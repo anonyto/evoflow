@@ -38,6 +38,21 @@ import {
 } from "lucide-react";
 import { useState, useEffect } from "react";
 
+// Project Images
+import stockkeepImg from "./assets/stockkeep.jpg";
+import gamesooqImg from "./assets/GameSooq.jpg";
+import smartcityImg from "./assets/SmartCity.jpg";
+import anonytoImg from "./assets/Anonyto.png";
+
+// Project images mapping
+const projectImages: { [key: string]: string } = {
+  'Stockkeep': stockkeepImg,
+  'GameSooQ': gamesooqImg,
+  'SmartCity': smartcityImg,
+  'Anonyto': anonytoImg,
+};
+
+
 function AppContent() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -125,7 +140,7 @@ function AppContent() {
 
   return (
     <div className={`min-h-screen transition-colors duration-300 ${
-      theme === "dark" ? "bg-brand-neutral-900 text-white" : "bg-white text-brand-neutral-900"
+      theme === "dark" ? "bg-brand-neutral-900 text-white" : "bg-white text-brand-neutral-800"
     }`}>
       {/* Navigation */}
       <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
@@ -138,9 +153,9 @@ function AppContent() {
         <div className="container-max px-4">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
-            <div className="flex items-center">
+            <a href="#" className="flex items-center" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>
               <EvoFlowLogo size="lg" theme={theme} />
-            </div>
+            </a>
 
             {/* Desktop Navigation */}
             <div className="hidden lg:flex items-center space-x-8">
@@ -152,6 +167,9 @@ function AppContent() {
               </a>
               <a href="#why-automate" className="text-sm font-medium hover:text-brand-primary-600 transition-colors">
                 {t.nav.about}
+              </a>
+              <a href="#our-projects" className="text-sm font-medium hover:text-brand-primary-600 transition-colors">
+                {t.nav.projects}
               </a>
               <a href="#contact" className="text-sm font-medium hover:text-brand-primary-600 transition-colors">
                 {t.nav.contact}
@@ -272,6 +290,9 @@ function AppContent() {
               <a href="#why-automate" className="block text-sm font-medium hover:text-brand-primary-600 transition-colors">
                 {t.nav.about}
               </a>
+              <a href="#our-projects" className="block text-sm font-medium hover:text-brand-primary-600 transition-colors">
+                {t.nav.projects}
+              </a>
               <a href="#contact" className="block text-sm font-medium hover:text-brand-primary-600 transition-colors">
                 {t.nav.contact}
               </a>
@@ -368,7 +389,7 @@ function AppContent() {
         <div className="container-max relative z-10 flex flex-col items-center text-center px-4">
 
           {/* Main Headline - One Line */}
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-brand-neutral-900 dark:text-white mb-6 px-4 animate-fade-in animation-delay-200 text-balance">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-brand-neutral-800 dark:text-white mb-6 px-4 animate-fade-in animation-delay-200 text-balance">
             {t.hero.title}{" "}
             <span className="relative inline-block">
               <span className="bg-gradient-to-r from-blue-600 via-purple-500 to-pink-500 bg-clip-text text-transparent bg-[length:200%_auto] animate-gradient-x">
@@ -389,7 +410,7 @@ function AppContent() {
               {t.hero.cta}
               <ArrowRight className="ml-2 w-4 sm:w-5 h-4 sm:h-5 group-hover:translate-x-1 transition-transform" />
             </button>
-            <button className="inline-flex items-center justify-center rounded-lg text-sm sm:text-base font-medium transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background border-2 border-brand-neutral-300 dark:border-brand-neutral-600 bg-white dark:bg-brand-neutral-800 hover:bg-brand-neutral-50 dark:hover:bg-brand-neutral-700 text-brand-neutral-900 dark:text-white h-11 sm:h-12 px-6 sm:px-8 group">
+            <button className="inline-flex items-center justify-center rounded-lg text-sm sm:text-base font-medium transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background border-2 border-brand-neutral-300 dark:border-brand-neutral-600 bg-white dark:bg-brand-neutral-800 hover:bg-brand-neutral-50 dark:hover:bg-brand-neutral-700 text-brand-neutral-800 dark:text-white h-11 sm:h-12 px-6 sm:px-8 group">
               <Play className="mr-2 w-4 sm:w-5 h-4 sm:h-5" />
               {t.hero.ctaSecondary}
             </button>
@@ -415,11 +436,11 @@ function AppContent() {
                     value={stat.number} 
                     delay={800 + index * 300}
                     duration={2000}
-                    className="text-2xl sm:text-4xl font-bold text-brand-neutral-900 dark:text-white transition-all duration-300 group-hover:text-brand-primary-600 dark:group-hover:text-brand-primary-400 group-hover:scale-110"
+                    className="text-2xl sm:text-4xl font-bold text-brand-neutral-800 dark:text-white transition-all duration-300 group-hover:text-brand-primary-600 dark:group-hover:text-brand-primary-400 group-hover:scale-110"
                   />
                   
                   {/* Label */}
-                  <p className="text-xs sm:text-sm text-brand-neutral-600 dark:text-brand-neutral-400 mt-1 transition-colors duration-300 group-hover:text-brand-neutral-900 dark:group-hover:text-white">
+                  <p className="text-xs sm:text-sm text-brand-neutral-600 dark:text-brand-neutral-400 mt-1 transition-colors duration-300 group-hover:text-brand-neutral-800 dark:group-hover:text-white">
                     {stat.label}
                   </p>
                   
@@ -463,7 +484,7 @@ function AppContent() {
                   <div className="w-12 h-12 sm:w-14 sm:h-14 bg-brand-primary-100 dark:bg-brand-primary-900/30 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
                     <IconComponent className="w-6 h-6 sm:w-7 sm:h-7 text-brand-primary-600 dark:text-brand-primary-400" />
                   </div>
-                  <h3 className="text-lg sm:text-xl font-semibold text-brand-neutral-900 dark:text-white mb-3 group-hover:text-brand-primary-600 dark:group-hover:text-brand-primary-400 transition-colors">
+                  <h3 className="text-lg sm:text-xl font-semibold text-brand-neutral-800 dark:text-white mb-3 group-hover:text-brand-primary-600 dark:group-hover:text-brand-primary-400 transition-colors">
                     {service.title}
                   </h3>
                   <p className="text-sm sm:text-base text-brand-neutral-600 dark:text-brand-neutral-300 leading-relaxed">
@@ -502,7 +523,7 @@ function AppContent() {
                   <div className="text-5xl font-bold text-brand-primary-600/20 dark:text-brand-primary-400/20 mb-4">
                     {step.number}
                   </div>
-                  <h3 className="text-xl font-semibold text-brand-neutral-900 dark:text-white mb-3">
+                  <h3 className="text-xl font-semibold text-brand-neutral-800 dark:text-white mb-3">
                     {step.title}
                   </h3>
                   <p className="text-brand-neutral-600 dark:text-brand-neutral-300 leading-relaxed">
@@ -545,7 +566,7 @@ function AppContent() {
                   <div className="w-12 h-12 bg-brand-primary-100 dark:bg-brand-primary-900/30 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                     <IconComponent className="w-6 h-6 text-brand-primary-600 dark:text-brand-primary-400" />
                   </div>
-                  <h3 className="text-xl font-semibold text-brand-neutral-900 dark:text-white mb-3">
+                  <h3 className="text-xl font-semibold text-brand-neutral-800 dark:text-white mb-3">
                     {benefit.title}
                   </h3>
                   <p className="text-brand-neutral-600 dark:text-brand-neutral-300 leading-relaxed">
@@ -587,7 +608,7 @@ function AppContent() {
                       <IconComponent className="w-5 h-5 text-brand-primary-600 dark:text-brand-primary-400" />
                     </div>
                     <div>
-                      <h3 className="text-lg font-semibold text-brand-neutral-900 dark:text-white mb-2">
+                      <h3 className="text-lg font-semibold text-brand-neutral-800 dark:text-white mb-2">
                         {audience.title}
                       </h3>
                       <p className="text-sm text-brand-neutral-600 dark:text-brand-neutral-300">
@@ -602,8 +623,96 @@ function AppContent() {
         </div>
       </section>
 
+      {/* Our Projects Section */}
+      <section id="our-projects" className="section-padding bg-white dark:bg-brand-neutral-900">
+        <div className="container-max px-4">
+          <div className="text-center mb-12 sm:mb-16 scroll-animate">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold mb-4 text-balance">
+              {t.ourProjects.title}
+            </h2>
+            <p className="text-base sm:text-lg lg:text-xl text-brand-neutral-600 dark:text-brand-neutral-300 max-w-3xl mx-auto px-4">
+              {t.ourProjects.subtitle}
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {t.ourProjects.projects.map((project, index) => {
+              const CardWrapper = project.link ? 'a' : 'div';
+              const cardProps = project.link ? { href: project.link, target: "_blank", rel: "noopener noreferrer" } : {};
+              
+              return (
+                <CardWrapper
+                  key={index}
+                  {...cardProps}
+                  className={`bg-white dark:bg-brand-neutral-800 rounded-2xl p-6 border border-brand-neutral-200 dark:border-brand-neutral-700 hover:shadow-xl hover:border-brand-primary-300 dark:hover:border-brand-primary-600 transition-all duration-300 group scroll-animate stagger-${(index % 4) + 1} ${project.link ? 'cursor-pointer' : ''} flex flex-col h-full`}
+                >
+                  {/* Project Image */}
+                  <div className="relative w-full h-40 rounded-xl mb-4 overflow-hidden group-hover:scale-[1.02] transition-transform duration-300">
+                    <img 
+                      src={projectImages[project.name]} 
+                      alt={project.name}
+                      className="w-full h-full object-cover"
+                    />
+                    {/* Gradient overlay on hover */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  </div>
+
+                  {/* Project Name */}
+                  <h3 className="text-lg font-bold text-brand-neutral-800 dark:text-white mb-2 group-hover:text-brand-primary-600 dark:group-hover:text-brand-primary-400 transition-colors">
+                    {project.name}
+                  </h3>
+
+                  {/* Project Description */}
+                  <p className="text-sm text-brand-neutral-600 dark:text-brand-neutral-300 leading-relaxed mb-4 flex-grow">
+                    {project.description}
+                  </p>
+
+                  {/* Technology Tags */}
+                  <div className="flex flex-wrap gap-2 mt-auto">
+                    {project.tags.map((tag, tagIndex) => {
+                      // Color mapping for different technologies
+                      const tagColors: { [key: string]: string } = {
+                        'React': 'text-blue-500',
+                        'Flutter': 'text-cyan-500',
+                        'Django': 'text-green-600',
+                        'Firebase': 'text-orange-500',
+                        'Yolo': 'text-purple-500',
+                        'FastAPI': 'text-teal-500',
+                        'Chrome Extension': 'text-yellow-600',
+                        'Privacy': 'text-pink-500',
+                        'AI Protection': 'text-indigo-500',
+                      };
+                      const colorClass = tagColors[tag] || 'text-brand-primary-500';
+                      
+                      return (
+                        <span
+                          key={tagIndex}
+                          className={`text-xs font-semibold ${colorClass}`}
+                        >
+                          #{tag}
+                        </span>
+                      );
+                    })}
+                  </div>
+
+                  {/* Visit Link Indicator for linked projects */}
+                  {project.link && (
+                    <div className="mt-4 pt-4 border-t border-brand-neutral-200 dark:border-brand-neutral-700">
+                      <span className="text-sm font-medium text-brand-primary-600 dark:text-brand-primary-400 group-hover:underline flex items-center gap-1">
+                        {language === 'fr' ? 'Visiter le site' : 'Visit website'}
+                        <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                      </span>
+                    </div>
+                  )}
+                </CardWrapper>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
       {/* Integrations Section */}
-      <section id="integrations" className="section-padding bg-white dark:bg-brand-neutral-900">
+      <section id="integrations" className="section-padding bg-brand-neutral-50 dark:bg-brand-neutral-800">
         <div className="container-max px-4">
           <div className="text-center mb-12 sm:mb-16 scroll-animate">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold mb-4 text-balance">
@@ -640,7 +749,7 @@ function AppContent() {
                   onClick={() => setOpenFaqIndex(openFaqIndex === index ? null : index)}
                   className="w-full px-6 py-4 flex items-center justify-between text-left"
                 >
-                  <span className="font-medium text-brand-neutral-900 dark:text-white">{item.q}</span>
+                  <span className="font-medium text-brand-neutral-800 dark:text-white">{item.q}</span>
                   {openFaqIndex === index ? (
                     <ChevronUp className="w-5 h-5 text-brand-neutral-500 flex-shrink-0" />
                   ) : (
@@ -680,7 +789,7 @@ function AppContent() {
                   <input
                     type="text"
                     placeholder={t.contact.namePlaceholder}
-                    className="w-full px-4 py-3 rounded-xl border border-brand-neutral-300 dark:border-brand-neutral-600 bg-white dark:bg-brand-neutral-800 text-brand-neutral-900 dark:text-white placeholder-brand-neutral-400 focus:outline-none focus:ring-2 focus:ring-brand-primary-500"
+                    className="w-full px-4 py-3 rounded-xl border border-brand-neutral-300 dark:border-brand-neutral-600 bg-white dark:bg-brand-neutral-800 text-brand-neutral-800 dark:text-white placeholder-brand-neutral-400 focus:outline-none focus:ring-2 focus:ring-brand-primary-500"
                   />
                 </div>
                 <div>
@@ -690,7 +799,7 @@ function AppContent() {
                   <input
                     type="email"
                     placeholder={t.contact.emailPlaceholder}
-                    className="w-full px-4 py-3 rounded-xl border border-brand-neutral-300 dark:border-brand-neutral-600 bg-white dark:bg-brand-neutral-800 text-brand-neutral-900 dark:text-white placeholder-brand-neutral-400 focus:outline-none focus:ring-2 focus:ring-brand-primary-500"
+                    className="w-full px-4 py-3 rounded-xl border border-brand-neutral-300 dark:border-brand-neutral-600 bg-white dark:bg-brand-neutral-800 text-brand-neutral-800 dark:text-white placeholder-brand-neutral-400 focus:outline-none focus:ring-2 focus:ring-brand-primary-500"
                   />
                 </div>
               </div>
@@ -701,7 +810,7 @@ function AppContent() {
                 <input
                   type="text"
                   placeholder={t.contact.companyPlaceholder}
-                  className="w-full px-4 py-3 rounded-xl border border-brand-neutral-300 dark:border-brand-neutral-600 bg-white dark:bg-brand-neutral-800 text-brand-neutral-900 dark:text-white placeholder-brand-neutral-400 focus:outline-none focus:ring-2 focus:ring-brand-primary-500"
+                  className="w-full px-4 py-3 rounded-xl border border-brand-neutral-300 dark:border-brand-neutral-600 bg-white dark:bg-brand-neutral-800 text-brand-neutral-800 dark:text-white placeholder-brand-neutral-400 focus:outline-none focus:ring-2 focus:ring-brand-primary-500"
                 />
               </div>
               <div>
@@ -711,7 +820,7 @@ function AppContent() {
                 <textarea
                   rows={4}
                   placeholder={t.contact.descriptionPlaceholder}
-                  className="w-full px-4 py-3 rounded-xl border border-brand-neutral-300 dark:border-brand-neutral-600 bg-white dark:bg-brand-neutral-800 text-brand-neutral-900 dark:text-white placeholder-brand-neutral-400 focus:outline-none focus:ring-2 focus:ring-brand-primary-500 resize-none"
+                  className="w-full px-4 py-3 rounded-xl border border-brand-neutral-300 dark:border-brand-neutral-600 bg-white dark:bg-brand-neutral-800 text-brand-neutral-800 dark:text-white placeholder-brand-neutral-400 focus:outline-none focus:ring-2 focus:ring-brand-primary-500 resize-none"
                 ></textarea>
               </div>
               <button

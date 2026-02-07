@@ -3,6 +3,7 @@ export const translations = {
     nav: {
       services: "Services",
       howItWorks: "Comment ça marche",
+      projects: "Projets",
       about: "À propos",
       contact: "Contact",
       audit: "Audit Gratuit",
@@ -157,6 +158,36 @@ export const translations = {
         },
       ],
     },
+    ourProjects: {
+      title: "Nos Projets",
+      subtitle: "Découvrez quelques-uns de nos projets réalisés",
+      projects: [
+        {
+          name: "Stockkeep",
+          description: "Plateforme web et mobile pour la gestion des stocks de magasins, permettant aux utilisateurs de suivre, demander, valider et approuver les mouvements de stocks et les commandes sur plusieurs rôles, assurant des opérations de chaîne d'approvisionnement efficaces et structurées.",
+          tags: ["React", "Flutter", "Django"],
+          link: null,
+        },
+        {
+          name: "GameSooQ",
+          description: "Application mobile avec landing page et dashboard admin permettant aux utilisateurs d'échanger des jeux vidéo en toute sécurité, avec chat en temps réel, suivi des échanges. Le tout géré via un dashboard moderne pour surveiller l'activité des utilisateurs et les statistiques de l'app.",
+          tags: ["React", "Flutter", "Firebase"],
+          link: "https://gamesooq.com",
+        },
+        {
+          name: "SmartCity",
+          description: "Plateforme web alimentée par l'IA avec détection de véhicules en temps réel et surveillance des infractions de vitesse utilisant YOLO, intégrée à un dashboard React pour visualiser les incidents de circulation, suivre les plaques d'immatriculation et afficher les statistiques de la ville intelligente.",
+          tags: ["React", "Yolo", "FastAPI"],
+          link: null,
+        },
+        {
+          name: "Anonyto",
+          description: "Extension de navigateur de protection de la vie privée qui détecte et anonymise automatiquement vos données personnelles en temps réel avant qu'elles ne soient envoyées aux outils d'IA comme ChatGPT, Copilot et Gemini. Protection instantanée sans changement d'habitudes.",
+          tags: ["Chrome Extension", "Privacy", "AI Protection"],
+          link: "https://anonyto.com",
+        },
+      ],
+    },
     integrations: {
       title: "Intégrations natives",
       subtitle: "Connectez tous vos outils préférés",
@@ -242,6 +273,7 @@ export const translations = {
     nav: {
       services: "Services",
       howItWorks: "How It Works",
+      projects: "Projects",
       about: "About",
       contact: "Contact",
       audit: "Free Audit",
@@ -393,6 +425,36 @@ export const translations = {
         {
           title: "SAAS Editors",
           description: "Integrate AI features into your products.",
+        },
+      ],
+    },
+    ourProjects: {
+      title: "Our Projects",
+      subtitle: "Discover some of our completed projects",
+      projects: [
+        {
+          name: "Stockkeep",
+          description: "Web and mobile platform for managing store inventory, enabling users to track, request, validate, and approve stock movements and orders across multiple roles, ensuring efficient and structured supply chain operations.",
+          tags: ["React", "Flutter", "Django"],
+          link: null,
+        },
+        {
+          name: "GameSooQ",
+          description: "Mobile app with landing page and admin dashboard that allows users to exchange video games securely, featuring real time chat, exchange tracking. All managed through a modern dashboard for monitoring user activity and app statistics.",
+          tags: ["React", "Flutter", "Firebase"],
+          link: "https://gamesooq.com",
+        },
+        {
+          name: "SmartCity",
+          description: "AI-powered web platform with real time vehicle detection and speed violation monitoring using YOLO, integrated with a React dashboard to visualize traffic incidents, track license plates, and display smart city statistics for efficient traffic law enforcement.",
+          tags: ["React", "Yolo", "FastAPI"],
+          link: null,
+        },
+        {
+          name: "Anonyto",
+          description: "Privacy protection browser extension that automatically detects and anonymizes your personal data in real-time before it's sent to AI tools like ChatGPT, Copilot and Gemini. Instant protection without changing your habits.",
+          tags: ["Chrome Extension", "Privacy", "AI Protection"],
+          link: "https://anonyto.com",
         },
       ],
     },
