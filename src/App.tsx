@@ -135,7 +135,7 @@ function AppContent() {
             : "bg-white/95 backdrop-blur-md border-b border-brand-neutral-200"
           : "bg-transparent"
       }`}>
-        <div className="container-max">
+        <div className="container-max px-4">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <div className="flex items-center">
@@ -368,7 +368,7 @@ function AppContent() {
         <div className="container-max relative z-10 flex flex-col items-center text-center px-4">
 
           {/* Main Headline - One Line */}
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-brand-neutral-900 dark:text-white mb-6 px-4 animate-fade-in animation-delay-200 whitespace-nowrap">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-brand-neutral-900 dark:text-white mb-6 px-4 animate-fade-in animation-delay-200 text-balance">
             {t.hero.title}{" "}
             <span className="relative inline-block">
               <span className="bg-gradient-to-r from-blue-600 via-purple-500 to-pink-500 bg-clip-text text-transparent bg-[length:200%_auto] animate-gradient-x">
@@ -396,14 +396,14 @@ function AppContent() {
           </div>
 
           {/* Stats with enhanced animations */}
-          <div className="grid grid-cols-3 gap-6 sm:gap-12 animate-fade-in animation-delay-800">
+          <div className="flex justify-center items-start gap-8 sm:gap-16 md:gap-24 animate-fade-in animation-delay-800 w-full max-w-3xl">
             {stats.map((stat, index) => (
               <div 
                 key={index} 
-                className={`text-center group cursor-pointer stagger-${index + 1}`}
+                className={`text-center group cursor-pointer stagger-${index + 1} flex-1`}
                 style={{ animationDelay: `${800 + index * 200}ms` }}
               >
-                <div className="relative inline-flex flex-col items-center p-4 sm:p-6 rounded-2xl transition-all duration-500 hover:bg-brand-primary-50/50 dark:hover:bg-brand-primary-900/20 hover:scale-110 hover:-translate-y-2">
+                <div className="relative flex flex-col items-center p-4 sm:p-6 rounded-2xl transition-all duration-500 hover:bg-brand-primary-50/50 dark:hover:bg-brand-primary-900/20 hover:scale-110 hover:-translate-y-2">
                   {/* Animated icon */}
                   <div className="relative mb-3">
                     <div className="absolute inset-0 bg-brand-primary-500/20 rounded-full blur-xl scale-0 group-hover:scale-150 transition-transform duration-500"></div>
@@ -495,7 +495,7 @@ function AppContent() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto">
             {t.howItWorks.steps.map((step, index) => (
               <div key={index} className={`scroll-animate stagger-${index + 1}`}>
                 <div className="bg-white dark:bg-brand-neutral-900 rounded-2xl p-8 border border-brand-neutral-200 dark:border-brand-neutral-700 h-full">
@@ -730,9 +730,9 @@ function AppContent() {
       {/* Footer */}
       <footer className="bg-brand-neutral-900 text-brand-neutral-300 py-16">
         <div className="container-max px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-12">
             {/* Brand */}
-            <div className="lg:col-span-1">
+            <div className="col-span-2 lg:col-span-1">
               <div className="flex items-center mb-6">
                 <EvoFlowLogo size="lg" theme="dark" />
               </div>

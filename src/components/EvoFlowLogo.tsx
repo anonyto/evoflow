@@ -1,5 +1,6 @@
 import React from 'react';
-import { Zap } from 'lucide-react';
+import logoLight from '../assets/logo_LightMood.png';
+import logoDark from '../assets/logo_DarkMood.png';
 
 interface EvoFlowLogoProps {
   className?: string;
@@ -13,28 +14,21 @@ export const EvoFlowLogo: React.FC<EvoFlowLogoProps> = ({
   theme = 'light'
 }) => {
   const sizeClasses = {
-    sm: 'text-xl',
-    md: 'text-2xl',
-    lg: 'text-3xl',
-    xl: 'text-4xl',
+    sm: 'h-6',
+    md: 'h-8',
+    lg: 'h-10',
+    xl: 'h-12',
   };
 
-  const iconSizes = {
-    sm: 'w-4 h-4',
-    md: 'w-5 h-5',
-    lg: 'w-6 h-6',
-    xl: 'w-7 h-7',
-  };
-
-  // Dark grey color that works on both light and dark backgrounds
-  const flowColor = theme === 'dark' ? '#E5E7EB' : '#1F2937';
+  // Use light logo on dark backgrounds, dark logo on light backgrounds
+  const logoSrc = theme === 'dark' ? logoDark : logoLight;
 
   return (
-    <div className={`font-display font-bold tracking-tight flex items-center ${sizeClasses[size]} ${className}`}>
-      <span style={{ color: '#2563EB' }}>Evo</span>
-      <Zap className={`${iconSizes[size]} text-blue-500 fill-blue-500`} />
-      <span style={{ color: flowColor }}>low</span>
-    </div>
+    <img 
+      src={logoSrc} 
+      alt="Evoflow" 
+      className={`${sizeClasses[size]} w-auto object-contain ${className}`}
+    />
   );
 };
 
