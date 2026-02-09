@@ -3,6 +3,7 @@ import { LanguageProvider, useLanguage } from "./context/LanguageContext";
 import { translations } from "./i18n/translations";
 import { EvoFlowLogo } from "./components/EvoFlowLogo";
 import { AnimatedCounter } from "./components/AnimatedCounter";
+import { integrationLogos, integrationBrandColors } from "./components/IntegrationLogos";
 import {
   ArrowRight,
   Menu,
@@ -29,12 +30,15 @@ import {
   MapPin,
   Workflow,
   ChevronDown,
-  ChevronUp,
   Building,
   Rocket,
   Store,
   Briefcase,
   Code,
+  Plus,
+  Minus,
+  Star,
+  Quote,
 } from "lucide-react";
 import { useState, useEffect } from "react";
 
@@ -171,6 +175,12 @@ function AppContent() {
               <a href="#our-projects" className="text-sm font-medium hover:text-brand-primary-600 transition-colors">
                 {t.nav.projects}
               </a>
+              <a href="#testimonials" className="text-sm font-medium hover:text-brand-primary-600 transition-colors">
+                {t.nav.testimonials}
+              </a>
+              <a href="#faq" className="text-sm font-medium hover:text-brand-primary-600 transition-colors">
+                {t.nav.faq}
+              </a>
               <a href="#contact" className="text-sm font-medium hover:text-brand-primary-600 transition-colors">
                 {t.nav.contact}
               </a>
@@ -292,6 +302,12 @@ function AppContent() {
               </a>
               <a href="#our-projects" className="block text-sm font-medium hover:text-brand-primary-600 transition-colors">
                 {t.nav.projects}
+              </a>
+              <a href="#testimonials" className="block text-sm font-medium hover:text-brand-primary-600 transition-colors">
+                {t.nav.testimonials}
+              </a>
+              <a href="#faq" className="block text-sm font-medium hover:text-brand-primary-600 transition-colors">
+                {t.nav.faq}
               </a>
               <a href="#contact" className="block text-sm font-medium hover:text-brand-primary-600 transition-colors">
                 {t.nav.contact}
@@ -519,8 +535,8 @@ function AppContent() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto">
             {t.howItWorks.steps.map((step, index) => (
               <div key={index} className={`scroll-animate stagger-${index + 1}`}>
-                <div className="bg-white dark:bg-brand-neutral-900 rounded-2xl p-8 border border-brand-neutral-200 dark:border-brand-neutral-700 h-full">
-                  <div className="text-5xl font-bold text-brand-primary-600/20 dark:text-brand-primary-400/20 mb-4">
+                <div className="bg-white dark:bg-brand-neutral-900 rounded-2xl p-8 border border-brand-neutral-200 dark:border-brand-neutral-700 h-full hover:-translate-y-1 hover:shadow-lg hover:border-brand-primary-300 dark:hover:border-brand-primary-600 transition-all duration-300 group cursor-pointer">
+                  <div className="text-5xl font-bold text-brand-primary-600/20 dark:text-white mb-4">
                     {step.number}
                   </div>
                   <h3 className="text-xl font-semibold text-brand-neutral-800 dark:text-white mb-3">
@@ -562,7 +578,7 @@ function AppContent() {
             {t.whyAutomate.benefits.map((benefit, index) => {
               const IconComponent = iconMap[benefit.icon] || CheckCircle;
               return (
-                <div key={index} className={`bg-white dark:bg-brand-neutral-800 rounded-xl p-8 group border border-brand-neutral-200 dark:border-brand-neutral-700 hover:shadow-md transition-all duration-300 scroll-animate stagger-${(index % 6) + 1}`}>
+                <div key={index} className={`bg-white dark:bg-brand-neutral-800 rounded-xl p-8 group border border-brand-neutral-200 dark:border-brand-neutral-700 hover:shadow-lg hover:-translate-y-1 hover:border-brand-primary-300 dark:hover:border-brand-primary-600 transition-all duration-300 cursor-pointer scroll-animate stagger-${(index % 6) + 1}`}>
                   <div className="w-12 h-12 bg-brand-primary-100 dark:bg-brand-primary-900/30 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                     <IconComponent className="w-6 h-6 text-brand-primary-600 dark:text-brand-primary-400" />
                   </div>
@@ -602,7 +618,7 @@ function AppContent() {
             {t.whoWeServe.audiences.map((audience, index) => {
               const IconComponent = audienceIcons[index] || Building;
               return (
-                <div key={index} className={`bg-white dark:bg-brand-neutral-900 rounded-xl p-6 border border-brand-neutral-200 dark:border-brand-neutral-700 hover:shadow-md transition-all duration-300 scroll-animate stagger-${(index % 6) + 1}`}>
+                <div key={index} className={`bg-white dark:bg-brand-neutral-900 rounded-xl p-6 group border border-brand-neutral-200 dark:border-brand-neutral-700 hover:shadow-lg hover:-translate-y-1 hover:border-brand-primary-300 dark:hover:border-brand-primary-600 transition-all duration-300 cursor-pointer scroll-animate stagger-${(index % 6) + 1}`}>
                   <div className="flex items-start gap-4">
                     <div className="w-10 h-10 bg-brand-primary-100 dark:bg-brand-primary-900/30 rounded-lg flex items-center justify-center flex-shrink-0">
                       <IconComponent className="w-5 h-5 text-brand-primary-600 dark:text-brand-primary-400" />
@@ -613,6 +629,78 @@ function AppContent() {
                       </h3>
                       <p className="text-sm text-brand-neutral-600 dark:text-brand-neutral-300">
                         {audience.description}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section id="testimonials" className="section-padding bg-white dark:bg-brand-neutral-900 relative overflow-hidden">
+        {/* Background decoration */}
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-brand-primary-500/5 dark:bg-brand-primary-500/10 rounded-full blur-3xl"></div>
+        </div>
+
+        <div className="container-max px-4 relative z-10">
+          <div className="text-center mb-12 sm:mb-16 scroll-animate">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold mb-4 text-balance">
+              {t.testimonials.title}
+            </h2>
+            <p className="text-base sm:text-lg text-brand-neutral-600 dark:text-brand-neutral-300 max-w-2xl mx-auto">
+              {t.testimonials.subtitle}
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-5xl mx-auto scroll-animate">
+            {t.testimonials.items.map((item, index) => {
+              const initials = item.name.split(' ').map(n => n[0]).join('');
+              const gradients = [
+                'from-blue-500 to-cyan-400',
+                'from-purple-500 to-pink-400',
+                'from-emerald-500 to-teal-400',
+                'from-orange-500 to-amber-400',
+              ];
+              return (
+                <div
+                  key={index}
+                  className="bg-brand-neutral-50 dark:bg-brand-neutral-800 rounded-2xl p-6 sm:p-8 border border-brand-neutral-200 dark:border-brand-neutral-700 hover:-translate-y-1 hover:shadow-lg hover:border-brand-primary-300 dark:hover:border-brand-primary-600 transition-all duration-300 group relative"
+                >
+                  {/* Quote icon */}
+                  <Quote className="w-8 h-8 text-brand-primary-200 dark:text-brand-primary-800 absolute top-6 right-6 sm:top-8 sm:right-8" />
+
+                  {/* Stars */}
+                  <div className="flex gap-1 mb-4">
+                    {Array.from({ length: item.rating }).map((_, i) => (
+                      <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
+                    ))}
+                  </div>
+
+                  {/* Quote text */}
+                  <p className="text-brand-neutral-700 dark:text-brand-neutral-200 leading-relaxed mb-6 text-sm sm:text-base">
+                    "{item.quote}"
+                  </p>
+
+                  {/* Author info */}
+                  <div className="flex items-center gap-4 pt-4 border-t border-brand-neutral-200 dark:border-brand-neutral-700">
+                    {/* Avatar with initials */}
+                    <div className={`w-12 h-12 rounded-full bg-gradient-to-br ${gradients[index % 4]} flex items-center justify-center flex-shrink-0 shadow-md`}>
+                      <span className="text-white font-bold text-sm">{initials}</span>
+                    </div>
+                    <div className="min-w-0">
+                      <h4 className="font-semibold text-brand-neutral-800 dark:text-white text-sm sm:text-base truncate">
+                        {item.name}
+                      </h4>
+                      <p className="text-xs sm:text-sm text-brand-neutral-500 dark:text-brand-neutral-400 truncate">
+                        {item.role} — {item.company}
+                      </p>
+                      <p className="text-xs text-brand-neutral-400 dark:text-brand-neutral-500 flex items-center gap-1 mt-0.5">
+                        <MapPin className="w-3 h-3" />
+                        {item.location}
                       </p>
                     </div>
                   </div>
@@ -644,7 +732,7 @@ function AppContent() {
                 <CardWrapper
                   key={index}
                   {...cardProps}
-                  className={`bg-white dark:bg-brand-neutral-800 rounded-2xl p-6 border border-brand-neutral-200 dark:border-brand-neutral-700 hover:shadow-xl hover:border-brand-primary-300 dark:hover:border-brand-primary-600 transition-all duration-300 group scroll-animate stagger-${(index % 4) + 1} ${project.link ? 'cursor-pointer' : ''} flex flex-col h-full`}
+                  className={`bg-white dark:bg-brand-neutral-800 rounded-2xl p-6 border border-brand-neutral-200 dark:border-brand-neutral-700 hover:shadow-xl hover:-translate-y-1 hover:border-brand-primary-300 dark:hover:border-brand-primary-600 transition-all duration-300 group scroll-animate stagger-${(index % 4) + 1} ${project.link ? 'cursor-pointer' : ''} flex flex-col h-full`}
                 >
                   {/* Project Image */}
                   <div className="relative w-full h-40 rounded-xl mb-4 overflow-hidden group-hover:scale-[1.02] transition-transform duration-300">
@@ -667,32 +755,11 @@ function AppContent() {
                     {project.description}
                   </p>
 
-                  {/* Technology Tags */}
-                  <div className="flex flex-wrap gap-2 mt-auto">
-                    {project.tags.map((tag, tagIndex) => {
-                      // Color mapping for different technologies
-                      const tagColors: { [key: string]: string } = {
-                        'React': 'text-blue-500',
-                        'Flutter': 'text-cyan-500',
-                        'Django': 'text-green-600',
-                        'Firebase': 'text-orange-500',
-                        'Yolo': 'text-purple-500',
-                        'FastAPI': 'text-teal-500',
-                        'Chrome Extension': 'text-yellow-600',
-                        'Privacy': 'text-pink-500',
-                        'AI Protection': 'text-indigo-500',
-                      };
-                      const colorClass = tagColors[tag] || 'text-brand-primary-500';
-                      
-                      return (
-                        <span
-                          key={tagIndex}
-                          className={`text-xs font-semibold ${colorClass}`}
-                        >
-                          #{tag}
-                        </span>
-                      );
-                    })}
+                  {/* Category */}
+                  <div className="mt-auto">
+                    <span className="inline-block text-xs font-semibold uppercase tracking-wider text-brand-primary-600 dark:text-brand-primary-400 bg-brand-primary-50 dark:bg-brand-primary-900/20 px-3 py-1 rounded-full">
+                      {project.category}
+                    </span>
                   </div>
 
                   {/* Visit Link Indicator for linked projects */}
@@ -723,46 +790,132 @@ function AppContent() {
             </p>
           </div>
 
-          <div className="flex flex-wrap justify-center gap-4 sm:gap-6 max-w-4xl mx-auto">
-            {t.integrations.tools.map((tool, index) => (
-              <div key={index} className={`bg-brand-neutral-100 dark:bg-brand-neutral-800 rounded-xl px-6 py-3 text-sm font-medium text-brand-neutral-700 dark:text-brand-neutral-300 hover:bg-brand-primary-100 dark:hover:bg-brand-primary-900/30 hover:text-brand-primary-600 dark:hover:text-brand-primary-400 transition-all duration-300 scroll-animate-scale stagger-${(index % 8) + 1}`}>
-                {tool}
-              </div>
-            ))}
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-6 max-w-5xl mx-auto">
+            {t.integrations.tools.map((tool, index) => {
+              const LogoComponent = integrationLogos[tool];
+              const brandColor = integrationBrandColors[tool] || "#6366f1";
+              return (
+                <div
+                  key={index}
+                  className={`group flex flex-col items-center gap-3 bg-white dark:bg-brand-neutral-900 rounded-2xl px-4 py-6 border border-brand-neutral-200 dark:border-brand-neutral-700 hover:shadow-lg hover:border-brand-primary-300 dark:hover:border-brand-primary-600 hover:-translate-y-1 transition-all duration-300 scroll-animate-scale stagger-${(index % 8) + 1}`}
+                >
+                  {LogoComponent && (
+                    <div
+                      className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-xl transition-all duration-300 group-hover:scale-110"
+                      style={{ backgroundColor: `${brandColor}15` }}
+                    >
+                      <LogoComponent
+                        className="w-6 h-6 sm:w-7 sm:h-7 transition-colors duration-300"
+                        style={{ color: theme === 'dark' ? '#ffffff' : brandColor } as React.CSSProperties}
+                      />
+                    </div>
+                  )}
+                  <span className="text-sm font-semibold text-brand-neutral-700 dark:text-brand-neutral-200 group-hover:text-brand-primary-600 dark:group-hover:text-brand-primary-400 transition-colors duration-300">
+                    {tool}
+                  </span>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
 
       {/* FAQ Section */}
-      <section className="section-padding bg-brand-neutral-50 dark:bg-brand-neutral-800">
-        <div className="container-max px-4">
+      <section id="faq" className="section-padding bg-brand-neutral-50 dark:bg-brand-neutral-800 relative overflow-hidden">
+        {/* Background decorative elements */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <div className="absolute -top-20 -right-20 w-80 h-80 bg-blue-500/5 dark:bg-blue-500/10 rounded-full blur-3xl animate-pulse-slow"></div>
+          <div className="absolute -bottom-20 -left-20 w-96 h-96 bg-purple-500/5 dark:bg-purple-500/10 rounded-full blur-3xl animate-pulse-slow animation-delay-400"></div>
+        </div>
+
+        <div className="container-max px-4 relative z-10">
           <div className="text-center mb-12 sm:mb-16 scroll-animate">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold mb-4 text-balance">
               {t.faq.title}
             </h2>
+            <p className="text-base sm:text-lg text-brand-neutral-600 dark:text-brand-neutral-300 max-w-2xl mx-auto">
+              {language === 'fr' ? 'Tout ce que vous devez savoir pour démarrer' : 'Everything you need to know to get started'}
+            </p>
           </div>
 
-          <div className="max-w-3xl mx-auto space-y-4">
-            {t.faq.items.map((item, index) => (
-              <div key={index} className={`bg-white dark:bg-brand-neutral-900 rounded-xl border border-brand-neutral-200 dark:border-brand-neutral-700 overflow-hidden scroll-animate stagger-${(index % 5) + 1}`}>
-                <button
-                  onClick={() => setOpenFaqIndex(openFaqIndex === index ? null : index)}
-                  className="w-full px-6 py-4 flex items-center justify-between text-left"
+          <div className="max-w-3xl mx-auto space-y-4 scroll-animate">
+            {t.faq.items.map((item, index) => {
+              const isOpen = openFaqIndex === index;
+              return (
+                <div
+                  key={index}
+                  className={`group rounded-2xl border overflow-hidden transition-all duration-300 ${
+                    isOpen
+                      ? 'bg-white dark:bg-brand-neutral-900 border-brand-primary-300 dark:border-brand-primary-600 shadow-lg shadow-brand-primary-500/5 dark:shadow-brand-primary-500/10'
+                      : 'bg-white dark:bg-brand-neutral-900 border-brand-neutral-200 dark:border-brand-neutral-700 hover:border-brand-neutral-300 dark:hover:border-brand-neutral-600 hover:shadow-md'
+                  }`}
                 >
-                  <span className="font-medium text-brand-neutral-800 dark:text-white">{item.q}</span>
-                  {openFaqIndex === index ? (
-                    <ChevronUp className="w-5 h-5 text-brand-neutral-500 flex-shrink-0" />
-                  ) : (
-                    <ChevronDown className="w-5 h-5 text-brand-neutral-500 flex-shrink-0" />
-                  )}
-                </button>
-                {openFaqIndex === index && (
-                  <div className="px-6 pb-4">
-                    <p className="text-brand-neutral-600 dark:text-brand-neutral-300 leading-relaxed">{item.a}</p>
+                  <button
+                    onClick={() => setOpenFaqIndex(isOpen ? null : index)}
+                    className="w-full px-6 py-5 flex items-center gap-4 text-left transition-colors duration-200"
+                  >
+                    {/* Number badge */}
+                    <span className={`flex-shrink-0 w-8 h-8 rounded-lg flex items-center justify-center text-xs font-bold transition-all duration-300 ${
+                      isOpen
+                        ? 'bg-brand-primary-600 text-white'
+                        : 'bg-brand-neutral-100 dark:bg-brand-neutral-800 text-brand-neutral-500 dark:text-brand-neutral-400 group-hover:bg-brand-primary-100 dark:group-hover:bg-brand-primary-900/30 group-hover:text-brand-primary-600 dark:group-hover:text-brand-primary-400'
+                    }`}>
+                      {String(index + 1).padStart(2, '0')}
+                    </span>
+
+                    {/* Question text */}
+                    <span className={`flex-1 font-semibold transition-colors duration-200 ${
+                      isOpen
+                        ? 'text-brand-primary-600 dark:text-brand-primary-400'
+                        : 'text-brand-neutral-800 dark:text-white group-hover:text-brand-primary-600 dark:group-hover:text-brand-primary-400'
+                    }`}>
+                      {item.q}
+                    </span>
+
+                    {/* Toggle icon */}
+                    <div className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 ${
+                      isOpen
+                        ? 'bg-brand-primary-600 text-white rotate-0'
+                        : 'bg-brand-neutral-100 dark:bg-brand-neutral-800 text-brand-neutral-500 group-hover:bg-brand-primary-100 dark:group-hover:bg-brand-primary-900/30 group-hover:text-brand-primary-600 dark:group-hover:text-brand-primary-400'
+                    }`}>
+                      {isOpen ? (
+                        <Minus className="w-4 h-4" />
+                      ) : (
+                        <Plus className="w-4 h-4" />
+                      )}
+                    </div>
+                  </button>
+
+                  {/* Answer - animated */}
+                  <div className={`grid transition-all duration-300 ease-in-out ${
+                    isOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'
+                  }`}>
+                    <div className="overflow-hidden">
+                      <div className="px-6 pb-5 pl-[4.5rem]">
+                        <div className="h-px bg-gradient-to-r from-brand-primary-500/30 via-brand-primary-500/10 to-transparent mb-4"></div>
+                        <p className="text-brand-neutral-600 dark:text-brand-neutral-300 leading-relaxed">
+                          {item.a}
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                )}
-              </div>
-            ))}
+                </div>
+              );
+            })}
+          </div>
+
+          {/* Bottom CTA */}
+          <div className="text-center mt-12 scroll-animate">
+            <p className="text-brand-neutral-500 dark:text-brand-neutral-400 mb-4">
+              {language === 'fr' ? 'Vous avez d\'autres questions ?' : 'Still have questions?'}
+            </p>
+            <a
+              href="#contact"
+              className="inline-flex items-center gap-2 bg-brand-primary-600 hover:bg-brand-primary-700 text-white font-medium px-6 py-3 rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-brand-primary-500/25 group"
+            >
+              {language === 'fr' ? 'Contactez-nous' : 'Contact us'}
+              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            </a>
           </div>
         </div>
       </section>
