@@ -182,7 +182,7 @@ export default function Navbar() {
 
             {/* Mobile Menu Button */}
             <button
-              className="lg:hidden p-2 rounded-xl"
+              className={`lg:hidden p-2 rounded-xl transition-colors ${theme === "dark" ? "text-brand-neutral-300 hover:text-brand-primary-400" : "text-brand-neutral-700 hover:text-brand-primary-600"}`}
               onClick={() => setMobileOpen(!mobileOpen)}
             >
               {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -194,25 +194,25 @@ export default function Navbar() {
         {mobileOpen && (
           <div className="lg:hidden border-t border-brand-neutral-200 dark:border-brand-neutral-800 bg-white dark:bg-brand-neutral-900">
             <div className="container-max py-6 space-y-4 px-4">
-              <a href="#services" onClick={(e) => handleNavClick(e, "services")} className="block text-sm font-medium hover:text-brand-primary-600 transition-colors">
+              <a href="#services" onClick={(e) => handleNavClick(e, "services")} className={`block text-sm font-medium transition-colors ${theme === "dark" ? "text-brand-neutral-300 hover:text-brand-primary-400" : "text-brand-neutral-700 hover:text-brand-primary-600"}`}>
                 {t.nav.services}
               </a>
-              <a href="#how-it-works" onClick={(e) => handleNavClick(e, "how-it-works")} className="block text-sm font-medium hover:text-brand-primary-600 transition-colors">
+              <a href="#how-it-works" onClick={(e) => handleNavClick(e, "how-it-works")} className={`block text-sm font-medium transition-colors ${theme === "dark" ? "text-brand-neutral-300 hover:text-brand-primary-400" : "text-brand-neutral-700 hover:text-brand-primary-600"}`}>
                 {t.nav.howItWorks}
               </a>
-              <a href="#why-automate" onClick={(e) => handleNavClick(e, "why-automate")} className="block text-sm font-medium hover:text-brand-primary-600 transition-colors">
+              <a href="#why-automate" onClick={(e) => handleNavClick(e, "why-automate")} className={`block text-sm font-medium transition-colors ${theme === "dark" ? "text-brand-neutral-300 hover:text-brand-primary-400" : "text-brand-neutral-700 hover:text-brand-primary-600"}`}>
                 {t.nav.advantages}
               </a>
-              {/*<a href="#our-projects" className="block text-sm font-medium hover:text-brand-primary-600 transition-colors">
+              {/*<a href="#our-projects" className={`block text-sm font-medium transition-colors ${theme === "dark" ? "text-brand-neutral-300 hover:text-brand-primary-400" : "text-brand-neutral-700 hover:text-brand-primary-600"}`}>
                 {t.nav.projects}
               </a>
-              <a href="#testimonials" className="block text-sm font-medium hover:text-brand-primary-600 transition-colors">
+              <a href="#testimonials" className={`block text-sm font-medium transition-colors ${theme === "dark" ? "text-brand-neutral-300 hover:text-brand-primary-400" : "text-brand-neutral-700 hover:text-brand-primary-600"}`}>
                 {t.nav.testimonials}
               </a>*/}
-              <a href="#faq" onClick={(e) => handleNavClick(e, "faq")} className="block text-sm font-medium hover:text-brand-primary-600 transition-colors">
+              <a href="#faq" onClick={(e) => handleNavClick(e, "faq")} className={`block text-sm font-medium transition-colors ${theme === "dark" ? "text-brand-neutral-300 hover:text-brand-primary-400" : "text-brand-neutral-700 hover:text-brand-primary-600"}`}>
                 {t.nav.faq}
               </a>
-              <a href="#contact" onClick={(e) => handleNavClick(e, "contact")} className="block text-sm font-medium hover:text-brand-primary-600 transition-colors">
+              <a href="#contact" onClick={(e) => handleNavClick(e, "contact")} className={`block text-sm font-medium transition-colors ${theme === "dark" ? "text-brand-neutral-300 hover:text-brand-primary-400" : "text-brand-neutral-700 hover:text-brand-primary-600"}`}>
                 {t.nav.contact}
               </a>
               <div className="flex items-center space-x-4 pt-4 border-t border-brand-neutral-200 dark:border-brand-neutral-800">

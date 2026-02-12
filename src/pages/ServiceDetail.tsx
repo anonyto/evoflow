@@ -23,7 +23,7 @@ const ServiceDetail = () => {
     
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        if (entry.isIntersecting) {
+        if (entry.isIntersecting && !entry.target.classList.contains('animate-in')) {
           entry.target.classList.add('animate-in');
         }
       });
@@ -32,7 +32,7 @@ const ServiceDetail = () => {
     elements.forEach((el) => observer.observe(el));
     
     return () => elements.forEach((el) => observer.unobserve(el));
-  }, []);
+  }, [theme, language]);
 
   if (!service) {
     return (
