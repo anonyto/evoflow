@@ -16,7 +16,7 @@ export default function IntegrationsSection() {
     <section id="integrations" className="section-padding bg-brand-neutral-50 dark:bg-brand-neutral-800">
       <div className="container-max px-4">
         <div className="text-center mb-12 sm:mb-16 scroll-animate">
-          <span className="inline-block px-4 py-1.5 rounded-full bg-brand-neutral-800 dark:bg-brand-neutral-800 bg-blue-50 text-brand-primary-600 dark:text-brand-primary-400 text-sm font-medium mb-4 border border-brand-primary-200 dark:border-brand-primary-800">
+          <span className="inline-block px-4 py-1.5 rounded-full bg-blue-50 text-brand-primary-600 dark:bg-brand-neutral-800 dark:text-brand-primary-400 text-sm font-medium mb-4 border border-brand-primary-200 dark:border-brand-primary-800">
             {st.integrations}
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold mb-4 text-balance">
