@@ -13,8 +13,8 @@ export const translations = {
     hero: {
       badge: "Agence IA & Automatisation",
       title: "Transformez votre entreprise",
-      titleHighlight: "avec l'IA",
-      subtitle: "Nous concevons des solutions d'intelligence artificielle sur-mesure pour automatiser vos processus, optimiser vos workflows et propulser votre croissance.",
+      titleHighlight: "avec EvoFlow",
+      subtitle: "Nous fournissons des solutions expertes en cybersécurité, transformation digitale et automatisation IA pour accélérer votre transformation digitale.",
       cta: "Audit Gratuit",
       ctaSecondary: "Voir nos solutions",
       stats: {
@@ -337,33 +337,36 @@ export const translations = {
           "Feuille de route de sécurité personnalisée pour votre industrie",
         ],
       },
-      audit: {
-        title: "Audit et consultation",
-        subtitle: "Perspectives stratégiques pour la croissance",
-        tagline: "Stratégie basée sur les données pour une transformation durable",
-        description: "Services de conseil expert pour optimiser les opérations, assurer la conformité et stimuler la croissance stratégique.",
-        longDescription: "La transformation numérique nécessite bien plus que la technologie — elle exige une vision stratégique, l'excellence opérationnelle et une expertise approfondie du domaine. Notre pratique de conseil combine des cadres analytiques rigoureux avec une expérience pratique du secteur pour aider les organisations à identifier les opportunités, atténuer les risques et exécuter les transformations qui livrent des résultats mesurables. De l'audit informatique à la stratégie numérique complète, nous partenons avec vous à chaque étape.",
-        subServices: [
-          { title: "Stratégie numérique", description: "Alignez les investissements technologiques avec les objectifs commerciaux. Nous créons des feuilles de route exploitables qui équilibrent l'innovation avec l'exécution pratique." },
-          { title: "Audit et évaluation informatique", description: "Évaluation approfondie des systèmes informatiques, des processus et des contrôles pour identifier les risques, les inefficacités et les opportunités d'optimisation." },
-          { title: "Conformité réglementaire", description: "Naviguez avec confiance les cadres réglementaires complexes. Nous vous aidons à construire des programmes de conformité durables qui évoluent avec votre entreprise." },
-          { title: "Gestion du changement", description: "Programmes de transformation centrés sur les personnes qui assurent l'adoption, minimisent la résistance et maximisent le ROI de vos investissements technologiques." },
-          { title: "Optimisation des processus", description: "Identifiez les goulots d'étranglement, éliminez les gaspillages et repensez les flux de travail pour une efficacité maximale en utilisant les méthodologies Lean, Six Sigma et design thinking." },
-          { title: "Stratégie données et analytique", description: "Construisez une culture orientée données avec des architectures analytiques modernes, des cadres de gouvernance et des capacités BI en libre-service." },
-        ],
-        features: [
-          { title: "Ateliers exécutifs", description: "Séances de stratégie facilitées pour aligner les équipes de direction sur les priorités numériques et les feuilles de route de transformation." },
-          { title: "Évaluations de maturité", description: "Comparez vos capacités numériques par rapport aux normes industrielles et aux organisations de classe mondiale." },
-          { title: "Sélection de fournisseurs", description: "Évaluation de fournisseurs indépendante et impartiale pour vous aider à choisir les bons partenaires technologiques." },
-        ],
-        benefits: [
-          "Amélioration moyenne de 40% de l'efficacité opérationnelle",
-          "Feuilles de route de transformation claires et priorisées",
-          "Recommandations indépendantes et agnostiques des fournisseurs",
-          "Suivi du ROI mesurable pour chaque initiative",
-          "Rapports et présentations prêts pour les cadres",
-        ],
+      digital: {
+      title: "Transformation Digitale",
+      subtitle: "Réinventez votre entreprise pour l’ère numérique",
+      tagline: "Stratégie, technologie et innovation alignées pour la croissance",
+      description:
+        "Services complets de transformation digitale pour moderniser les opérations, améliorer l’expérience client et stimuler l’innovation durable.",
+      longDescription:
+        "La transformation digitale ne consiste pas seulement à adopter de nouvelles technologies — il s'agit de repenser fondamentalement la manière dont votre organisation crée de la valeur. Nous aidons les entreprises à moderniser leurs systèmes legacy, repenser leurs processus, adopter le cloud et développer une culture orientée données afin d’accélérer l’innovation et la performance.",
+      subServices: [
+        { title: "Stratégie & feuille de route digitale", description: "Définition d’une vision claire et d’un plan de transformation aligné sur vos objectifs business." },
+        { title: "Transformation Cloud", description: "Migration et modernisation des applications et infrastructures vers le cloud." },
+        { title: "Modernisation des systèmes legacy", description: "Remplacement des systèmes obsolètes par des architectures évolutives." },
+        { title: "Transformation de l’expérience client (CX)", description: "Conception de parcours digitaux fluides et personnalisés." },
+        { title: "Architecture d’entreprise", description: "Conception d’écosystèmes technologiques intégrés et scalables." },
+        { title: "Transformation orientée données", description: "Exploitation de la data et de l’analytique pour des décisions intelligentes." },
+      ],
+      features: [
+        { title: "Ateliers d’innovation", description: "Sessions collaboratives pour définir les priorités de transformation." },
+        { title: "Activation technologique", description: "Implémentation des plateformes digitales modernes." },
+        { title: "Gestion du changement", description: "Accompagnement à l’adoption et à la transition organisationnelle." },
+      ],
+      benefits: [
+        "Efficacité opérationnelle accrue",
+        "Expérience client améliorée",
+        "Agilité business renforcée",
+        "Infrastructure digitale évolutive",
+        "Avantage concurrentiel durable",
+      ],
       },
+
       ai: {
         title: "IA et automatisation",
         subtitle: "Automatisation de processus intelligents",
@@ -432,8 +435,8 @@ export const translations = {
     hero: {
       badge: "AI & Automation Agency",
       title: "Transform your business",
-      titleHighlight: "with AI",
-      subtitle: "We design custom AI solutions to automate your processes, optimize your workflows, and accelerate your growth.",
+      titleHighlight: "with EvoFlow",
+      subtitle: "We deliver expert solutions in cybersecurity, digital transformation and AI-powered automation to accelerate your digital transformation.",
       cta: "Free Audit",
       ctaSecondary: "See Our Solutions",
       stats: {
@@ -729,88 +732,96 @@ export const translations = {
  
     },
     serviceDetails: {
-      cyber: {
-        title: "Cyber Security",
-        subtitle: "Protect your digital assets",
-        tagline: "Defense-in-depth security for the modern enterprise",
-        description: "Comprehensive security solutions to defend your infrastructure, data, and users against evolving threats.",
-        longDescription: "In today's threat landscape, a reactive approach to security is no longer enough. Our cybersecurity practice delivers proactive, layered defenses that protect your organization from advanced persistent threats, ransomware, social engineering, and zero-day vulnerabilities. We combine cutting-edge technology with deep expertise to build security postures that are resilient, compliant, and business-aligned.",
-        subServices: [
-          { title: "Penetration Testing", description: "Simulate real-world attacks to identify vulnerabilities before malicious actors exploit them. Our red team exercises cover web apps, APIs, mobile, and infrastructure." },
-          { title: "Security Monitoring (SOC)", description: "24/7 Security Operations Center with SIEM integration, real-time alerting, and expert analysts providing continuous threat detection and incident response." },
-          { title: "Vulnerability Management", description: "Continuous scanning, prioritization, and remediation tracking across your entire digital footprint — from cloud workloads to on-premise systems." },
-          { title: "Incident Response & Forensics", description: "Rapid containment, root cause analysis, and recovery planning when breaches occur. We help you minimize damage and restore operations quickly." },
-          { title: "Cloud & Infrastructure Security", description: "Harden your AWS, Azure, or GCP environments with best-practice configurations, network segmentation, and zero-trust architecture." },
-          { title: "Compliance & Governance", description: "Navigate ISO 27001, SOC 2, GDPR, HIPAA, and PCI-DSS requirements with expert guidance, gap assessments, and audit preparation." },
-        ],
-        features: [
-          { title: "Threat Intelligence", description: "Stay ahead with curated intelligence feeds and dark web monitoring tailored to your industry." },
-          { title: "Zero Trust Architecture", description: "Implement identity-centric security models that verify every access request regardless of network location." },
-          { title: "Security Awareness Training", description: "Empower employees with phishing simulations and interactive security training programs." },
-        ],
-        benefits: [
-          "Reduce risk of data breaches by up to 85%",
-          "Achieve compliance certifications 3x faster",
-          "24/7 expert monitoring and rapid response",
-          "Proactive threat hunting and intelligence",
-          "Custom security roadmap for your industry",
-        ],
-      },
-      audit: {
-        title: "Audit & Consulting",
-        subtitle: "Strategic insights for growth",
-        tagline: "Data-driven strategy for sustainable transformation",
-        description: "Expert advisory services to optimize operations, ensure compliance, and drive strategic growth.",
-        longDescription: "Navigating digital transformation requires more than technology — it demands strategic vision, operational excellence, and deep domain expertise. Our consulting practice combines rigorous analytical frameworks with hands-on industry experience to help organizations identify opportunities, mitigate risks, and execute transformations that deliver measurable results. From IT audits to full-scale digital strategy, we partner with you at every step.",
-        subServices: [
-          { title: "Digital Strategy", description: "Align technology investments with business objectives. We create actionable roadmaps that balance innovation with practical execution." },
-          { title: "IT Audit & Assessment", description: "Thorough evaluation of IT systems, processes, and controls to identify risks, inefficiencies, and optimization opportunities." },
-          { title: "Regulatory Compliance", description: "Navigate complex regulatory frameworks with confidence. We help you build sustainable compliance programs that scale with your business." },
-          { title: "Change Management", description: "People-centric transformation programs that ensure adoption, minimize resistance, and maximize the ROI of your technology investments." },
-          { title: "Process Optimization", description: "Identify bottlenecks, eliminate waste, and redesign workflows for maximum efficiency using Lean, Six Sigma, and design thinking methodologies." },
-          { title: "Data & Analytics Strategy", description: "Build a data-driven culture with modern analytics architectures, governance frameworks, and self-service BI capabilities." },
-        ],
-        features: [
-          { title: "Executive Workshops", description: "Facilitated strategy sessions to align leadership teams on digital priorities and transformation roadmaps." },
-          { title: "Maturity Assessments", description: "Benchmark your digital capabilities against industry standards and best-in-class organizations." },
-          { title: "Vendor Selection", description: "Independent, unbiased vendor evaluation to help you choose the right technology partners." },
-        ],
-        benefits: [
-          "Average 40% improvement in operational efficiency",
-          "Clear, prioritized transformation roadmaps",
-          "Independent, vendor-agnostic recommendations",
-          "Measurable ROI tracking for every initiative",
-          "Executive-ready reports and presentations",
-        ],
-      },
-      ai: {
-        title: "AI & Automation",
-        subtitle: "Intelligent process automation",
-        tagline: "Unlock exponential efficiency with intelligent systems",
-        description: "Harness AI and automation to streamline workflows, reduce costs, and unlock new capabilities.",
-        longDescription: "Artificial intelligence isn't a future promise — it's today's competitive advantage. Our AI & Automation practice helps organizations move beyond pilot projects to enterprise-scale intelligent automation. We combine deep machine learning expertise with practical business acumen to deliver solutions that automate routine tasks, augment human decision-making, and create entirely new value streams. From chatbots to predictive analytics, we turn AI potential into operational reality.",
-        subServices: [
-          { title: "AI Strategy & Roadmap", description: "Define your AI vision, identify high-value use cases, and create a phased implementation plan aligned with your business strategy." },
-          { title: "Conversational AI", description: "Deploy intelligent chatbots and virtual agents for customer service, sales, and internal support — with natural language understanding and multi-channel integration." },
-          { title: "Business Process Automation", description: "Automate end-to-end business processes across departments with intelligent workflows that learn and adapt over time." },
-          { title: "Robotic Process Automation", description: "High-volume, rule-based task automation for finance, HR, operations, and customer service using leading RPA platforms." },
-          { title: "Custom ML & Predictive Models", description: "Purpose-built machine learning models for demand forecasting, anomaly detection, recommendation engines, and predictive maintenance." },
-          { title: "Intelligent Analytics", description: "AI-powered dashboards, automated reporting, and natural language querying that surface insights and drive data-informed decisions." },
-        ],
-        features: [
-          { title: "Generative AI Solutions", description: "Leverage LLMs for content generation, document analysis, code assistance, and creative workflows." },
-          { title: "Integration Hub", description: "Connect AI capabilities to your existing tech stack with pre-built connectors for 200+ enterprise applications." },
-          { title: "AI Governance", description: "Responsible AI frameworks covering bias detection, explainability, data privacy, and model monitoring." },
-        ],
-        benefits: [
-          "Reduce operational costs by up to 60%",
-          "10x faster processing for routine tasks",
-          "Unlock insights hidden in unstructured data",
-          "Scale operations without scaling headcount",
-          "Continuous improvement through ML feedback loops",
-        ],
-      },
-    },
+  cyber: {
+    title: "Cyber Security",
+    subtitle: "Protect your digital assets",
+    tagline: "Defense-in-depth security for the modern enterprise",
+    description:
+      "Comprehensive security solutions to defend your infrastructure, data, and users against evolving threats.",
+    longDescription:
+      "In today's threat landscape, a reactive approach to security is no longer enough. Our cybersecurity practice delivers proactive, layered defenses that protect your organization from advanced persistent threats, ransomware, social engineering, and zero-day vulnerabilities. We combine cutting-edge technology with deep expertise to build security postures that are resilient, compliant, and business-aligned.",
+    subServices: [
+      { title: "Penetration Testing", description: "Simulate real-world attacks to identify vulnerabilities before malicious actors exploit them." },
+      { title: "Security Monitoring (SOC)", description: "24/7 Security Operations Center with SIEM integration and real-time threat detection." },
+      { title: "Vulnerability Management", description: "Continuous scanning, prioritization, and remediation tracking across your systems." },
+      { title: "Incident Response & Forensics", description: "Rapid containment, investigation, and recovery support during security incidents." },
+      { title: "Cloud & Infrastructure Security", description: "Secure AWS, Azure, and GCP environments with zero-trust architecture." },
+      { title: "Compliance & Governance", description: "Support for ISO 27001, SOC 2, GDPR, HIPAA, and PCI-DSS compliance." },
+    ],
+    features: [
+      { title: "Threat Intelligence", description: "Industry-specific intelligence feeds and proactive monitoring." },
+      { title: "Zero Trust Architecture", description: "Identity-first security approach for modern infrastructures." },
+      { title: "Security Awareness Training", description: "Interactive phishing simulations and employee training programs." },
+    ],
+    benefits: [
+      "Reduce risk of data breaches",
+      "Achieve compliance faster",
+      "24/7 expert monitoring",
+      "Proactive threat hunting",
+      "Customized security roadmap",
+    ],
+  },
+
+  digital: {
+    title: "Digital Transformation",
+    subtitle: "Reimagine your business for the digital age",
+    tagline: "Strategy, technology, and innovation aligned for growth",
+    description:
+      "End-to-end digital transformation services that modernize operations, enhance customer experiences, and drive sustainable innovation.",
+    longDescription:
+      "Digital transformation is more than adopting new technologies — it is about fundamentally rethinking how your organization delivers value. We help businesses modernize legacy systems, redesign processes, embrace cloud-native architectures, and build data-driven cultures. From strategy to execution, we partner with you to accelerate innovation, improve agility, and create measurable business impact.",
+    subServices: [
+      { title: "Digital Strategy & Roadmap", description: "Define a clear transformation vision aligned with your business objectives and competitive landscape." },
+      { title: "Cloud Transformation", description: "Migrate, modernize, and optimize applications and infrastructure in cloud environments." },
+      { title: "Legacy System Modernization", description: "Upgrade outdated systems with scalable, future-ready architectures." },
+      { title: "Customer Experience (CX) Transformation", description: "Redesign digital journeys to deliver seamless and personalized user experiences." },
+      { title: "Enterprise Architecture", description: "Design scalable and integrated technology ecosystems that support long-term growth." },
+      { title: "Data-Driven Transformation", description: "Leverage analytics, BI, and governance frameworks to enable smarter decision-making." },
+    ],
+    features: [
+      { title: "Innovation Workshops", description: "Collaborative sessions to identify opportunities and define transformation priorities." },
+      { title: "Technology Enablement", description: "Selection and implementation of modern digital platforms and tools." },
+      { title: "Change & Adoption Programs", description: "Ensure smooth organizational transition and user adoption." },
+    ],
+    benefits: [
+      "Increased operational efficiency",
+      "Improved customer engagement",
+      "Greater business agility",
+      "Scalable digital infrastructure",
+      "Long-term competitive advantage",
+    ],
+  },
+
+  ai: {
+    title: "AI & Automation",
+    subtitle: "Intelligent process automation",
+    tagline: "Unlock exponential efficiency with intelligent systems",
+    description:
+      "Harness AI and automation to streamline workflows, reduce costs, and unlock new capabilities.",
+    longDescription:
+      "Artificial intelligence isn't a future promise — it's today's competitive advantage. Our AI & Automation practice helps organizations move beyond pilot projects to enterprise-scale intelligent automation. We deliver solutions that automate routine tasks, augment decision-making, and create new value streams.",
+    subServices: [
+      { title: "AI Strategy & Roadmap", description: "Identify high-impact AI use cases and define phased implementation plans." },
+      { title: "Conversational AI", description: "Deploy intelligent chatbots and virtual agents with natural language capabilities." },
+      { title: "Business Process Automation", description: "Automate end-to-end workflows across departments." },
+      { title: "Robotic Process Automation", description: "High-volume rule-based task automation using RPA platforms." },
+      { title: "Custom ML Models", description: "Predictive models for forecasting, anomaly detection, and recommendations." },
+      { title: "Intelligent Analytics", description: "AI-powered dashboards and automated reporting solutions." },
+    ],
+    features: [
+      { title: "Generative AI Solutions", description: "LLM-powered content generation, document analysis, and automation." },
+      { title: "Integration Hub", description: "Connect AI solutions with your enterprise applications." },
+      { title: "AI Governance", description: "Responsible AI frameworks ensuring transparency and compliance." },
+    ],
+    benefits: [
+      "Reduce operational costs",
+      "Accelerate task processing",
+      "Unlock hidden data insights",
+      "Scale operations efficiently",
+      "Continuous ML-driven improvement",
+    ],
+  },
+},
     footer: {
       tagline: "Transform your business with AI and automation",
       services: {
