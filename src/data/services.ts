@@ -53,22 +53,22 @@ export const getServices = (language: "en" | "fr" = "en"): ServiceCategory[] => 
       benefits: sd.cyber.benefits,
     },
     {
-      id: "audit",
-      slug: "audit-consulting",
-      title: sd.audit.title,
-      subtitle: sd.audit.subtitle,
-      tagline: sd.audit.tagline,
-      description: sd.audit.description,
-      longDescription: sd.audit.longDescription,
+      id: "digital",
+      slug: "digital-transformation",
+      title: sd.digital.title,
+      subtitle: sd.digital.subtitle,
+      tagline: sd.digital.tagline,
+      description: sd.digital.description,
+      longDescription: sd.digital.longDescription,
       icon: ClipboardCheck,
 
-      subServices: sd.audit.subServices.map((sub, idx) => ({
+      subServices: sd.digital.subServices.map((sub, idx) => ({
         icon: [TrendingUp, FileText, Scale, Users, Target, BarChart3][idx] || ClipboardCheck,
         title: sub.title,
         description: sub.description,
       })),
-      features: sd.audit.features,
-      benefits: sd.audit.benefits,
+      features: sd.digital.features,
+      benefits: sd.digital.benefits,
     },
     {
       id: "ai",

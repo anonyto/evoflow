@@ -17,22 +17,29 @@ const ServiceDetail = () => {
     window.scrollTo({ top: 0 });
   }, [slug]);
 
-  // Setup intersection observer for scroll animations
-  useEffect(() => {
-    const elements = document.querySelectorAll('.scroll-animate, .scroll-animate-left, .scroll-animate-right, .scroll-animate-scale, .scroll-animate-fade');
-    
-    const observer = new IntersectionObserver((entries) => {
+   useEffect(() => {
+  const elements = document.querySelectorAll(
+    ".scroll-animate, .scroll-animate-left, .scroll-animate-right, .scroll-animate-scale, .scroll-animate-fade"
+  );
+
+  const observer = new IntersectionObserver(
+    (entries) => {
       entries.forEach((entry) => {
-        if (entry.isIntersecting && !entry.target.classList.contains('animate-in')) {
-          entry.target.classList.add('animate-in');
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animate-in");
         }
       });
-    }, { threshold: 0.1 });
-    
-    elements.forEach((el) => observer.observe(el));
-    
-    return () => elements.forEach((el) => observer.unobserve(el));
-  }, [theme, language]);
+    },
+    { threshold: 0.1 }
+  );
+
+  elements.forEach((el) => {
+    el.classList.remove("animate-in");
+    observer.observe(el);
+  });
+
+  return () => observer.disconnect();
+}, [slug, theme, language]);
 
   if (!service) {
     return (
