@@ -8,14 +8,14 @@ export const translations = {
       testimonials: "Témoignages",
       faq: "FAQ",
       contact: "Contact",
-      audit: "Audit Gratuit",
+      audit: "Soumission Gratuite",
     },
     hero: {
       badge: "Agence IA & Automatisation",
       title: "Transformez votre entreprise",
       titleHighlight: "avec EvoFlow",
       subtitle: "Nous fournissons des solutions expertes en cybersécurité, transformation digitale et automatisation IA pour accélérer votre transformation digitale.",
-      cta: "Audit Gratuit",
+      cta: "Soumission Gratuite",
       ctaSecondary: "Voir nos solutions",
       stats: {
         clients: "Clients satisfaits",
@@ -255,7 +255,7 @@ export const translations = {
         },
         {
           q: "Quel est le coût d'une automatisation ?",
-          a: "Chaque projet est unique. Nous proposons un audit gratuit pour évaluer vos besoins et vous fournir un devis personnalisé.",
+          a: "Chaque projet est unique. Nous proposons une soumission gratuite pour évaluer vos besoins et vous fournir un devis personnalisé.",
         },
       ],
     },
@@ -305,7 +305,7 @@ export const translations = {
       realResults: "Vrais résultats, mesurés",
       readyToGetStarted: "Prêt à commencer ?",
       transformYourBusiness: "Parlons de comment notre expertise en {service} peut transformer votre entreprise.",
-      getAFreeAudit: "Obtenir un audit gratuit",
+      getAFreeSubmission: "Obtenir une soumission gratuite",
       exploreOtherServices: "Explorez nos autres services",
       
     },
@@ -430,14 +430,14 @@ export const translations = {
       testimonials: "Testimonials",
       faq: "FAQ",
       contact: "Contact",
-      audit: "Free Audit",
+      audit: "Free Submission",
     },
     hero: {
       badge: "AI & Automation Agency",
       title: "Transform your business",
       titleHighlight: "with EvoFlow",
       subtitle: "We deliver expert solutions in cybersecurity, digital transformation and AI-powered automation to accelerate your digital transformation.",
-      cta: "Free Audit",
+      cta: "Free submission",
       ctaSecondary: "See Our Solutions",
       stats: {
         clients: "Happy clients",
@@ -551,7 +551,7 @@ export const translations = {
           icon: "Target",
         },
       ],
-      cta: "Get my free audit",
+      cta: "Get my free submission",
     },
     whoWeServe: {
       title: "Who are our solutions for?",
@@ -661,7 +661,7 @@ export const translations = {
       items: [
         {
           q: "How does a typical project work?",
-          a: "We start with a free audit of your needs, followed by a scoping document within 48h. Then we design and deploy your automations with ongoing support.",
+          a: "We start with a free submission of your needs, followed by a scoping document within 48h. Then we design and deploy your automations with ongoing support.",
         },
         {
           q: "What tools do you use?",
@@ -677,7 +677,7 @@ export const translations = {
         },
         {
           q: "What is the cost of automation?",
-          a: "Each project is unique. We offer a free audit to assess your needs and provide a custom quote.",
+          a: "Each project is unique. We offer a free submission to assess your needs and provide a custom quote.",
         },
       ],
     },
@@ -727,7 +727,7 @@ export const translations = {
       realResults: "Real results, measured",
       readyToGetStarted: "Ready to get started?",
       transformYourBusiness: "Let's discuss how our {service} expertise can transform your business.",
-      getAFreeAudit: "Get a Free Audit",
+      getAFreeSubmission: "Get a free submission",
       exploreOtherServices: "Explore our other services",
  
     },

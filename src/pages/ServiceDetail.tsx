@@ -185,7 +185,7 @@ const ServiceDetail = () => {
               to="/#contact"
               className="inline-flex items-center justify-center h-12 px-8 rounded-xl text-base font-semibold bg-blue-600 text-white hover:opacity-90 transition-all shadow-md group"
             >
-              {t.getAFreeAudit}
+              {t.getAFreeSubmission}
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>

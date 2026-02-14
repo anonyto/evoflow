@@ -21,10 +21,9 @@ export default function App() {
             <Route path="/" element={<Layout />}>
               <Route index element={<Home />} />
               <Route
-  path="services/:slug"
-  element={<ServiceDetailWrapper />}
-/>
-
+                path="services/:slug"
+                element={<ServiceDetailWrapper />}
+              />
               <Route path="*" element={<NotFound />} />
             </Route>
           </Routes>
