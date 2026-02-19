@@ -13,7 +13,7 @@ export const translations = {
     hero: {
       badge: "Agence IA & Automatisation",
       title: "Transformez votre entreprise",
-      titleHighlight: "avec EvoFlow",
+      titleHighlight: "avec Evobit",
       subtitle: "Nous fournissons des solutions expertes en cybersécurité, transformation digitale et automatisation IA pour accélérer votre transformation digitale.",
       cta: "Soumission Gratuite",
       ctaSecondary: "Voir nos solutions",
@@ -25,7 +25,7 @@ export const translations = {
     },
     services: {
       title: "Ce que nous offrons",
-      subtitle: "Trois piliers d'expertise pour sécuriser, optimiser et automatiser votre business.",
+      subtitle: "Piliers d'expertise pour sécuriser, optimiser et automatiser votre business.",
       items: [
         {
           title: "Développement Web",
@@ -196,7 +196,7 @@ export const translations = {
       subtitle: "Des entreprises canadiennes nous font confiance",
       items: [
         {
-          quote: "EvoFlow a complètement transformé notre façon de gérer les opérations. On a gagné plus de 20 heures par semaine grâce à leurs automatisations. L'équipe est réactive, professionnelle et vraiment à l'écoute.",
+          quote: "Evobit a complètement transformé notre façon de gérer les opérations. On a gagné plus de 20 heures par semaine grâce à leurs automatisations. L'équipe est réactive, professionnelle et vraiment à l'écoute.",
           name: "Sophie Tremblay",
           role: "Directrice des opérations",
           company: "NovaTech Solutions",
@@ -204,7 +204,7 @@ export const translations = {
           rating: 5,
         },
         {
-          quote: "On cherchait un partenaire capable de comprendre nos enjeux business, pas juste la technique. EvoFlow a su proposer des solutions concrètes qui ont eu un impact mesurable sur notre croissance dès le premier mois.",
+          quote: "On cherchait un partenaire capable de comprendre nos enjeux business, pas juste la technique. Evobit a su proposer des solutions concrètes qui ont eu un impact mesurable sur notre croissance dès le premier mois.",
           name: "Marc-Antoine Dubois",
           role: "Fondateur & CEO",
           company: "Altitude Commerce",
@@ -212,7 +212,7 @@ export const translations = {
           rating: 5,
         },
         {
-          quote: "Le niveau de qualité et d'attention aux détails est exceptionnel. Notre CRM, nos emails et notre facturation sont maintenant entièrement automatisés. Je recommande EvoFlow sans hésitation.",
+          quote: "Le niveau de qualité et d'attention aux détails est exceptionnel. Notre CRM, nos emails et notre facturation sont maintenant entièrement automatisés. Je recommande Evobit sans hésitation.",
           name: "Isabelle Gagnon",
           role: "VP Marketing",
           company: "Groupe Horizon",
@@ -220,7 +220,7 @@ export const translations = {
           rating: 5,
         },
         {
-          quote: "En tant que startup, chaque minute compte. EvoFlow nous a permis de nous concentrer sur ce qui compte vraiment : notre produit et nos clients. Leur approche est humaine et les résultats parlent d'eux-mêmes.",
+          quote: "En tant que startup, chaque minute compte. Evobit nous a permis de nous concentrer sur ce qui compte vraiment : notre produit et nos clients. Leur approche est humaine et les résultats parlent d'eux-mêmes.",
           name: "Jean-Philippe Roy",
           role: "Co-fondateur",
           company: "PixelCraft Studio",
@@ -394,6 +394,91 @@ export const translations = {
           "Amélioration continue grâce aux boucles de rétroaction ML",
         ],
       },
+    devops: {
+  title: "DevOps & Cloud Engineering",
+  subtitle: "Accelerating delivery, reliability, and scalability",
+  tagline: "Modern infrastructure for high-performing teams",
+  description:
+    "Comprehensive DevOps and cloud engineering services to automate deployments, improve reliability, and scale infrastructure efficiently.",
+
+  longDescription:
+    "Modern organizations must deliver software faster while maintaining high reliability and security. Our DevOps & Cloud Engineering practice helps businesses automate processes, modernize infrastructure, and improve collaboration between development and operations teams. We design scalable cloud platforms, implement robust CI/CD pipelines, and integrate observability and security at every stage to ensure fast, stable, and predictable deployments.",
+
+  subServices: [
+    { title: "CI/CD Automation", description: "Automate build, test, and deployment pipelines for faster and more secure releases." },
+    { title: "Cloud Architecture", description: "Design scalable and resilient infrastructures on AWS, Azure, and GCP." },
+    { title: "Infrastructure as Code", description: "Automate infrastructure provisioning using Terraform and modern IaC tools." },
+    { title: "Containerization & Kubernetes", description: "Deploy and manage containerized applications at scale." },
+    { title: "DevSecOps", description: "Integrate security directly into the DevOps lifecycle." },
+    { title: "Monitoring & Observability", description: "Implement logging, tracing, and monitoring solutions." },
+  ],
+
+  features: [
+    {
+      title: "Full Automation",
+      description: "Reduce manual intervention through automated deployments, testing, and infrastructure management.",
+    },
+    {
+      title: "Cloud-Native Architecture",
+      description: "Design highly available, fault-tolerant environments optimized for performance.",
+    },
+    {
+      title: "Advanced Observability",
+      description: "Proactive monitoring with metrics, logs, and intelligent alerts to prevent incidents.",
+    },
+  ],
+
+  benefits: [
+    "Up to 70% reduction in deployment time",
+    "Significant improvement in system reliability",
+    "Faster delivery of new features",
+    "Reduced IT operational costs",
+    "Scalable infrastructure ready for growth",
+  ],
+},
+
+itStrategy: {
+  title: "IT Strategy & Infrastructure",
+  subtitle: "Aligning technology with business growth",
+  tagline: "Reliable infrastructure with expert guidance",
+  description:
+    "Strategic technology leadership and infrastructure management services to optimize operations, ensure compliance, and support long-term growth.",
+
+  longDescription:
+    "An effective IT strategy is essential to support growth and maintain business competitiveness. Our IT Strategy & Infrastructure service combines technology leadership, operational management, and governance expertise to align your systems with business objectives. We help organizations modernize infrastructure, strengthen resilience, optimize costs, and ensure regulatory compliance while preparing for future transformation.",
+
+  subServices: [
+    { title: "Fractional CTO", description: "Part-time executive technology leadership for your organization." },
+    { title: "IT Infrastructure Management", description: "Monitoring, maintenance, and optimization of IT systems." },
+    { title: "IT Audits & Compliance", description: "Security, infrastructure, and regulatory requirement assessments." },
+    { title: "Disaster Recovery & Backup", description: "Ensure business continuity and data resilience." },
+    { title: "Performance Optimization", description: "Improve system reliability and scalability." },
+  ],
+
+  features: [
+    {
+      title: "Strategic Technology Leadership",
+      description: "Access executive-level IT expertise to guide critical technology decisions.",
+    },
+    {
+      title: "Highly Available Infrastructure",
+      description: "Implementation of reliable, secure systems capable of handling high workloads.",
+    },
+    {
+      title: "Governance & Compliance",
+      description: "Frameworks and processes ensuring standards compliance and IT risk control.",
+    },
+  ],
+
+  benefits: [
+    "Clear alignment between IT and business strategy",
+    "Reduced operational risks",
+    "Optimized infrastructure costs",
+    "Improved business continuity",
+    "Faster, more informed technology decisions",
+  ],
+},
+
     },
     footer: {
       tagline: "Transformez votre entreprise avec l'IA et l'automatisation",
@@ -415,7 +500,7 @@ export const translations = {
         privacy: "Confidentialité",
         terms: "Conditions",
       },
-      copyright: "2026 EvoFlow. Tous droits réservés.",
+      copyright: "2026 Evobit. Tous droits réservés.",
       newsletter: "Restez informé",
       newsletterDesc: "Conseils et actualités sur l'automatisation IA.",
       subscribe: "S'abonner",
@@ -435,7 +520,7 @@ export const translations = {
     hero: {
       badge: "AI & Automation Agency",
       title: "Transform your business",
-      titleHighlight: "with EvoFlow",
+      titleHighlight: "with Evobit",
       subtitle: "We deliver expert solutions in cybersecurity, digital transformation and AI-powered automation to accelerate your digital transformation.",
       cta: "Free submission",
       ctaSecondary: "See Our Solutions",
@@ -447,7 +532,7 @@ export const translations = {
     },
     services: {
       title: "What we deliver",
-      subtitle: "Three pillars of expertise to secure, optimize, and automate your business.",
+      subtitle: "Pillars of expertise to secure, optimize, and automate your business.",
       items: [
         {
           title: "Web Development",
@@ -618,7 +703,7 @@ export const translations = {
       subtitle: "Trusted by Canadian businesses",
       items: [
         {
-          quote: "EvoFlow completely transformed how we manage operations. We saved over 20 hours a week thanks to their automations. The team is responsive, professional, and truly listens to our needs.",
+          quote: "Evobit completely transformed how we manage operations. We saved over 20 hours a week thanks to their automations. The team is responsive, professional, and truly listens to our needs.",
           name: "Sophie Tremblay",
           role: "Director of Operations",
           company: "NovaTech Solutions",
@@ -626,7 +711,7 @@ export const translations = {
           rating: 5,
         },
         {
-          quote: "We were looking for a partner who understands business challenges, not just the technical side. EvoFlow delivered concrete solutions that had a measurable impact on our growth from the very first month.",
+          quote: "We were looking for a partner who understands business challenges, not just the technical side. Evobit delivered concrete solutions that had a measurable impact on our growth from the very first month.",
           name: "Marc-Antoine Dubois",
           role: "Founder & CEO",
           company: "Altitude Commerce",
@@ -634,7 +719,7 @@ export const translations = {
           rating: 5,
         },
         {
-          quote: "The level of quality and attention to detail is exceptional. Our CRM, emails, and invoicing are now fully automated. I recommend EvoFlow without hesitation.",
+          quote: "The level of quality and attention to detail is exceptional. Our CRM, emails, and invoicing are now fully automated. I recommend Evobit without hesitation.",
           name: "Isabelle Gagnon",
           role: "VP Marketing",
           company: "Groupe Horizon",
@@ -642,7 +727,7 @@ export const translations = {
           rating: 5,
         },
         {
-          quote: "As a startup, every minute counts. EvoFlow allowed us to focus on what truly matters: our product and our clients. Their approach is human-centered and the results speak for themselves.",
+          quote: "As a startup, every minute counts. Evobit allowed us to focus on what truly matters: our product and our clients. Their approach is human-centered and the results speak for themselves.",
           name: "Jean-Philippe Roy",
           role: "Co-founder",
           company: "PixelCraft Studio",
@@ -732,95 +817,177 @@ export const translations = {
  
     },
     serviceDetails: {
-  cyber: {
-    title: "Cyber Security",
-    subtitle: "Protect your digital assets",
-    tagline: "Defense-in-depth security for the modern enterprise",
-    description:
-      "Comprehensive security solutions to defend your infrastructure, data, and users against evolving threats.",
-    longDescription:
-      "In today's threat landscape, a reactive approach to security is no longer enough. Our cybersecurity practice delivers proactive, layered defenses that protect your organization from advanced persistent threats, ransomware, social engineering, and zero-day vulnerabilities. We combine cutting-edge technology with deep expertise to build security postures that are resilient, compliant, and business-aligned.",
-    subServices: [
-      { title: "Penetration Testing", description: "Simulate real-world attacks to identify vulnerabilities before malicious actors exploit them." },
-      { title: "Security Monitoring (SOC)", description: "24/7 Security Operations Center with SIEM integration and real-time threat detection." },
-      { title: "Vulnerability Management", description: "Continuous scanning, prioritization, and remediation tracking across your systems." },
-      { title: "Incident Response & Forensics", description: "Rapid containment, investigation, and recovery support during security incidents." },
-      { title: "Cloud & Infrastructure Security", description: "Secure AWS, Azure, and GCP environments with zero-trust architecture." },
-      { title: "Compliance & Governance", description: "Support for ISO 27001, SOC 2, GDPR, HIPAA, and PCI-DSS compliance." },
-    ],
-    features: [
-      { title: "Threat Intelligence", description: "Industry-specific intelligence feeds and proactive monitoring." },
-      { title: "Zero Trust Architecture", description: "Identity-first security approach for modern infrastructures." },
-      { title: "Security Awareness Training", description: "Interactive phishing simulations and employee training programs." },
-    ],
-    benefits: [
-      "Reduce risk of data breaches",
-      "Achieve compliance faster",
-      "24/7 expert monitoring",
-      "Proactive threat hunting",
-      "Customized security roadmap",
-    ],
-  },
+      cyber: {
+        title: "Cyber Security",
+        subtitle: "Protect your digital assets",
+        tagline: "Defense-in-depth security for the modern enterprise",
+        description:
+          "Comprehensive security solutions to defend your infrastructure, data, and users against evolving threats.",
+        longDescription:
+          "In today's threat landscape, a reactive approach to security is no longer enough. Our cybersecurity practice delivers proactive, layered defenses that protect your organization from advanced persistent threats, ransomware, social engineering, and zero-day vulnerabilities. We combine cutting-edge technology with deep expertise to build security postures that are resilient, compliant, and business-aligned.",
+        subServices: [
+          { title: "Penetration Testing", description: "Simulate real-world attacks to identify vulnerabilities before malicious actors exploit them." },
+          { title: "Security Monitoring (SOC)", description: "24/7 Security Operations Center with SIEM integration and real-time threat detection." },
+          { title: "Vulnerability Management", description: "Continuous scanning, prioritization, and remediation tracking across your systems." },
+          { title: "Incident Response & Forensics", description: "Rapid containment, investigation, and recovery support during security incidents." },
+          { title: "Cloud & Infrastructure Security", description: "Secure AWS, Azure, and GCP environments with zero-trust architecture." },
+          { title: "Compliance & Governance", description: "Support for ISO 27001, SOC 2, GDPR, HIPAA, and PCI-DSS compliance." },
+        ],
+        features: [
+          { title: "Threat Intelligence", description: "Industry-specific intelligence feeds and proactive monitoring." },
+          { title: "Zero Trust Architecture", description: "Identity-first security approach for modern infrastructures." },
+          { title: "Security Awareness Training", description: "Interactive phishing simulations and employee training programs." },
+        ],
+        benefits: [
+          "Reduce risk of data breaches",
+          "Achieve compliance faster",
+          "24/7 expert monitoring",
+          "Proactive threat hunting",
+          "Customized security roadmap",
+        ],
+      },
+      digital: {
+        title: "Digital Transformation",
+        subtitle: "Reimagine your business for the digital age",
+        tagline: "Strategy, technology, and innovation aligned for growth",
+        description:
+          "End-to-end digital transformation services that modernize operations, enhance customer experiences, and drive sustainable innovation.",
+        longDescription:
+          "Digital transformation is more than adopting new technologies — it is about fundamentally rethinking how your organization delivers value. We help businesses modernize legacy systems, redesign processes, embrace cloud-native architectures, and build data-driven cultures. From strategy to execution, we partner with you to accelerate innovation, improve agility, and create measurable business impact.",
+        subServices: [
+          { title: "Digital Strategy & Roadmap", description: "Define a clear transformation vision aligned with your business objectives and competitive landscape." },
+          { title: "Cloud Transformation", description: "Migrate, modernize, and optimize applications and infrastructure in cloud environments." },
+          { title: "Legacy System Modernization", description: "Upgrade outdated systems with scalable, future-ready architectures." },
+          { title: "Customer Experience (CX) Transformation", description: "Redesign digital journeys to deliver seamless and personalized user experiences." },
+          { title: "Enterprise Architecture", description: "Design scalable and integrated technology ecosystems that support long-term growth." },
+          { title: "Data-Driven Transformation", description: "Leverage analytics, BI, and governance frameworks to enable smarter decision-making." },
+        ],
+        features: [
+          { title: "Innovation Workshops", description: "Collaborative sessions to identify opportunities and define transformation priorities." },
+          { title: "Technology Enablement", description: "Selection and implementation of modern digital platforms and tools." },
+          { title: "Change & Adoption Programs", description: "Ensure smooth organizational transition and user adoption." },
+        ],
+        benefits: [
+          "Increased operational efficiency",
+          "Improved customer engagement",
+          "Greater business agility",
+          "Scalable digital infrastructure",
+          "Long-term competitive advantage",
+        ],
+      },
+      ai: {
+        title: "AI & Automation",
+        subtitle: "Intelligent process automation",
+        tagline: "Unlock exponential efficiency with intelligent systems",
+        description:
+          "Harness AI and automation to streamline workflows, reduce costs, and unlock new capabilities.",
+        longDescription:
+          "Artificial intelligence isn't a future promise — it's today's competitive advantage. Our AI & Automation practice helps organizations move beyond pilot projects to enterprise-scale intelligent automation. We deliver solutions that automate routine tasks, augment decision-making, and create new value streams.",
+        subServices: [
+          { title: "AI Strategy & Roadmap", description: "Identify high-impact AI use cases and define phased implementation plans." },
+          { title: "Conversational AI", description: "Deploy intelligent chatbots and virtual agents with natural language capabilities." },
+          { title: "Business Process Automation", description: "Automate end-to-end workflows across departments." },
+          { title: "Robotic Process Automation", description: "High-volume rule-based task automation using RPA platforms." },
+          { title: "Custom ML Models", description: "Predictive models for forecasting, anomaly detection, and recommendations." },
+          { title: "Intelligent Analytics", description: "AI-powered dashboards and automated reporting solutions." },
+        ],
+        features: [
+          { title: "Generative AI Solutions", description: "LLM-powered content generation, document analysis, and automation." },
+          { title: "Integration Hub", description: "Connect AI solutions with your enterprise applications." },
+          { title: "AI Governance", description: "Responsible AI frameworks ensuring transparency and compliance." },
+        ],
+        benefits: [
+          "Reduce operational costs",
+          "Accelerate task processing",
+          "Unlock hidden data insights",
+          "Scale operations efficiently",
+          "Continuous ML-driven improvement",
+        ],
+      },
+      devops: {
+        title: "DevOps & Cloud Engineering",
+        subtitle: "Accelerate delivery, reliability, and scalability",
+        tagline: "Modern infrastructure for high-performing teams",
+        description:
+          "End-to-end DevOps and cloud engineering services to automate deployments, improve reliability, and scale infrastructure efficiently.",
 
-  digital: {
-    title: "Digital Transformation",
-    subtitle: "Reimagine your business for the digital age",
-    tagline: "Strategy, technology, and innovation aligned for growth",
-    description:
-      "End-to-end digital transformation services that modernize operations, enhance customer experiences, and drive sustainable innovation.",
-    longDescription:
-      "Digital transformation is more than adopting new technologies — it is about fundamentally rethinking how your organization delivers value. We help businesses modernize legacy systems, redesign processes, embrace cloud-native architectures, and build data-driven cultures. From strategy to execution, we partner with you to accelerate innovation, improve agility, and create measurable business impact.",
-    subServices: [
-      { title: "Digital Strategy & Roadmap", description: "Define a clear transformation vision aligned with your business objectives and competitive landscape." },
-      { title: "Cloud Transformation", description: "Migrate, modernize, and optimize applications and infrastructure in cloud environments." },
-      { title: "Legacy System Modernization", description: "Upgrade outdated systems with scalable, future-ready architectures." },
-      { title: "Customer Experience (CX) Transformation", description: "Redesign digital journeys to deliver seamless and personalized user experiences." },
-      { title: "Enterprise Architecture", description: "Design scalable and integrated technology ecosystems that support long-term growth." },
-      { title: "Data-Driven Transformation", description: "Leverage analytics, BI, and governance frameworks to enable smarter decision-making." },
-    ],
-    features: [
-      { title: "Innovation Workshops", description: "Collaborative sessions to identify opportunities and define transformation priorities." },
-      { title: "Technology Enablement", description: "Selection and implementation of modern digital platforms and tools." },
-      { title: "Change & Adoption Programs", description: "Ensure smooth organizational transition and user adoption." },
-    ],
-    benefits: [
-      "Increased operational efficiency",
-      "Improved customer engagement",
-      "Greater business agility",
-      "Scalable digital infrastructure",
-      "Long-term competitive advantage",
-    ],
-  },
+        longDescription:
+          "Modern organizations must deliver software faster while maintaining high reliability and security. Our DevOps & Cloud Engineering services help businesses automate workflows, modernize infrastructure, and improve collaboration between development and operations teams. We design scalable cloud platforms, implement robust CI/CD pipelines, and integrate observability and security into every stage to ensure fast, stable, and predictable deployments.",
 
-  ai: {
-    title: "AI & Automation",
-    subtitle: "Intelligent process automation",
-    tagline: "Unlock exponential efficiency with intelligent systems",
-    description:
-      "Harness AI and automation to streamline workflows, reduce costs, and unlock new capabilities.",
-    longDescription:
-      "Artificial intelligence isn't a future promise — it's today's competitive advantage. Our AI & Automation practice helps organizations move beyond pilot projects to enterprise-scale intelligent automation. We deliver solutions that automate routine tasks, augment decision-making, and create new value streams.",
-    subServices: [
-      { title: "AI Strategy & Roadmap", description: "Identify high-impact AI use cases and define phased implementation plans." },
-      { title: "Conversational AI", description: "Deploy intelligent chatbots and virtual agents with natural language capabilities." },
-      { title: "Business Process Automation", description: "Automate end-to-end workflows across departments." },
-      { title: "Robotic Process Automation", description: "High-volume rule-based task automation using RPA platforms." },
-      { title: "Custom ML Models", description: "Predictive models for forecasting, anomaly detection, and recommendations." },
-      { title: "Intelligent Analytics", description: "AI-powered dashboards and automated reporting solutions." },
-    ],
-    features: [
-      { title: "Generative AI Solutions", description: "LLM-powered content generation, document analysis, and automation." },
-      { title: "Integration Hub", description: "Connect AI solutions with your enterprise applications." },
-      { title: "AI Governance", description: "Responsible AI frameworks ensuring transparency and compliance." },
-    ],
-    benefits: [
-      "Reduce operational costs",
-      "Accelerate task processing",
-      "Unlock hidden data insights",
-      "Scale operations efficiently",
-      "Continuous ML-driven improvement",
-    ],
-  },
+        subServices: [
+          { title: "CI/CD Implementation", description: "Automate build, test, and deployment pipelines for faster and safer releases." },
+          { title: "Cloud Architecture", description: "Design scalable and resilient infrastructure on AWS, Azure, and GCP." },
+          { title: "Infrastructure as Code", description: "Automate infrastructure provisioning using Terraform and modern IaC tools." },
+          { title: "Containerization & Kubernetes", description: "Deploy and manage containerized applications at scale." },
+          { title: "DevSecOps", description: "Integrate security into the DevOps lifecycle." },
+          { title: "Monitoring & Observability", description: "Implement logging, tracing, and monitoring solutions." },
+        ],
+
+        features: [
+          {
+            title: "End-to-End Automation",
+            description: "Reduce manual work through automated deployments, testing, and infrastructure management.",
+          },
+          {
+            title: "Cloud-Native Architecture",
+            description: "Highly available, fault-tolerant environments designed for performance and scalability.",
+          },
+          {
+            title: "Advanced Observability",
+            description: "Proactive monitoring with metrics, logs, and intelligent alerts to prevent incidents.",
+          },
+        ],
+
+        benefits: [
+          "Up to 70% faster deployment cycles",
+          "Improved system reliability and uptime",
+          "Faster delivery of new features",
+          "Reduced operational costs",
+          "Scalable infrastructure ready for growth",
+        ],
+      },
+
+      itStrategy: {
+        title: "IT Strategy & Infrastructure",
+        subtitle: "Align technology with business growth",
+        tagline: "Reliable infrastructure with expert guidance",
+        description:
+          "Strategic IT leadership and infrastructure management services to optimize operations, ensure compliance, and support long-term growth.",
+
+        longDescription:
+          "A strong IT strategy is essential for sustainable business growth and competitiveness. Our IT Strategy & Infrastructure services combine executive technology leadership, operational management, and governance expertise to align your IT systems with business objectives. We help organizations modernize infrastructure, improve resilience, optimize costs, and ensure regulatory compliance while preparing them for future digital transformation.",
+
+        subServices: [
+          { title: "Fractional CTO", description: "Part-time executive technology leadership." },
+          { title: "IT Infrastructure Management", description: "Monitoring, maintenance, and optimization of IT systems." },
+          { title: "IT Audits & Compliance", description: "Security, infrastructure, and regulatory assessments." },
+          { title: "Disaster Recovery & Backup", description: "Ensure business continuity and resilience." },
+          { title: "Performance Optimization", description: "Improve system reliability and scalability." },
+        ],
+
+        features: [
+          {
+            title: "Strategic IT Leadership",
+            description: "Expert guidance to drive informed technology decisions and long-term planning.",
+          },
+          {
+            title: "Highly Available Systems",
+            description: "Reliable and secure infrastructure designed to support high workloads.",
+          },
+          {
+            title: "Governance & Compliance",
+            description: "Frameworks and processes ensuring standards compliance and risk management.",
+          },
+        ],
+
+        benefits: [
+          "Clear alignment between IT and business strategy",
+          "Reduced operational risks",
+          "Optimized infrastructure costs",
+          "Improved business continuity",
+          "Faster and more confident technology decisions",
+        ],
+      },
 },
     footer: {
       tagline: "Transform your business with AI and automation",
@@ -842,7 +1009,7 @@ export const translations = {
         privacy: "Privacy",
         terms: "Terms",
       },
-      copyright: "2026 EvoFlow. All rights reserved.",
+      copyright: "2026 Evobit. All rights reserved.",
       newsletter: "Stay informed",
       newsletterDesc: "Tips and news about AI automation.",
       subscribe: "Subscribe",

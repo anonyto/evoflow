@@ -2,6 +2,7 @@ import {
   Shield, Lock, Eye, FileSearch, AlertTriangle, Server,
   ClipboardCheck, TrendingUp, FileText, Scale, Users, Target,
   Bot, Workflow, Zap, Brain, Cpu, BarChart3,
+  Cloud, GitBranch, Boxes, Activity, Settings, HardDrive,
 } from "lucide-react";
 import { translations } from "../i18n/translations";
 
@@ -52,6 +53,7 @@ export const getServices = (language: "en" | "fr" = "en"): ServiceCategory[] => 
       features: sd.cyber.features,
       benefits: sd.cyber.benefits,
     },
+
     {
       id: "digital",
       slug: "digital-transformation",
@@ -61,7 +63,6 @@ export const getServices = (language: "en" | "fr" = "en"): ServiceCategory[] => 
       description: sd.digital.description,
       longDescription: sd.digital.longDescription,
       icon: ClipboardCheck,
-
       subServices: sd.digital.subServices.map((sub, idx) => ({
         icon: [TrendingUp, FileText, Scale, Users, Target, BarChart3][idx] || ClipboardCheck,
         title: sub.title,
@@ -70,6 +71,7 @@ export const getServices = (language: "en" | "fr" = "en"): ServiceCategory[] => 
       features: sd.digital.features,
       benefits: sd.digital.benefits,
     },
+
     {
       id: "ai",
       slug: "ai-automation",
@@ -79,7 +81,6 @@ export const getServices = (language: "en" | "fr" = "en"): ServiceCategory[] => 
       description: sd.ai.description,
       longDescription: sd.ai.longDescription,
       icon: Bot,
-
       subServices: sd.ai.subServices.map((sub, idx) => ({
         icon: [Brain, Bot, Workflow, Zap, Cpu, BarChart3][idx] || Bot,
         title: sub.title,
@@ -88,8 +89,45 @@ export const getServices = (language: "en" | "fr" = "en"): ServiceCategory[] => 
       features: sd.ai.features,
       benefits: sd.ai.benefits,
     },
+
+    {
+      id: "devops",
+      slug: "devops-cloud",
+      title: sd.devops.title,
+      subtitle: sd.devops.subtitle,
+      tagline: sd.devops.tagline,
+      description: sd.devops.description,
+      longDescription: sd.devops.longDescription,
+      icon: Cloud,
+      subServices: sd.devops.subServices.map((sub, idx) => ({
+        icon: [GitBranch, Cloud, Boxes, Shield, Activity, Settings][idx] || Cloud,
+        title: sub.title,
+        description: sub.description,
+      })),
+      features: sd.devops.features,
+      benefits: sd.devops.benefits,
+    },
+
+    {
+      id: "itStrategy",
+      slug: "it-strategy-infrastructure",
+      title: sd.itStrategy.title,
+      subtitle: sd.itStrategy.subtitle,
+      tagline: sd.itStrategy.tagline,
+      description: sd.itStrategy.description,
+      longDescription: sd.itStrategy.longDescription,
+      icon: HardDrive,
+      subServices: sd.itStrategy.subServices.map((sub, idx) => ({
+        icon: [Users, Server, FileSearch, Activity, TrendingUp][idx] || HardDrive,
+        title: sub.title,
+        description: sub.description,
+      })),
+      features: sd.itStrategy.features,
+      benefits: sd.itStrategy.benefits,
+    },
   ];
 };
+
 
 export const services = getServices("en");
 
