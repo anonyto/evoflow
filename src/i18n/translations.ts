@@ -8,14 +8,14 @@ export const translations = {
       testimonials: "Témoignages",
       faq: "FAQ",
       contact: "Contact",
-      audit: "Consultation Gratuite",
+      audit: "Soumission Gratuite",
     },
     hero: {
       badge: "Agence IA & Automatisation",
       title: "Transformez votre entreprise",
       titleHighlight: "avec Evobit",
       subtitle: "Nous fournissons des solutions expertes en cybersécurité, transformation digitale et automatisation IA pour accélérer votre transformation digitale.",
-      cta: "Consultation Gratuite",
+      cta: "Soumission Gratuite",
       ctaSecondary: "Voir nos services",
       stats: {
         clients: "Clients satisfaits",
@@ -260,12 +260,12 @@ export const translations = {
         },
         {
           q: "Quel est le coût d'une automatisation ?",
-          a: "Chaque projet est unique. Nous proposons une consultation gratuite pour évaluer vos besoins et vous fournir un devis personnalisé.",
+          a: "Chaque projet est unique. Nous proposons une soumission gratuite pour évaluer vos besoins et vous fournir un devis personnalisé.",
         },
       ],
     },
     contact: {
-      title: "Prêt à automatiser votre business ?",
+      title: "Prêt à commencer votre business ?",
       subtitle: "Réservez directement un créneau avec notre équipe",
       generalTab: "Contact général",
       generalTabShort: "Contact",
@@ -315,7 +315,7 @@ export const translations = {
       realResults: "Vrais résultats, mesurés",
       readyToGetStarted: "Prêt à commencer ?",
       transformYourBusiness: "Parlons de comment notre expertise en {service} peut transformer votre entreprise.",
-      getAFreeSubmission: "Obtenir une consultation gratuite",
+      getAFreeSubmission: "Obtenir une soumission gratuite",
       exploreOtherServices: "Explorez nos autres services",
       
     },
@@ -348,35 +348,34 @@ export const translations = {
         ],
       },
       digital: {
-      title: "Transformation Digitale",
-      subtitle: "Réinventez votre entreprise pour l’ère numérique",
-      tagline: "Stratégie, technologie et innovation alignées pour la croissance",
-      description:
-        "Services complets de transformation digitale pour moderniser les opérations, améliorer l’expérience client et stimuler l’innovation durable.",
-      longDescription:
-        "La transformation digitale ne consiste pas seulement à adopter de nouvelles technologies — il s'agit de repenser fondamentalement la manière dont votre organisation crée de la valeur. Nous aidons les entreprises à moderniser leurs systèmes legacy, repenser leurs processus, adopter le cloud et développer une culture orientée données afin d’accélérer l’innovation et la performance.",
-      subServices: [
-        { title: "Stratégie & feuille de route digitale", description: "Définition d’une vision claire et d’un plan de transformation aligné sur vos objectifs business." },
-        { title: "Transformation Cloud", description: "Migration et modernisation des applications et infrastructures vers le cloud." },
-        { title: "Modernisation des systèmes legacy", description: "Remplacement des systèmes obsolètes par des architectures évolutives." },
-        { title: "Transformation de l’expérience client (CX)", description: "Conception de parcours digitaux fluides et personnalisés." },
-        { title: "Architecture d’entreprise", description: "Conception d’écosystèmes technologiques intégrés et scalables." },
-        { title: "Transformation orientée données", description: "Exploitation de la data et de l’analytique pour des décisions intelligentes." },
-      ],
-      features: [
-        { title: "Ateliers d’innovation", description: "Sessions collaboratives pour définir les priorités de transformation." },
-        { title: "Activation technologique", description: "Implémentation des plateformes digitales modernes." },
-        { title: "Gestion du changement", description: "Accompagnement à l’adoption et à la transition organisationnelle." },
-      ],
-      benefits: [
-        "Efficacité opérationnelle accrue",
-        "Expérience client améliorée",
-        "Agilité business renforcée",
-        "Infrastructure digitale évolutive",
-        "Avantage concurrentiel durable",
-      ],
+        title: "Transformation Digitale",
+        subtitle: "Réinventez votre entreprise pour l’ère numérique",
+        tagline: "Stratégie, technologie et innovation alignées pour la croissance",
+        description:
+          "Services complets de transformation digitale pour moderniser les opérations, améliorer l’expérience client et stimuler l’innovation durable.",
+        longDescription:
+          "La transformation digitale ne consiste pas seulement à adopter de nouvelles technologies — il s'agit de repenser fondamentalement la manière dont votre organisation crée de la valeur. Nous aidons les entreprises à moderniser leurs systèmes legacy, repenser leurs processus, adopter le cloud et développer une culture orientée données afin d’accélérer l’innovation et la performance.",
+        subServices: [
+          { title: "Stratégie & feuille de route digitale", description: "Définition d’une vision claire et d’un plan de transformation aligné sur vos objectifs business." },
+          { title: "Transformation Cloud", description: "Migration et modernisation des applications et infrastructures vers le cloud." },
+          { title: "Modernisation des systèmes legacy", description: "Remplacement des systèmes obsolètes par des architectures évolutives." },
+          { title: "Transformation de l’expérience client (CX)", description: "Conception de parcours digitaux fluides et personnalisés." },
+          { title: "Architecture d’entreprise", description: "Conception d’écosystèmes technologiques intégrés et scalables." },
+          { title: "Transformation orientée données", description: "Exploitation de la data et de l’analytique pour des décisions intelligentes." },
+        ],
+        features: [
+          { title: "Ateliers d’innovation", description: "Sessions collaboratives pour définir les priorités de transformation." },
+          { title: "Activation technologique", description: "Implémentation des plateformes digitales modernes." },
+          { title: "Gestion du changement", description: "Accompagnement à l’adoption et à la transition organisationnelle." },
+        ],
+        benefits: [
+          "Efficacité opérationnelle accrue",
+          "Expérience client améliorée",
+          "Agilité business renforcée",
+          "Infrastructure digitale évolutive",
+          "Avantage concurrentiel durable",
+        ],
       },
-
       ai: {
         title: "IA et automatisation",
         subtitle: "Automatisation de processus intelligents",
@@ -404,95 +403,149 @@ export const translations = {
           "Amélioration continue grâce aux boucles de rétroaction ML",
         ],
       },
-    devops: {
-  title: "DevOps & Cloud Engineering",
-  subtitle: "Accélérer la livraison, la fiabilité et la scalabilité",
-  tagline: "Infrastructure moderne pour des équipes performantes",
-  description:
-    "Services complets de DevOps et d'ingénierie cloud pour automatiser les déploiements, améliorer la fiabilité et faire évoluer l'infrastructure efficacement.",
+      devops: {
+        title: "DevOps & Cloud Engineering",
+        subtitle: "Accélérer la livraison, la fiabilité et la scalabilité",
+        tagline: "Infrastructure moderne pour des équipes performantes",
+        description:
+          "Services complets de DevOps et d'ingénierie cloud pour automatiser les déploiements, améliorer la fiabilité et faire évoluer l'infrastructure efficacement.",
 
-  longDescription:
-    "Vous souhaitez révolutionner votre entreprise avec des services DevOps ? Vous voulez automatiser les flux de travail et augmenter la productivité de votre département IT ? Faites-nous confiance pour transformer vos opérations, intégrer des solutions cloud, l'intégration et la livraison continues (CI/CD), GitOps, la conteneurisation, DevSecOps, et une gamme d'autres services.",
+        longDescription:
+          "Vous souhaitez révolutionner votre entreprise avec des services DevOps ? Vous voulez automatiser les flux de travail et augmenter la productivité de votre département IT ? Faites-nous confiance pour transformer vos opérations, intégrer des solutions cloud, l'intégration et la livraison continues (CI/CD), GitOps, la conteneurisation, DevSecOps, et une gamme d'autres services.",
 
-  subServices: [
-    { title: "Services DevOps", description: "Vous souhaitez révolutionner votre entreprise avec des services DevOps ? Vous voulez automatiser les flux de travail et augmenter la productivité de votre département IT ? Faites-nous confiance pour transformer vos opérations, intégrer des solutions cloud, l'intégration et la livraison continues (CI/CD), GitOps, la conteneurisation, DevSecOps, et une gamme d'autres services.", subItems: ["Conseil DevOps", "Services CI/CD", "Ingénierie Cloud Azure", "Services AWS DevOps"] },
-    { title: "Ingénierie de plateforme", description: "Votre entreprise a besoin d'une plateforme cloud performante, sécurisée et évolutive. Réinventez votre architecture technologique avec nos services experts de développement de plateforme. Passez en douceur d'un système legacy rigide à un écosystème flexible et modulaire construit sur des couches connectées. Exploitez la puissance du cloud, des microservices et des API internes et externes pour accélérer votre infrastructure." },
-    { title: "CTO Fractionnel", description: "Accédez à un leadership technologique de premier plan sans engagement à temps plein. Notre service de CTO fractionnel vous donne accès à des dirigeants technologiques expérimentés qui guident votre stratégie IT à temps partiel. Nous vous aidons à aligner votre technologie avec vos objectifs business, à prendre des décisions technologiques éclairées et à stimuler l'innovation." },
-    { title: "Services d'audit IT", description: "Nous examinons votre technologie pour assurer la sécurité et l'efficacité de votre entreprise. Notre audit IT vérifie vos systèmes pour détecter les faiblesses, s'assure que vous respectez les règles importantes et suggère des moyens d'améliorer votre infrastructure technologique.", subItems: ["Audit d'infrastructure", "Audit de sécurité", "Audit de conformité"] },
-    { title: "Conseil et services en transformation digitale", description: "Nous aidons votre entreprise à utiliser les nouvelles technologies pour mieux fonctionner. Nos consultants travaillent en étroite collaboration avec votre équipe pour identifier les opportunités, implémenter des solutions de pointe et favoriser une culture d'innovation. De la migration cloud à l'analyse de données, nous vous guidons à travers les complexités du changement numérique." },
-    { title: "Gestion d'infrastructure", description: "Découvrez la force transformatrice de nos services de gestion d'infrastructure sans faille. Si votre personnel IT ne gère plus les charges de travail croissantes, nous construisons et gérons une architecture de projet numérique, vous propulsant vers un succès sans précédent.", subItems: ["Services gérés d'infrastructure IT", "Services de gestion d'infrastructure cloud", "Support d'infrastructure IT", "Conseil en infrastructure IT"] },
-    { title: "Service de cloud computing", description: "Découvrez le potentiel inégalé des services de cloud computing. Transférez votre solution numérique dans le cloud et économisez avec nos services d'optimisation cloud. Débloquez l'agilité, la scalabilité et l'innovation comme jamais auparavant.", subItems: ["Services de migration de bases de données", "Services de migration cloud", "Services de migration Google Cloud", "Services de migration Azure", "Services de migration AWS", "Conseil cloud"] },
-    { title: "Services SRE", description: "Vous recherchez des professionnels pour aider votre entreprise à faire face à l'augmentation de la charge de travail en dimensionnant et en optimisant les flux de travail ? Associez-vous à nous dès aujourd'hui pour répondre aux incidents ou même assister avec la sauvegarde et la reprise après sinistre.", subItems: ["Surveillance IT", "Services de sauvegarde et reprise après sinistre"] },
-    { title: "Services Kubernetes", description: "Boostez vos applications avec nos services Kubernetes de pointe. Facilitez la personnalisation et l'automatisation avec des charges de travail conteneurisées et des services Kubernetes. Donnez à vos équipes de développement et d'exploitation les moyens de stimuler l'innovation." },
-    { title: "Blockchain DevOps", description: "Renforcez votre parcours blockchain avec nos services DevOps experts. Rationalisez le déploiement, accélérez les cycles de développement et révolutionnez la livraison de vos produits. Adoptez l'efficacité, la collaboration et l'agilité du marché." },
-  ],
+        subServices: [
+          { title: "Services DevOps", description: "Vous souhaitez révolutionner votre entreprise avec des services DevOps ? Vous voulez automatiser les flux de travail et augmenter la productivité de votre département IT ? Faites-nous confiance pour transformer vos opérations, intégrer des solutions cloud, l'intégration et la livraison continues (CI/CD), GitOps, la conteneurisation, DevSecOps, et une gamme d'autres services.", subItems: ["Conseil DevOps", "Services CI/CD", "Ingénierie Cloud Azure", "Services AWS DevOps"] },
+          { title: "Ingénierie de plateforme", description: "Votre entreprise a besoin d'une plateforme cloud performante, sécurisée et évolutive. Réinventez votre architecture technologique avec nos services experts de développement de plateforme. Passez en douceur d'un système legacy rigide à un écosystème flexible et modulaire construit sur des couches connectées. Exploitez la puissance du cloud, des microservices et des API internes et externes pour accélérer votre infrastructure." },
+          { title: "CTO Fractionnel", description: "Accédez à un leadership technologique de premier plan sans engagement à temps plein. Notre service de CTO fractionnel vous donne accès à des dirigeants technologiques expérimentés qui guident votre stratégie IT à temps partiel. Nous vous aidons à aligner votre technologie avec vos objectifs business, à prendre des décisions technologiques éclairées et à stimuler l'innovation." },
+          { title: "Services d'audit IT", description: "Nous examinons votre technologie pour assurer la sécurité et l'efficacité de votre entreprise. Notre audit IT vérifie vos systèmes pour détecter les faiblesses, s'assure que vous respectez les règles importantes et suggère des moyens d'améliorer votre infrastructure technologique.", subItems: ["Audit d'infrastructure", "Audit de sécurité", "Audit de conformité"] },
+          { title: "Conseil et services en transformation digitale", description: "Nous aidons votre entreprise à utiliser les nouvelles technologies pour mieux fonctionner. Nos consultants travaillent en étroite collaboration avec votre équipe pour identifier les opportunités, implémenter des solutions de pointe et favoriser une culture d'innovation. De la migration cloud à l'analyse de données, nous vous guidons à travers les complexités du changement numérique." },
+          { title: "Gestion d'infrastructure", description: "Découvrez la force transformatrice de nos services de gestion d'infrastructure sans faille. Si votre personnel IT ne gère plus les charges de travail croissantes, nous construisons et gérons une architecture de projet numérique, vous propulsant vers un succès sans précédent.", subItems: ["Services gérés d'infrastructure IT", "Services de gestion d'infrastructure cloud", "Support d'infrastructure IT", "Conseil en infrastructure IT"] },
+          { title: "Service de cloud computing", description: "Découvrez le potentiel inégalé des services de cloud computing. Transférez votre solution numérique dans le cloud et économisez avec nos services d'optimisation cloud. Débloquez l'agilité, la scalabilité et l'innovation comme jamais auparavant.", subItems: ["Services de migration de bases de données", "Services de migration cloud", "Services de migration Google Cloud", "Services de migration Azure", "Services de migration AWS", "Conseil cloud"] },
+          { title: "Services SRE", description: "Vous recherchez des professionnels pour aider votre entreprise à faire face à l'augmentation de la charge de travail en dimensionnant et en optimisant les flux de travail ? Associez-vous à nous dès aujourd'hui pour répondre aux incidents ou même assister avec la sauvegarde et la reprise après sinistre.", subItems: ["Surveillance IT", "Services de sauvegarde et reprise après sinistre"] },
+          { title: "Services Kubernetes", description: "Boostez vos applications avec nos services Kubernetes de pointe. Facilitez la personnalisation et l'automatisation avec des charges de travail conteneurisées et des services Kubernetes. Donnez à vos équipes de développement et d'exploitation les moyens de stimuler l'innovation." },
+          { title: "Blockchain DevOps", description: "Renforcez votre parcours blockchain avec nos services DevOps experts. Rationalisez le déploiement, accélérez les cycles de développement et révolutionnez la livraison de vos produits. Adoptez l'efficacité, la collaboration et l'agilité du marché." },
+        ],
 
-  features: [
-    {
-      title: "Automatisation complète",
-      description: "Réduisez les interventions manuelles grâce aux déploiements, tests et gestion d'infrastructure automatisés.",
-    },
-    {
-      title: "Architecture Cloud-Native",
-      description: "Des environnements hautement disponibles et tolérants aux pannes, optimisés pour la performance.",
-    },
-    {
-      title: "Observabilité avancée",
-      description: "Surveillance proactive avec métriques, journaux et alertes intelligentes pour prévenir les incidents.",
-    },
-  ],
+        features: [
+          {
+            title: "Automatisation complète",
+            description: "Réduisez les interventions manuelles grâce aux déploiements, tests et gestion d'infrastructure automatisés.",
+          },
+          {
+            title: "Architecture Cloud-Native",
+            description: "Des environnements hautement disponibles et tolérants aux pannes, optimisés pour la performance.",
+          },
+          {
+            title: "Observabilité avancée",
+            description: "Surveillance proactive avec métriques, journaux et alertes intelligentes pour prévenir les incidents.",
+          },
+        ],
 
-  benefits: [
-    "Réduction jusqu'à 70% du temps de déploiement",
-    "Amélioration significative de la fiabilité système",
-    "Livraison plus rapide de nouvelles fonctionnalités",
-    "Réduction des coûts opérationnels IT",
-    "Infrastructure scalable prête pour la croissance",
-  ],
-},
+        benefits: [
+          "Réduction jusqu'à 70% du temps de déploiement",
+          "Amélioration significative de la fiabilité système",
+          "Livraison plus rapide de nouvelles fonctionnalités",
+          "Réduction des coûts opérationnels IT",
+          "Infrastructure scalable prête pour la croissance",
+        ],
+      },
+      itStrategy: {
+        title: "Stratégie IT & Infrastructure",
+        subtitle: "Aligner la technologie avec la croissance de l'entreprise",
+        tagline: "Infrastructure fiable avec un accompagnement expert",
+        description:
+          "Leadership technologique stratégique et services de gestion d'infrastructure pour optimiser les opérations, assurer la conformité et soutenir la croissance à long terme.",
 
-itStrategy: {
-  title: "Stratégie IT & Infrastructure",
-  subtitle: "Aligner la technologie avec la croissance de l'entreprise",
-  tagline: "Infrastructure fiable avec un accompagnement expert",
-  description:
-    "Leadership technologique stratégique et services de gestion d'infrastructure pour optimiser les opérations, assurer la conformité et soutenir la croissance à long terme.",
+        longDescription:
+          "Une stratégie IT efficace est essentielle pour soutenir la croissance et maintenir la compétitivité de l'entreprise. Notre service Stratégie IT & Infrastructure combine leadership technologique, gestion opérationnelle et expertise en gouvernance pour aligner vos systèmes avec vos objectifs business. Nous aidons les organisations à moderniser leur infrastructure, renforcer la résilience, optimiser les coûts et assurer la conformité réglementaire tout en préparant les transformations futures.",
 
-  longDescription:
-    "Une stratégie IT efficace est essentielle pour soutenir la croissance et maintenir la compétitivité de l'entreprise. Notre service Stratégie IT & Infrastructure combine leadership technologique, gestion opérationnelle et expertise en gouvernance pour aligner vos systèmes avec vos objectifs business. Nous aidons les organisations à moderniser leur infrastructure, renforcer la résilience, optimiser les coûts et assurer la conformité réglementaire tout en préparant les transformations futures.",
+        subServices: [
+          { title: "CTO Fractionnel", description: "Leadership technologique exécutif à temps partiel pour votre organisation." },
+          { title: "Gestion d'infrastructure IT", description: "Surveillance, maintenance et optimisation des systèmes informatiques." },
+          { title: "Audits IT & Conformité", description: "Évaluations de sécurité, d'infrastructure et de conformité réglementaire." },
+          { title: "Reprise après sinistre & Sauvegarde", description: "Assurez la continuité d'activité et la résilience des données." },
+          { title: "Optimisation des performances", description: "Améliorez la fiabilité et la scalabilité des systèmes." },
+        ],
 
-  subServices: [
-    { title: "CTO Fractionnel", description: "Leadership technologique exécutif à temps partiel pour votre organisation." },
-    { title: "Gestion d'infrastructure IT", description: "Surveillance, maintenance et optimisation des systèmes informatiques." },
-    { title: "Audits IT & Conformité", description: "Évaluations de sécurité, d'infrastructure et de conformité réglementaire." },
-    { title: "Reprise après sinistre & Sauvegarde", description: "Assurez la continuité d'activité et la résilience des données." },
-    { title: "Optimisation des performances", description: "Améliorez la fiabilité et la scalabilité des systèmes." },
-  ],
+        features: [
+          {
+            title: "Leadership technologique stratégique",
+            description: "Accédez à une expertise IT de niveau exécutif pour guider les décisions technologiques critiques.",
+          },
+          {
+            title: "Infrastructure haute disponibilité",
+            description: "Mise en place de systèmes fiables et sécurisés capables de supporter des charges de travail élevées.",
+          },
+          {
+            title: "Gouvernance & Conformité",
+            description: "Cadres et processus garantissant le respect des normes et le contrôle des risques IT.",
+          },
+        ],
 
-  features: [
-    {
-      title: "Leadership technologique stratégique",
-      description: "Accédez à une expertise IT de niveau exécutif pour guider les décisions technologiques critiques.",
-    },
-    {
-      title: "Infrastructure haute disponibilité",
-      description: "Mise en place de systèmes fiables et sécurisés capables de supporter des charges de travail élevées.",
-    },
-    {
-      title: "Gouvernance & Conformité",
-      description: "Cadres et processus garantissant le respect des normes et le contrôle des risques IT.",
-    },
-  ],
-
-  benefits: [
-    "Alignement clair entre IT et stratégie business",
-    "Réduction des risques opérationnels",
-    "Optimisation des coûts d'infrastructure",
-    "Amélioration de la continuité d'activité",
-    "Décisions technologiques plus rapides et éclairées",
-  ],
-},
-
+        benefits: [
+          "Alignement clair entre IT et stratégie business",
+          "Réduction des risques opérationnels",
+          "Optimisation des coûts d'infrastructure",
+          "Amélioration de la continuité d'activité",
+          "Décisions technologiques plus rapides et éclairées",
+        ],
+      },
+      webScraping: {
+        title: "Web Scraping",
+        subtitle: "Transformez le web en informations exploitables",
+        tagline: "Collectez, analysez et exploitez les données web efficacement",
+        description:
+          "Services automatisés de collecte et traitement de données web pour extraire des insights, suivre les tendances et améliorer la prise de décision.",
+        longDescription:
+          "À l’ère de la donnée, l’information est un atout stratégique. Notre service de Web Scraping & Extraction de Données permet aux entreprises de collecter systématiquement des informations depuis des sites web, plateformes en ligne et sources publiques. Nous fournissons des solutions fiables, scalables et conformes, pour surveiller la concurrence, collecter de l’intelligence marché, suivre les tendances et alimenter vos modèles IA/ML. Des scrapers sur-mesure aux pipelines automatisés, nous transformons le contenu web non structuré en données structurées et exploitables.",
+        subServices: [
+          { 
+            title: "Web Scraping sur-mesure", 
+            description: "Développement de solutions adaptées pour sites web, portails et plateformes e-commerce." 
+          },
+          { 
+            title: "Nettoyage & Transformation des Données", 
+            description: "Traitement des données brutes pour obtenir des formats structurés et prêts à l’analyse ou à l’intégration." 
+          },
+          { 
+            title: "Flux de Données en Temps Réel", 
+            description: "Mise en place de pipelines automatisés pour la collecte continue et la mise à jour des données." 
+          },
+          { 
+            title: "Veille Marché & Concurrence", 
+            description: "Suivi des concurrents, des prix et des tendances sectorielles pour éclairer vos décisions stratégiques." 
+          },
+          { 
+            title: "Extraction de Leads & Contacts", 
+            description: "Collecte de leads qualifiés et d’informations de contact à partir de sources publiques." 
+          },
+          { 
+            title: "Scraping Conforme & Éthique", 
+            description: "Assurer une collecte de données respectant les limites légales et éthiques, y compris le RGPD et les conditions d’utilisation des sites." 
+          },
+        ],
+        features: [
+          { 
+            title: "Pipelines Scalables", 
+            description: "Collecte et traitement de grandes quantités de données de manière efficace grâce à des workflows automatisés." 
+          },
+          { 
+            title: "Intégrations Personnalisées", 
+            description: "Injection directe des données extraites dans vos bases, CRM ou plateformes d’analyse." 
+          },
+          { 
+            title: "Collecte Planifiée ou à la Demande", 
+            description: "Flexibilité pour des mises à jour périodiques ou en temps réel." 
+          },
+        ],
+        benefits: [
+          "Accéder à des insights exploitables depuis des sources publiques",
+          "Surveiller la concurrence et les tendances du marché en temps réel",
+          "Alimenter vos modèles IA/ML avec des données structurées",
+          "Automatiser les tâches répétitives de collecte de données",
+          "Améliorer la prise de décision basée sur les données",
+        ],
+      },
     },
     footer: {
       tagline: "Transformez votre entreprise avec l'IA et l'automatisation",
@@ -529,14 +582,14 @@ itStrategy: {
       testimonials: "Testimonials",
       faq: "FAQ",
       contact: "Contact",
-      audit: "Free Consultation",
+      audit: "Free Submission",
     },
     hero: {
       badge: "AI & Automation Agency",
       title: "Transform your business",
       titleHighlight: "with Evobit",
       subtitle: "We deliver expert solutions in cybersecurity, digital transformation and AI-powered automation to accelerate your digital transformation.",
-      cta: "Free Consultation",
+      cta: "Free submission",
       ctaSecondary: "See Our Services",
       stats: {
         clients: "Happy clients",
@@ -651,7 +704,7 @@ itStrategy: {
           icon: "Target",
         },
       ],
-      cta: "Get my free consultation",
+      cta: "Get my free submission",
     },
     whoWeServe: {
       title: "Who are our solutions for?",
@@ -765,7 +818,7 @@ itStrategy: {
       items: [
         {
           q: "How does a typical project work?",
-          a: "We start with a free consultation of your needs, followed by a scoping document within 48h. Then we design and deploy your automations with ongoing support.",
+          a: "We start with a free submission of your needs, followed by a scoping document within 48h. Then we design and deploy your automations with ongoing support.",
         },
         {
           q: "What tools do you use?",
@@ -781,12 +834,12 @@ itStrategy: {
         },
         {
           q: "What is the cost of automation?",
-          a: "Each project is unique. We offer a free consultation to assess your needs and provide a custom quote.",
+          a: "Each project is unique. We offer a free submission to assess your needs and provide a custom quote.",
         },
       ],
     },
     contact: {
-      title: "Ready to automate your business?",
+      title: "Ready to start your business?",
       subtitle: "Book a call directly with our team",
       generalTab: "General Contact",
       generalTabShort: "Contact",
@@ -836,7 +889,7 @@ itStrategy: {
       realResults: "Real results, measured",
       readyToGetStarted: "Ready to get started?",
       transformYourBusiness: "Let's discuss how our {service} expertise can transform your business.",
-      getAFreeSubmission: "Get a free consultation",
+      getAFreeSubmission: "Get a free submission",
       exploreOtherServices: "Explore our other services",
  
     },
@@ -1014,6 +1067,62 @@ itStrategy: {
           "Optimized infrastructure costs",
           "Improved business continuity",
           "Faster and more confident technology decisions",
+        ],
+      },
+      webScraping: {
+        title: "Web Scraping",
+        subtitle: "Turn the web into actionable insights",
+        tagline: "Collect, analyze, and leverage web data efficiently",
+        description:
+          "Automated web data collection and processing services to extract insights, monitor trends, and enhance decision-making.",
+        longDescription:
+          "In the data-driven era, information is power. Our Web Scraping & Data Extraction service enables organizations to systematically collect data from websites, online platforms, and public sources. We provide reliable, scalable, and compliant solutions that help you monitor competitors, gather market intelligence, track trends, and fuel AI/ML models. From custom scrapers to automated pipelines, we transform unstructured web content into structured, actionable data.",
+        subServices: [
+          { 
+            title: "Custom Web Scraping", 
+            description: "Develop tailored scraping solutions for websites, portals, and e-commerce platforms." 
+          },
+          { 
+            title: "Data Cleaning & Transformation", 
+            description: "Process raw web data into structured formats ready for analysis or integration." 
+          },
+          { 
+            title: "Real-Time Data Feeds", 
+            description: "Set up automated pipelines for continuous data collection and updates." 
+          },
+          { 
+            title: "Market & Competitor Intelligence", 
+            description: "Monitor competitors, pricing, and industry trends to inform strategic decisions." 
+          },
+          { 
+            title: "Lead & Contact Extraction", 
+            description: "Extract qualified leads and contact information from public sources." 
+          },
+          { 
+            title: "Compliance-Aware Scraping", 
+            description: "Ensure web scraping respects legal and ethical boundaries, including GDPR and website terms of use." 
+          },
+        ],
+        features: [
+          { 
+            title: "Scalable Pipelines", 
+            description: "Collect and process large volumes of data efficiently with automated workflows." 
+          },
+          { 
+            title: "Custom Integrations", 
+            description: "Feed scraped data directly into your databases, CRMs, or analytics platforms." 
+          },
+          { 
+            title: "Scheduled & On-Demand Scraping", 
+            description: "Flexible scheduling for periodic or real-time data updates." 
+          },
+        ],
+        benefits: [
+          "Access actionable insights from public data sources",
+          "Monitor competitors and market trends in real-time",
+          "Feed AI/ML models with structured web data",
+          "Automate repetitive data collection tasks",
+          "Improve data-driven decision making",
         ],
       },
 },

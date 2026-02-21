@@ -1,13 +1,13 @@
 import { useLanguage } from "../context/LanguageContext";
 import { translations } from "../i18n/translations";
 import { ArrowRight, Clock, Play, TrendingUp, Users2 } from "lucide-react";
-import AnimatedCounter from "./AnimatedCounter";
+//import AnimatedCounter from "./AnimatedCounter";
 
 export default function HeroSection() {
   const { language } = useLanguage();
   const t = translations[language as keyof typeof translations];
 
-   const stats = [
+   {/* const stats = [
     { 
       number: "50+", 
       label: t.hero.stats.clients, 
@@ -23,7 +23,7 @@ export default function HeroSection() {
       label: t.hero.stats.roi, 
       icon: TrendingUp, 
     },
-  ];
+  ];*/}
 
   return (
     <>
@@ -67,7 +67,7 @@ export default function HeroSection() {
             </a>
           </div>
 
-          {/* Stats with enhanced animations */}
+          {/* 
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-16 md:gap-24 animate-fade-in animation-delay-800 w-full max-w-3xl">
             {stats.map((stat, index) => (
               <div 
@@ -76,13 +76,11 @@ export default function HeroSection() {
                 style={{ animationDelay: `${800 + index * 200}ms` }}
               >
                 <div className="relative flex flex-col items-center p-4 sm:p-6 rounded-2xl transition-all duration-500 hover:bg-brand-primary-50/50 dark:hover:bg-brand-primary-900/20 hover:scale-110 hover:-translate-y-2">
-                  {/* Animated icon */}
                   <div className="relative mb-3">
                     <div className="absolute inset-0 bg-brand-primary-500/20 rounded-full blur-xl scale-0 group-hover:scale-150 transition-transform duration-500"></div>
                     <stat.icon className="relative w-6 h-6 sm:w-8 sm:h-8 text-brand-primary-600 group-hover:text-brand-primary-500 transition-colors duration-300 group-hover:animate-bounce-subtle" />
                   </div>
                   
-                  {/* Number with animated counter */}
                   <AnimatedCounter 
                     value={stat.number} 
                     delay={800 + index * 300}
@@ -90,17 +88,15 @@ export default function HeroSection() {
                     className="text-2xl sm:text-4xl font-bold text-brand-neutral-800 dark:text-white transition-all duration-300 group-hover:text-brand-primary-600 dark:group-hover:text-brand-primary-400 group-hover:scale-110"
                   />
                   
-                  {/* Label */}
                   <p className="text-xs sm:text-sm text-brand-neutral-600 dark:text-brand-neutral-400 mt-1 transition-colors duration-300 group-hover:text-brand-neutral-800 dark:group-hover:text-white">
                     {stat.label}
                   </p>
                   
-                  {/* Decorative underline */}
                   <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 group-hover:w-3/4 transition-all duration-500 rounded-full"></div>
                 </div>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
 
         {/* White Gradient Fade at Bottom */}

@@ -128,6 +128,24 @@ export const getServices = (language: "en" | "fr" = "en"): ServiceCategory[] => 
       features: sd.itStrategy.features,
       benefits: sd.itStrategy.benefits,
     },
+
+    {
+      id: "webScraping",
+      slug: "web-scraping",
+      title: sd.webScraping.title,
+      subtitle: sd.webScraping.subtitle,
+      tagline: sd.webScraping.tagline,
+      description: sd.webScraping.description,
+      longDescription: sd.webScraping.longDescription,
+      icon: HardDrive,
+      subServices: sd.webScraping.subServices.map((sub, idx) => ({
+        icon: [Users, Server, FileSearch, Activity, TrendingUp][idx] || HardDrive,
+        title: sub.title,
+        description: sub.description,
+      })),
+      features: sd.webScraping.features,
+      benefits: sd.webScraping.benefits,
+    },
   ];
 };
 
