@@ -452,44 +452,44 @@ export const translations = {
 },
 
 itStrategy: {
-  title: "IT Strategy & Infrastructure",
-  subtitle: "Aligning technology with business growth",
-  tagline: "Reliable infrastructure with expert guidance",
+  title: "Stratégie IT & Infrastructure",
+  subtitle: "Aligner la technologie avec la croissance de l'entreprise",
+  tagline: "Infrastructure fiable avec un accompagnement expert",
   description:
-    "Strategic technology leadership and infrastructure management services to optimize operations, ensure compliance, and support long-term growth.",
+    "Leadership technologique stratégique et services de gestion d'infrastructure pour optimiser les opérations, assurer la conformité et soutenir la croissance à long terme.",
 
   longDescription:
-    "An effective IT strategy is essential to support growth and maintain business competitiveness. Our IT Strategy & Infrastructure service combines technology leadership, operational management, and governance expertise to align your systems with business objectives. We help organizations modernize infrastructure, strengthen resilience, optimize costs, and ensure regulatory compliance while preparing for future transformation.",
+    "Une stratégie IT efficace est essentielle pour soutenir la croissance et maintenir la compétitivité de l'entreprise. Notre service Stratégie IT & Infrastructure combine leadership technologique, gestion opérationnelle et expertise en gouvernance pour aligner vos systèmes avec vos objectifs business. Nous aidons les organisations à moderniser leur infrastructure, renforcer la résilience, optimiser les coûts et assurer la conformité réglementaire tout en préparant les transformations futures.",
 
   subServices: [
-    { title: "Fractional CTO", description: "Part-time executive technology leadership for your organization." },
-    { title: "IT Infrastructure Management", description: "Monitoring, maintenance, and optimization of IT systems." },
-    { title: "IT Audits & Compliance", description: "Security, infrastructure, and regulatory requirement assessments." },
-    { title: "Disaster Recovery & Backup", description: "Ensure business continuity and data resilience." },
-    { title: "Performance Optimization", description: "Improve system reliability and scalability." },
+    { title: "CTO Fractionnel", description: "Leadership technologique exécutif à temps partiel pour votre organisation." },
+    { title: "Gestion d'infrastructure IT", description: "Surveillance, maintenance et optimisation des systèmes informatiques." },
+    { title: "Audits IT & Conformité", description: "Évaluations de sécurité, d'infrastructure et de conformité réglementaire." },
+    { title: "Reprise après sinistre & Sauvegarde", description: "Assurez la continuité d'activité et la résilience des données." },
+    { title: "Optimisation des performances", description: "Améliorez la fiabilité et la scalabilité des systèmes." },
   ],
 
   features: [
     {
-      title: "Strategic Technology Leadership",
-      description: "Access executive-level IT expertise to guide critical technology decisions.",
+      title: "Leadership technologique stratégique",
+      description: "Accédez à une expertise IT de niveau exécutif pour guider les décisions technologiques critiques.",
     },
     {
-      title: "Highly Available Infrastructure",
-      description: "Implementation of reliable, secure systems capable of handling high workloads.",
+      title: "Infrastructure haute disponibilité",
+      description: "Mise en place de systèmes fiables et sécurisés capables de supporter des charges de travail élevées.",
     },
     {
-      title: "Governance & Compliance",
-      description: "Frameworks and processes ensuring standards compliance and IT risk control.",
+      title: "Gouvernance & Conformité",
+      description: "Cadres et processus garantissant le respect des normes et le contrôle des risques IT.",
     },
   ],
 
   benefits: [
-    "Clear alignment between IT and business strategy",
-    "Reduced operational risks",
-    "Optimized infrastructure costs",
-    "Improved business continuity",
-    "Faster, more informed technology decisions",
+    "Alignement clair entre IT et stratégie business",
+    "Réduction des risques opérationnels",
+    "Optimisation des coûts d'infrastructure",
+    "Amélioration de la continuité d'activité",
+    "Décisions technologiques plus rapides et éclairées",
   ],
 },
 
