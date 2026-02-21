@@ -62,7 +62,7 @@ export default function ProjectsSection() {
                 {project.link && (
                   <div className="mt-4 pt-4 border-t border-brand-neutral-200 dark:border-brand-neutral-700">
                     <span className="text-sm font-medium text-brand-primary-600 dark:text-brand-primary-400 group-hover:underline flex items-center gap-1">
-                      {language === "fr" ? "Visiter le site" : "Visit website"}
+                      {t.ourProjects.visitWebsite}
                       <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                     </span>
                   </div>

@@ -37,10 +37,10 @@ export default function HeroSection() {
         </div>
 
 
-        <div className="container-max relative z-10 flex flex-col items-center text-center px-4">
+        <div className="container-max relative z-10 flex flex-col items-center text-center px-4 sm:px-6 lg:px-8">
 
           {/* Main Headline - One Line */}
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-brand-neutral-800 dark:text-white mb-6 px-4 animate-fade-in animation-delay-200 text-balance">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-brand-neutral-800 dark:text-white mb-6 animate-fade-in animation-delay-200 text-balance">
             {t.hero.title}{" "}
             <span className="relative inline-block">
               <span className="bg-gradient-to-r from-blue-600 via-purple-500 to-pink-500 bg-clip-text text-transparent bg-[length:200%_auto] animate-gradient-x">
@@ -51,24 +51,24 @@ export default function HeroSection() {
           </h1>
 
           {/* Subtitle */}
-          <p className="text-base sm:text-lg lg:text-xl text-brand-neutral-600 dark:text-brand-neutral-300 leading-relaxed max-w-3xl mb-12 px-4 animate-fade-in animation-delay-400">
+          <p className="text-base sm:text-lg lg:text-xl text-brand-neutral-600 dark:text-brand-neutral-300 leading-relaxed max-w-3xl mb-12 animate-fade-in animation-delay-400">
             {t.hero.subtitle}
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-12 sm:mb-16 w-full sm:w-auto px-4 animate-fade-in animation-delay-600">
-            <button className="inline-flex items-center justify-center rounded-lg text-sm sm:text-base font-medium transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background bg-brand-primary-600 text-white hover:bg-brand-primary-700 h-11 sm:h-12 px-6 sm:px-8 shadow-sm hover:shadow-md group">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-12 sm:mb-16 w-full sm:w-auto animate-fade-in animation-delay-600">
+            <a href="#contact" className="inline-flex items-center justify-center rounded-lg text-sm sm:text-base font-medium transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background bg-brand-primary-600 text-white hover:bg-brand-primary-700 h-11 sm:h-12 px-6 sm:px-8 shadow-sm hover:shadow-md group">
               {t.hero.cta}
               <ArrowRight className="ml-2 w-4 sm:w-5 h-4 sm:h-5 group-hover:translate-x-1 transition-transform" />
-            </button>
-            <button className="inline-flex items-center justify-center rounded-lg text-sm sm:text-base font-medium transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background border-2 border-brand-neutral-300 dark:border-brand-neutral-600 bg-white dark:bg-brand-neutral-800 hover:bg-brand-neutral-50 dark:hover:bg-brand-neutral-700 text-brand-neutral-800 dark:text-white h-11 sm:h-12 px-6 sm:px-8 group">
+            </a>
+            <a href="#services" className="inline-flex items-center justify-center rounded-lg text-sm sm:text-base font-medium transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background border-2 border-brand-neutral-300 dark:border-brand-neutral-600 bg-white dark:bg-brand-neutral-800 hover:bg-brand-neutral-50 dark:hover:bg-brand-neutral-700 text-brand-neutral-800 dark:text-white h-11 sm:h-12 px-6 sm:px-8 group">
               <Play className="mr-2 w-4 sm:w-5 h-4 sm:h-5" />
               {t.hero.ctaSecondary}
-            </button>
+            </a>
           </div>
 
           {/* Stats with enhanced animations */}
-          <div className="flex justify-center items-start gap-8 sm:gap-16 md:gap-24 animate-fade-in animation-delay-800 w-full max-w-3xl">
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-16 md:gap-24 animate-fade-in animation-delay-800 w-full max-w-3xl">
             {stats.map((stat, index) => (
               <div 
                 key={index} 

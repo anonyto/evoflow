@@ -2,7 +2,8 @@ import {
   Shield, Lock, Eye, FileSearch, AlertTriangle, Server,
   ClipboardCheck, TrendingUp, FileText, Scale, Users, Target,
   Bot, Workflow, Zap, Brain, Cpu, BarChart3,
-  Cloud, GitBranch, Boxes, Activity, Settings, HardDrive,
+  Cloud, GitBranch, Activity, HardDrive,
+  Layers, UserCog, Search, Lightbulb, Monitor, Database, Radio, Container, Link2,
 } from "lucide-react";
 import { translations } from "../i18n/translations";
 
@@ -10,6 +11,7 @@ export interface SubService {
   icon: React.ElementType;
   title: string;
   description: string;
+  subItems?: string[];
 }
 
 export interface ServiceFeature {
@@ -99,10 +101,11 @@ export const getServices = (language: "en" | "fr" = "en"): ServiceCategory[] => 
       description: sd.devops.description,
       longDescription: sd.devops.longDescription,
       icon: Cloud,
-      subServices: sd.devops.subServices.map((sub, idx) => ({
-        icon: [GitBranch, Cloud, Boxes, Shield, Activity, Settings][idx] || Cloud,
+      subServices: sd.devops.subServices.map((sub: any, idx: number) => ({
+        icon: [GitBranch, Layers, UserCog, Search, Lightbulb, Monitor, Database, Radio, Container, Link2][idx] || Cloud,
         title: sub.title,
         description: sub.description,
+        ...(sub.subItems ? { subItems: sub.subItems } : {}),
       })),
       features: sd.devops.features,
       benefits: sd.devops.benefits,

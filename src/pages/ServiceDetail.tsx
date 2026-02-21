@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useNavigate } from "react-router-dom";
 import { ArrowLeft, ArrowRight, CheckCircle } from "lucide-react";
 import { getServiceBySlug, getServices } from "../data/services";
 import { useTheme } from "../context/ThemeContext";
@@ -12,6 +12,17 @@ const ServiceDetail = () => {
   const { language } = useLanguage();
   const t = translations[language as keyof typeof translations].serviceDetail;
   const service = getServiceBySlug(slug || "", language as "en" | "fr");
+  const navigate = useNavigate();
+
+  const scrollToContact = () => {
+    navigate("/");
+    setTimeout(() => {
+      const section = document.getElementById("contact");
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 100);
+  };
 
   useEffect(() => {
     window.scrollTo({ top: 0 });
@@ -62,7 +73,7 @@ const ServiceDetail = () => {
   const otherServices = allServices.filter((s) => s.id !== service.id);
 
   return (
-    <div className={`${theme === "dark" ? "bg-brand-neutral-900 text-white" : "bg-gray-50 text-gray-900"} min-h-screen`}>
+    <div className={`${theme === "dark" ? "bg-brand-neutral-900 text-white" : "bg-gray-50 text-gray-900"} min-h-screen overflow-x-hidden`}>
 
       {/* Hero */}
       <section className="relative pt-28 pb-16 md:pt-36 md:pb-20 overflow-hidden">
@@ -107,19 +118,29 @@ const ServiceDetail = () => {
             <h2 className={`${theme === "dark" ? "text-white" : "text-gray-900"} text-2xl md:text-3xl font-bold`}>{t.whatsIncluded}</h2>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-2 gap-6">
             {service.subServices.map((sub, i) => {
               const SubIcon = sub.icon;
               return (
                 <div
                   key={sub.title}
-                  className={`scroll-animate stagger-${(i % 8) + 1} ${theme === "dark" ? "bg-brand-neutral-800 shadow-md" : "bg-white shadow-sm"} rounded-xl p-6 hover:shadow-md transition-shadow duration-300 group`}
+                  className={`scroll-animate stagger-${(i % 8) + 1} ${theme === "dark" ? "bg-brand-neutral-800 shadow-md" : "bg-white shadow-sm"} rounded-xl p-6 hover:shadow-lg transition-shadow duration-300 group`}
                 >
                   <div className={`${theme === "dark" ? "bg-brand-neutral-700" : "bg-blue-50"} w-11 h-11 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
                     <SubIcon className={`${theme === "dark" ? "text-white" : "text-blue-600"} w-5 h-5`} />
                   </div>
                   <h3 className={`${theme === "dark" ? "text-white" : "text-gray-900"} font-semibold text-lg mb-2`}>{sub.title}</h3>
                   <p className={`${theme === "dark" ? "text-gray-300" : "text-gray-600"} text-sm leading-relaxed`}>{sub.description}</p>
+                  {sub.subItems && sub.subItems.length > 0 && (
+                    <ul className="mt-4 space-y-2">
+                      {sub.subItems.map((item: string, j: number) => (
+                        <li key={j} className="flex items-center gap-2">
+                          <span className="w-1.5 h-1.5 rounded-full bg-blue-500 shrink-0"></span>
+                          <span className={`${theme === "dark" ? "text-gray-200" : "text-gray-700"} text-sm font-medium`}>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </div>
               );
             })}
@@ -181,13 +202,13 @@ const ServiceDetail = () => {
             <p className={`${theme === "dark" ? "text-gray-300" : "text-gray-700"} max-w-xl mx-auto mb-8`}>
               {t.transformYourBusiness.replace("{service}", service.title.toLowerCase())}
             </p>
-            <Link
-              to="/#contact"
+            <button
+              onClick={scrollToContact}
               className="inline-flex items-center justify-center h-12 px-8 rounded-xl text-base font-semibold bg-blue-600 text-white hover:opacity-90 transition-all shadow-md group"
             >
               {t.getAFreeSubmission}
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </Link>
+            </button>
           </div>
         </div>
       </section>

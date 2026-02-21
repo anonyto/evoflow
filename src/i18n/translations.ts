@@ -8,15 +8,15 @@ export const translations = {
       testimonials: "Témoignages",
       faq: "FAQ",
       contact: "Contact",
-      audit: "Soumission Gratuite",
+      audit: "Consultation Gratuite",
     },
     hero: {
       badge: "Agence IA & Automatisation",
       title: "Transformez votre entreprise",
       titleHighlight: "avec Evobit",
       subtitle: "Nous fournissons des solutions expertes en cybersécurité, transformation digitale et automatisation IA pour accélérer votre transformation digitale.",
-      cta: "Soumission Gratuite",
-      ctaSecondary: "Voir nos solutions",
+      cta: "Consultation Gratuite",
+      ctaSecondary: "Voir nos services",
       stats: {
         clients: "Clients satisfaits",
         hours: "Heures économisées",
@@ -70,6 +70,7 @@ export const translations = {
       ],
       cta: "Découvrir toutes nos solutions",
       moreDetails: "Plus de détails",
+      andMore: "de plus",
     },
     howItWorks: {
       title: "Transformer votre entreprise avec l'IA",
@@ -164,6 +165,7 @@ export const translations = {
     ourProjects: {
       title: "Nos Projets",
       subtitle: "Découvrez quelques-uns de nos projets réalisés",
+      visitWebsite: "Visiter le site",
       projects: [
         {
           name: "Stockkeep",
@@ -236,6 +238,9 @@ export const translations = {
     },
     faq: {
       title: "Questions fréquentes",
+      subtitle: "Tout ce que vous devez savoir pour démarrer",
+      stillHaveQuestions: "Vous avez d'autres questions ?",
+      contactUs: "Contactez-nous",
       items: [
         {
           q: "Comment se déroule une mission type ?",
@@ -255,7 +260,7 @@ export const translations = {
         },
         {
           q: "Quel est le coût d'une automatisation ?",
-          a: "Chaque projet est unique. Nous proposons une soumission gratuite pour évaluer vos besoins et vous fournir un devis personnalisé.",
+          a: "Chaque projet est unique. Nous proposons une consultation gratuite pour évaluer vos besoins et vous fournir un devis personnalisé.",
         },
       ],
     },
@@ -293,6 +298,11 @@ export const translations = {
       faq: "FAQ",
       contact: "Nous contacter",
     },
+    notFound: {
+      title: "Page non trouvée",
+      description: "Oups ! La page que vous cherchez n'existe pas.",
+      backToHome: "Retour à l'accueil",
+    },
     serviceDetail: {
       backToHome: "Retour à l'accueil",
       notFound: "Service non trouvé",
@@ -305,7 +315,7 @@ export const translations = {
       realResults: "Vrais résultats, mesurés",
       readyToGetStarted: "Prêt à commencer ?",
       transformYourBusiness: "Parlons de comment notre expertise en {service} peut transformer votre entreprise.",
-      getAFreeSubmission: "Obtenir une soumission gratuite",
+      getAFreeSubmission: "Obtenir une consultation gratuite",
       exploreOtherServices: "Explorez nos autres services",
       
     },
@@ -396,44 +406,48 @@ export const translations = {
       },
     devops: {
   title: "DevOps & Cloud Engineering",
-  subtitle: "Accelerating delivery, reliability, and scalability",
-  tagline: "Modern infrastructure for high-performing teams",
+  subtitle: "Accélérer la livraison, la fiabilité et la scalabilité",
+  tagline: "Infrastructure moderne pour des équipes performantes",
   description:
-    "Comprehensive DevOps and cloud engineering services to automate deployments, improve reliability, and scale infrastructure efficiently.",
+    "Services complets de DevOps et d'ingénierie cloud pour automatiser les déploiements, améliorer la fiabilité et faire évoluer l'infrastructure efficacement.",
 
   longDescription:
-    "Modern organizations must deliver software faster while maintaining high reliability and security. Our DevOps & Cloud Engineering practice helps businesses automate processes, modernize infrastructure, and improve collaboration between development and operations teams. We design scalable cloud platforms, implement robust CI/CD pipelines, and integrate observability and security at every stage to ensure fast, stable, and predictable deployments.",
+    "Vous souhaitez révolutionner votre entreprise avec des services DevOps ? Vous voulez automatiser les flux de travail et augmenter la productivité de votre département IT ? Faites-nous confiance pour transformer vos opérations, intégrer des solutions cloud, l'intégration et la livraison continues (CI/CD), GitOps, la conteneurisation, DevSecOps, et une gamme d'autres services.",
 
   subServices: [
-    { title: "CI/CD Automation", description: "Automate build, test, and deployment pipelines for faster and more secure releases." },
-    { title: "Cloud Architecture", description: "Design scalable and resilient infrastructures on AWS, Azure, and GCP." },
-    { title: "Infrastructure as Code", description: "Automate infrastructure provisioning using Terraform and modern IaC tools." },
-    { title: "Containerization & Kubernetes", description: "Deploy and manage containerized applications at scale." },
-    { title: "DevSecOps", description: "Integrate security directly into the DevOps lifecycle." },
-    { title: "Monitoring & Observability", description: "Implement logging, tracing, and monitoring solutions." },
+    { title: "Services DevOps", description: "Vous souhaitez révolutionner votre entreprise avec des services DevOps ? Vous voulez automatiser les flux de travail et augmenter la productivité de votre département IT ? Faites-nous confiance pour transformer vos opérations, intégrer des solutions cloud, l'intégration et la livraison continues (CI/CD), GitOps, la conteneurisation, DevSecOps, et une gamme d'autres services.", subItems: ["Conseil DevOps", "Services CI/CD", "Ingénierie Cloud Azure", "Services AWS DevOps"] },
+    { title: "Ingénierie de plateforme", description: "Votre entreprise a besoin d'une plateforme cloud performante, sécurisée et évolutive. Réinventez votre architecture technologique avec nos services experts de développement de plateforme. Passez en douceur d'un système legacy rigide à un écosystème flexible et modulaire construit sur des couches connectées. Exploitez la puissance du cloud, des microservices et des API internes et externes pour accélérer votre infrastructure." },
+    { title: "CTO Fractionnel", description: "Accédez à un leadership technologique de premier plan sans engagement à temps plein. Notre service de CTO fractionnel vous donne accès à des dirigeants technologiques expérimentés qui guident votre stratégie IT à temps partiel. Nous vous aidons à aligner votre technologie avec vos objectifs business, à prendre des décisions technologiques éclairées et à stimuler l'innovation." },
+    { title: "Services d'audit IT", description: "Nous examinons votre technologie pour assurer la sécurité et l'efficacité de votre entreprise. Notre audit IT vérifie vos systèmes pour détecter les faiblesses, s'assure que vous respectez les règles importantes et suggère des moyens d'améliorer votre infrastructure technologique.", subItems: ["Audit d'infrastructure", "Audit de sécurité", "Audit de conformité"] },
+    { title: "Conseil et services en transformation digitale", description: "Nous aidons votre entreprise à utiliser les nouvelles technologies pour mieux fonctionner. Nos consultants travaillent en étroite collaboration avec votre équipe pour identifier les opportunités, implémenter des solutions de pointe et favoriser une culture d'innovation. De la migration cloud à l'analyse de données, nous vous guidons à travers les complexités du changement numérique." },
+    { title: "Gestion d'infrastructure", description: "Découvrez la force transformatrice de nos services de gestion d'infrastructure sans faille. Si votre personnel IT ne gère plus les charges de travail croissantes, nous construisons et gérons une architecture de projet numérique, vous propulsant vers un succès sans précédent.", subItems: ["Services gérés d'infrastructure IT", "Services de gestion d'infrastructure cloud", "Support d'infrastructure IT", "Conseil en infrastructure IT"] },
+    { title: "Service de cloud computing", description: "Découvrez le potentiel inégalé des services de cloud computing. Transférez votre solution numérique dans le cloud et économisez avec nos services d'optimisation cloud. Débloquez l'agilité, la scalabilité et l'innovation comme jamais auparavant.", subItems: ["Services de migration de bases de données", "Services de migration cloud", "Services de migration Google Cloud", "Services de migration Azure", "Services de migration AWS", "Conseil cloud"] },
+    { title: "Services SRE", description: "Vous recherchez des professionnels pour aider votre entreprise à faire face à l'augmentation de la charge de travail en dimensionnant et en optimisant les flux de travail ? Associez-vous à nous dès aujourd'hui pour répondre aux incidents ou même assister avec la sauvegarde et la reprise après sinistre.", subItems: ["Surveillance IT", "Services de sauvegarde et reprise après sinistre"] },
+    { title: "Services Kubernetes", description: "Boostez vos applications avec nos services Kubernetes de pointe. Facilitez la personnalisation et l'automatisation avec des charges de travail conteneurisées et des services Kubernetes. Donnez à vos équipes de développement et d'exploitation les moyens de stimuler l'innovation." },
+    { title: "Blockchain DevOps", description: "Renforcez votre parcours blockchain avec nos services DevOps experts. Rationalisez le déploiement, accélérez les cycles de développement et révolutionnez la livraison de vos produits. Adoptez l'efficacité, la collaboration et l'agilité du marché." },
   ],
 
   features: [
     {
-      title: "Full Automation",
-      description: "Reduce manual intervention through automated deployments, testing, and infrastructure management.",
+      title: "Automatisation complète",
+      description: "Réduisez les interventions manuelles grâce aux déploiements, tests et gestion d'infrastructure automatisés.",
     },
     {
-      title: "Cloud-Native Architecture",
-      description: "Design highly available, fault-tolerant environments optimized for performance.",
+      title: "Architecture Cloud-Native",
+      description: "Des environnements hautement disponibles et tolérants aux pannes, optimisés pour la performance.",
     },
     {
-      title: "Advanced Observability",
-      description: "Proactive monitoring with metrics, logs, and intelligent alerts to prevent incidents.",
+      title: "Observabilité avancée",
+      description: "Surveillance proactive avec métriques, journaux et alertes intelligentes pour prévenir les incidents.",
     },
   ],
 
   benefits: [
-    "Up to 70% reduction in deployment time",
-    "Significant improvement in system reliability",
-    "Faster delivery of new features",
-    "Reduced IT operational costs",
-    "Scalable infrastructure ready for growth",
+    "Réduction jusqu'à 70% du temps de déploiement",
+    "Amélioration significative de la fiabilité système",
+    "Livraison plus rapide de nouvelles fonctionnalités",
+    "Réduction des coûts opérationnels IT",
+    "Infrastructure scalable prête pour la croissance",
   ],
 },
 
@@ -515,15 +529,15 @@ itStrategy: {
       testimonials: "Testimonials",
       faq: "FAQ",
       contact: "Contact",
-      audit: "Free Submission",
+      audit: "Free Consultation",
     },
     hero: {
       badge: "AI & Automation Agency",
       title: "Transform your business",
       titleHighlight: "with Evobit",
       subtitle: "We deliver expert solutions in cybersecurity, digital transformation and AI-powered automation to accelerate your digital transformation.",
-      cta: "Free submission",
-      ctaSecondary: "See Our Solutions",
+      cta: "Free Consultation",
+      ctaSecondary: "See Our Services",
       stats: {
         clients: "Happy clients",
         hours: "Hours saved",
@@ -577,6 +591,7 @@ itStrategy: {
       ],
       cta: "Discover all our solutions",
       moreDetails: "Learn More",
+      andMore: "more",
     },
     howItWorks: {
       title: "Transform your business with AI",
@@ -636,7 +651,7 @@ itStrategy: {
           icon: "Target",
         },
       ],
-      cta: "Get my free submission",
+      cta: "Get my free consultation",
     },
     whoWeServe: {
       title: "Who are our solutions for?",
@@ -671,6 +686,7 @@ itStrategy: {
     ourProjects: {
       title: "Our Projects",
       subtitle: "Discover some of our completed projects",
+      visitWebsite: "Visit website",
       projects: [
         {
           name: "Stockkeep",
@@ -743,10 +759,13 @@ itStrategy: {
     },
     faq: {
       title: "Frequently Asked Questions",
+      subtitle: "Everything you need to know to get started",
+      stillHaveQuestions: "Still have questions?",
+      contactUs: "Contact us",
       items: [
         {
           q: "How does a typical project work?",
-          a: "We start with a free submission of your needs, followed by a scoping document within 48h. Then we design and deploy your automations with ongoing support.",
+          a: "We start with a free consultation of your needs, followed by a scoping document within 48h. Then we design and deploy your automations with ongoing support.",
         },
         {
           q: "What tools do you use?",
@@ -762,7 +781,7 @@ itStrategy: {
         },
         {
           q: "What is the cost of automation?",
-          a: "Each project is unique. We offer a free submission to assess your needs and provide a custom quote.",
+          a: "Each project is unique. We offer a free consultation to assess your needs and provide a custom quote.",
         },
       ],
     },
@@ -800,6 +819,11 @@ itStrategy: {
       faq: "FAQ",
       contact: "Contact Us",
     },
+    notFound: {
+      title: "Page not found",
+      description: "Oops! The page you're looking for doesn't exist.",
+      backToHome: "Return to Home",
+    },
     serviceDetail: {
       backToHome: "Back to home",
       notFound: "Service not found",
@@ -812,7 +836,7 @@ itStrategy: {
       realResults: "Real results, measured",
       readyToGetStarted: "Ready to get started?",
       transformYourBusiness: "Let's discuss how our {service} expertise can transform your business.",
-      getAFreeSubmission: "Get a free submission",
+      getAFreeSubmission: "Get a free consultation",
       exploreOtherServices: "Explore our other services",
  
     },
@@ -912,15 +936,19 @@ itStrategy: {
           "End-to-end DevOps and cloud engineering services to automate deployments, improve reliability, and scale infrastructure efficiently.",
 
         longDescription:
-          "Modern organizations must deliver software faster while maintaining high reliability and security. Our DevOps & Cloud Engineering services help businesses automate workflows, modernize infrastructure, and improve collaboration between development and operations teams. We design scalable cloud platforms, implement robust CI/CD pipelines, and integrate observability and security into every stage to ensure fast, stable, and predictable deployments.",
+          "Looking to revolutionize your business with DevOps services? Do you want to automate workflows and increase the productivity of your IT department? Trust us to transform your operations, integrate cloud solutions, continuous integration and delivery (CI/CD), GitOps, containerization, DevSecOps, and a suite of other services.",
 
         subServices: [
-          { title: "CI/CD Implementation", description: "Automate build, test, and deployment pipelines for faster and safer releases." },
-          { title: "Cloud Architecture", description: "Design scalable and resilient infrastructure on AWS, Azure, and GCP." },
-          { title: "Infrastructure as Code", description: "Automate infrastructure provisioning using Terraform and modern IaC tools." },
-          { title: "Containerization & Kubernetes", description: "Deploy and manage containerized applications at scale." },
-          { title: "DevSecOps", description: "Integrate security into the DevOps lifecycle." },
-          { title: "Monitoring & Observability", description: "Implement logging, tracing, and monitoring solutions." },
+          { title: "DevOps Services", description: "Looking to revolutionize your business with DevOps services? Do you want to automate workflows and increase the productivity of your IT department? Trust us to transform your operations, integrate cloud solutions, continuous integration and delivery (CI/CD), GitOps, containerization, DevSecOps, and a suite of other services.", subItems: ["DevOps Consulting", "CI/CD Services", "Azure Cloud Engineering", "AWS DevOps Services"] },
+          { title: "Platform Engineering", description: "Your business needs a high-performing, secure, and scalable cloud platform. Revamp your technology architecture with our expert platform development services. Transition seamlessly from a rigid legacy core system to a flexible, modular ecosystem built on connected layers. Leverage the power of cloud, microservices, and internal and external APIs to accelerate your infrastructure." },
+          { title: "Fractional CTO", description: "Gain top-tier tech leadership without the full-time commitment. Our Fractional CTO service gives you access to experienced technology executives who guide your IT strategy part-time. We help align your tech with your business goals, make smart technology decisions, and drive innovation. Whether you're a growing startup or an established company, our Fractional CTOs bring the expertise you need to thrive in the digital age." },
+          { title: "IT Audit Services", description: "We examine your technology to keep your business safe and efficient. Our IT audit checks your systems for weaknesses, ensures you follow important rules, and suggests ways to improve your tech setup. We help protect your valuable data and strengthen your digital defenses.", subItems: ["Infrastructure Audit", "Security Audit", "Compliance Audit"] },
+          { title: "Digital Transformation Consulting & Services", description: "We help your business use new tech to work better. Our consultants work closely with your team to identify opportunities, implement cutting-edge solutions, and foster a culture of innovation. From cloud migration to data analytics, we'll help you navigate the complexities of digital change." },
+          { title: "Infrastructure Management", description: "Experience the transformative force of our unwavering infrastructure management services. If your IT staff doesn't handle growing workloads anymore, we construct and manage a digital project architecture, propelling you towards unparalleled success. Embrace optimal conditions, thrive amidst competition, and witness your ambitions become reality.", subItems: ["IT Infrastructure Managed Services", "Cloud Infrastructure Management Services", "IT Infrastructure Support", "IT Infrastructure Consulting"] },
+          { title: "Cloud Computing Service", description: "Experience the unrivaled potential of cloud computing services. Transfer your digital solution into the cloud and save money with our Cloud optimization services. Unlock agility, scalability, and innovation like never before.", subItems: ["Database Migration Services", "Cloud Migration Services", "Google Cloud Migration Services", "Azure Migration Services", "AWS Migration Services", "Cloud Consulting"] },
+          { title: "SRE Services", description: "Looking for professionals that will help your business cope with the increase in workload by scaling and optimizing workflows? Partner with us today and respond to incidents or even assist with Backup and Disaster Recovery by adding new resources and expertise.", subItems: ["IT Monitoring", "Backup and Disaster Recovery Services"] },
+          { title: "Kubernetes Services", description: "Supercharge your applications with our cutting-edge Kubernetes services. Facilitate customization and automation with containerized workloads and Kubernetes services. Empower your development and operations teams to drive innovation and unlock new possibilities." },
+          { title: "Blockchain DevOps", description: "Empower your blockchain journey with our expert DevOps services. Streamline deployment, accelerate development cycles, and revolutionize your product delivery. Embrace efficiency, collaboration, and market agility like never before." },
         ],
 
         features: [

@@ -30,9 +30,7 @@ export default function FAQSection() {
             {t.faq.title}
           </h2>
           <p className="text-base sm:text-lg text-brand-neutral-600 dark:text-brand-neutral-300 max-w-2xl mx-auto">
-            {language === "fr"
-              ? "Tout ce que vous devez savoir pour démarrer"
-              : "Everything you need to know to get started"}
+            {t.faq.subtitle}
           </p>
         </div>
 
@@ -119,16 +117,14 @@ export default function FAQSection() {
         {/* Bottom CTA */}
         <div className="text-center mt-12 scroll-animate">
           <p className="text-brand-neutral-500 dark:text-brand-neutral-400 mb-4">
-            {language === "fr"
-              ? "Vous avez d'autres questions ?"
-              : "Still have questions?"}
+            {t.faq.stillHaveQuestions}
           </p>
 
           <a
             href="#contact"
             className="inline-flex items-center gap-2 bg-brand-primary-600 hover:bg-brand-primary-700 text-white font-medium px-6 py-3 rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-brand-primary-500/25 group"
           >
-            {language === "fr" ? "Contactez-nous" : "Contact us"}
+            {t.faq.contactUs}
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </a>
         </div>

@@ -81,7 +81,7 @@ export default function ServiceSection() {
                     ))}
                     {service.subServices.length > 3 && (
                       <li className="text-sm text-brand-neutral-400 pl-3.5">
-                        +{service.subServices.length - 3} more
+                        +{service.subServices.length - 3} {t.services.andMore}
                       </li>
                     )}
                   </ul>
