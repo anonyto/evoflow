@@ -5,6 +5,7 @@ import { getServiceBySlug, getServices } from "../data/services";
 import { useTheme } from "../context/ThemeContext";
 import { useLanguage } from "../context/LanguageContext";
 import { translations } from "../i18n/translations";
+import HowItWorksSection from "../components/HowItWorksSection";
 
 const ServiceDetail = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -18,9 +19,7 @@ const ServiceDetail = () => {
     navigate("/");
     setTimeout(() => {
       const section = document.getElementById("contact");
-      if (section) {
-        section.scrollIntoView({ behavior: "smooth" });
-      }
+      if (section) section.scrollIntoView({ behavior: "smooth" });
     }, 100);
   };
 
@@ -28,29 +27,27 @@ const ServiceDetail = () => {
     window.scrollTo({ top: 0 });
   }, [slug]);
 
-   useEffect(() => {
-  const elements = document.querySelectorAll(
-    ".scroll-animate, .scroll-animate-left, .scroll-animate-right, .scroll-animate-scale, .scroll-animate-fade"
-  );
+  useEffect(() => {
+    const elements = document.querySelectorAll(
+      ".scroll-animate, .scroll-animate-left, .scroll-animate-right, .scroll-animate-scale, .scroll-animate-fade"
+    );
 
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("animate-in");
-        }
-      });
-    },
-    { threshold: 0.1 }
-  );
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) entry.target.classList.add("animate-in");
+        });
+      },
+      { threshold: 0.1 }
+    );
 
-  elements.forEach((el) => {
-    el.classList.remove("animate-in");
-    observer.observe(el);
-  });
+    elements.forEach((el) => {
+      el.classList.remove("animate-in");
+      observer.observe(el);
+    });
 
-  return () => observer.disconnect();
-}, [slug, theme, language]);
+    return () => observer.disconnect();
+  }, [slug, theme, language]);
 
   if (!service) {
     return (
@@ -59,18 +56,18 @@ const ServiceDetail = () => {
           <h1 className={`${theme === "dark" ? "text-white" : "text-gray-900"} text-2xl font-bold mb-4`}>
             {t.notFound}
           </h1>
-          <Link to="/" className="text-blue-600 hover:underline">
-            {t.notFoundDescription}
-          </Link>
+          <Link to="/" className="text-blue-600 hover:underline">{t.notFoundDescription}</Link>
         </div>
       </div>
     );
   }
 
   const Icon = service.icon;
-  
   const allServices = getServices(language as "en" | "fr");
   const otherServices = allServices.filter((s) => s.id !== service.id);
+
+  // 🔹 boolean for AI / Automation service
+  const isAIService = service.id === "ai" || service.slug === "ai-automation";
 
   return (
     <div className={`${theme === "dark" ? "bg-brand-neutral-900 text-white" : "bg-gray-50 text-gray-900"} min-h-screen overflow-x-hidden`}>
@@ -112,7 +109,7 @@ const ServiceDetail = () => {
       <section className="py-16 md:py-20">
         <div className="container max-w-6xl mx-auto px-4 sm:px-6">
           <div className="scroll-animate mb-12">
-              <span className={`${theme === "dark" ? "bg-brand-neutral-800 text-blue-400" : "bg-blue-50 text-blue-600"} inline-block px-4 py-1.5 rounded-full text-sm font-medium mb-4 border border-brand-primary-200 dark:border-brand-primary-800`}>
+            <span className={`${theme === "dark" ? "bg-brand-neutral-800 text-blue-400" : "bg-blue-50 text-blue-600"} inline-block px-4 py-1.5 rounded-full text-sm font-medium mb-4 border border-brand-primary-200 dark:border-brand-primary-800`}>
               {t.ourSolutions}
             </span>
             <h2 className={`${theme === "dark" ? "text-white" : "text-gray-900"} text-2xl md:text-3xl font-bold`}>{t.whatsIncluded}</h2>
@@ -152,7 +149,6 @@ const ServiceDetail = () => {
       <section className="py-16 md:py-20">
         <div className="container max-w-6xl mx-auto px-4 sm:px-6">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
-
             {/* Features */}
             <div className="scroll-animate-left">
               <span className={`${theme === "dark" ? "bg-brand-neutral-800 text-blue-400" : "bg-blue-50 text-blue-600"} inline-block px-4 py-1.5 rounded-full text-sm font-medium mb-4 border border-brand-primary-200 dark:border-brand-primary-800`}>
@@ -187,17 +183,17 @@ const ServiceDetail = () => {
                 ))}
               </div>
             </div>
-
           </div>
         </div>
       </section>
 
+      {/*How It Works Section for AI & Automation */}
+      {isAIService && <HowItWorksSection />}
+
       {/* CTA */}
       <section className="py-16 md:py-20">
         <div className="container max-w-6xl mx-auto px-4 sm:px-6">
-          <div
-            className={`scroll-animate ${theme === "dark" ? "bg-brand-neutral-800 text-white shadow-md" : "bg-white text-gray-900 shadow-md"} rounded-3xl p-8 md:p-12 text-center`}
-          >
+          <div className={`scroll-animate ${theme === "dark" ? "bg-brand-neutral-800 text-white shadow-md" : "bg-white text-gray-900 shadow-md"} rounded-3xl p-8 md:p-12 text-center`}>
             <h2 className="text-2xl md:text-3xl font-bold mb-4">{t.readyToGetStarted}</h2>
             <p className={`${theme === "dark" ? "text-gray-300" : "text-gray-700"} max-w-xl mx-auto mb-8`}>
               {t.transformYourBusiness.replace("{service}", service.title.toLowerCase())}

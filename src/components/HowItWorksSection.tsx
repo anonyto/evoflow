@@ -41,13 +41,6 @@ export default function HowItWorksSection() {
               </div>
             ))}
           </div>
-
-          <div className="text-center mt-12">
-            <a href="#contact" className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background bg-brand-primary-600 text-white hover:bg-brand-primary-700 h-11 px-8 group">
-              {t.howItWorks.cta}
-              <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </a>
-          </div>
         </div>
       </section>
     </>
