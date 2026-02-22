@@ -105,7 +105,6 @@ export const translations = {
       ]
     },
     howItWorks: {
-      title: "Transformer votre entreprise avec l'IA",
       subtitle: "Notre méthode éprouvée garantit un déploiement rapide et efficace",
       steps: [
         {
@@ -741,7 +740,6 @@ export const translations = {
       ]
     },
     howItWorks: {
-      title: "Transform your business with AI",
       subtitle: "Our proven method ensures fast and efficient deployment",
       steps: [
         {
