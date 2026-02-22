@@ -70,8 +70,8 @@ export default function Navbar() {
               <a href="#services" onClick={(e) => handleNavClick(e, "services")} className={`text-sm font-medium transition-colors ${theme === "dark" ? "text-brand-neutral-300 hover:text-brand-primary-400" : "text-brand-neutral-700 hover:text-brand-primary-600"}`}>
                 {t.nav.services}
               </a>
-              <a href="#how-it-works" onClick={(e) => handleNavClick(e, "how-it-works")} className={`text-sm font-medium transition-colors ${theme === "dark" ? "text-brand-neutral-300 hover:text-brand-primary-400" : "text-brand-neutral-700 hover:text-brand-primary-600"}`}>
-                {t.nav.howItWorks}
+              <a href="#about-us" onClick={(e) => handleNavClick(e, "about-us")} className={`text-sm font-medium transition-colors ${theme === "dark" ? "text-brand-neutral-300 hover:text-brand-primary-400" : "text-brand-neutral-700 hover:text-brand-primary-600"}`}>
+                {t.nav.aboutUs}
               </a>
               <a href="#why-automate" onClick={(e) => handleNavClick(e, "why-automate")} className={`text-sm font-medium transition-colors ${theme === "dark" ? "text-brand-neutral-300 hover:text-brand-primary-400" : "text-brand-neutral-700 hover:text-brand-primary-600"}`}>
                 {t.nav.advantages}
@@ -197,8 +197,8 @@ export default function Navbar() {
               <a href="#services" onClick={(e) => handleNavClick(e, "services")} className={`block text-sm font-medium transition-colors ${theme === "dark" ? "text-brand-neutral-300 hover:text-brand-primary-400" : "text-brand-neutral-700 hover:text-brand-primary-600"}`}>
                 {t.nav.services}
               </a>
-              <a href="#how-it-works" onClick={(e) => handleNavClick(e, "how-it-works")} className={`block text-sm font-medium transition-colors ${theme === "dark" ? "text-brand-neutral-300 hover:text-brand-primary-400" : "text-brand-neutral-700 hover:text-brand-primary-600"}`}>
-                {t.nav.howItWorks}
+              <a href="#about-us" onClick={(e) => handleNavClick(e, "about-us")} className={`block text-sm font-medium transition-colors ${theme === "dark" ? "text-brand-neutral-300 hover:text-brand-primary-400" : "text-brand-neutral-700 hover:text-brand-primary-600"}`}>
+                {t.nav.aboutUs}
               </a>
               <a href="#why-automate" onClick={(e) => handleNavClick(e, "why-automate")} className={`block text-sm font-medium transition-colors ${theme === "dark" ? "text-brand-neutral-300 hover:text-brand-primary-400" : "text-brand-neutral-700 hover:text-brand-primary-600"}`}>
                 {t.nav.advantages}

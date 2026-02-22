@@ -1,8 +1,10 @@
+import { services } from "../data/services";
+
 export const translations = {
   fr: {
     nav: {
       services: "Services",
-      howItWorks: "Comment ça marche",
+      aboutUs:"À propos de nous",
       projects: "Projets",
       advantages: "Avantages",
       testimonials: "Témoignages",
@@ -71,6 +73,36 @@ export const translations = {
       cta: "Découvrir toutes nos solutions",
       moreDetails: "Plus de détails",
       andMore: "de plus",
+    },
+    about: {
+      title: "What we stand for",
+      description: "Nous nous engageons à fournir des solutions innovantes qui permettent aux entreprises et aux communautés de prospérer. Notre mission est de combiner créativité, technologie et engagement pour obtenir un impact réel.",
+      coreValues: [
+        {
+          title: "Innovation",
+          description: "Nous recherchons constamment de nouvelles idées et technologies pour améliorer notre travail et servir nos clients."
+        },
+        {
+          title: "Intégrité",
+          description: "Nous agissons avec honnêteté, transparence et pratiques éthiques dans tout ce que nous faisons."
+        },
+        {
+          title: "Collaboration",
+          description: "Nous croyons au travail d'équipe et au renforcement des relations pour atteindre les meilleurs résultats."
+        },
+        {
+          title: "Excellence",
+          description: "Nous visons la plus haute qualité dans notre travail, dépassant les attentes et offrant de la valeur."
+        },
+        {
+          title: "Durabilité",
+          description: "Nous visons à créer des solutions responsables sur le plan environnemental et social."
+        },
+        {
+          title: "Orientation Client",
+          description: "Nos clients sont au cœur de tout ce que nous faisons, et nous priorisons leurs besoins et leur succès."
+        }
+      ]
     },
     howItWorks: {
       title: "Transformer votre entreprise avec l'IA",
@@ -243,25 +275,37 @@ export const translations = {
       contactUs: "Contactez-nous",
       items: [
         {
-          q: "Comment se déroule une mission type ?",
-          a: "Nous commençons par un audit gratuit de vos besoins, suivi d'une note de cadrage sous 48h. Ensuite, nous concevons et déployons vos automatisations avec un suivi continu.",
+          q: "Quels types de projets de développement prenez-vous en charge ?",
+          a: "Nous réalisons des sites web modernes, des applications web performantes, des e-commerces sur-mesure ainsi que des applications mobiles iOS et Android, natives ou cross-platform."
         },
         {
-          q: "Quels outils utilisez-vous ?",
-          a: "Nous travaillons avec Make, Zapier, n8n, et développons des solutions sur-mesure avec les APIs de vos outils existants.",
+          q: "Comment votre automatisation de contenu SEO fonctionne-t-elle ?",
+          a: "Nous générons des articles 100% personnalisés et optimisés pour le référencement. Vous pouvez automatiser la publication et la stratégie de contenu avec l'aide de l'intelligence artificielle."
         },
         {
-          q: "Combien de temps pour voir des résultats ?",
-          a: "Les premières automatisations sont généralement opérationnelles sous 2 semaines. Le ROI est visible dès le premier mois.",
+          q: "Pouvez-vous automatiser mes réseaux sociaux ?",
+          a: "Oui, nous créons des systèmes qui génèrent des posts pour tous vos réseaux en un clic, en adaptant le contenu à chaque plateforme pour maximiser l'engagement."
         },
         {
-          q: "Proposez-vous de la formation ?",
-          a: "Oui, nous formons vos équipes à l'utilisation et la maintenance des automatisations mises en place.",
+          q: "Comment vos agents IA et chatbots peuvent aider mon entreprise ?",
+          a: "Nos agents IA multitâches peuvent se connecter à vos outils pour offrir un service client 24/7, répondre aux questions fréquentes, et automatiser des tâches répétitives."
         },
         {
-          q: "Quel est le coût d'une automatisation ?",
-          a: "Chaque projet est unique. Nous proposons une soumission gratuite pour évaluer vos besoins et vous fournir un devis personnalisé.",
+          q: "Que pouvez-vous faire avec le scraping et la veille web ?",
+          a: "Nous automatisons la collecte et le traitement de données pour votre veille concurrentielle, afin que vous restiez informé de votre marché en temps réel."
         },
+        {
+          q: "Comment l'automatisation de mes processus métier fonctionne-t-elle ?",
+          a: "Nous pouvons automatiser vos processus internes comme la comptabilité, la gestion RH, le suivi de projets et la facturation, vous permettant de gagner du temps et réduire les erreurs."
+        },
+        {
+          q: "Proposez-vous de la formation pour vos solutions automatisées ?",
+          a: "Oui, nous formons vos équipes pour qu'elles puissent utiliser, superviser et maintenir facilement toutes les automatisations mises en place."
+        },
+        {
+          q: "Comment puis-je obtenir un devis pour un projet ?",
+          a: "Chaque projet est unique. Nous proposons une soumission gratuite après analyse de vos besoins pour vous fournir un devis précis et adapté."
+        }
       ],
     },
     contact: {
@@ -283,6 +327,20 @@ export const translations = {
       descriptionPlaceholder: "Décrivez votre projet ou vos besoins en automatisation...",
       submit: "Envoyer",
       sending: "Envoi en cours...",
+      toaster: {
+        successTitle: "Message envoyé avec succès",
+        successDescription: "Notre équipe vous contactera dans les plus brefs délais.",
+        errorTitle: "Une erreur est survenue",
+        errorDescription: "Veuillez réessayer ou nous contacter ultérieurement.",
+        validationTitle: "Champs obligatoires manquants",
+        validationDescription: "Veuillez remplir tous les champs requis avant l’envoi."
+      },
+      errors: {
+        nameRequired: "Veuillez saisir votre nom.",
+        emailRequired: "Veuillez saisir une adresse email valide.",
+        messageRequired: "Veuillez écrire votre message.",
+        companyRequired: "Veuillez saisir le nom de votre entreprise.",
+      },
     },
     cta: {
       title: "Prêt à transformer votre entreprise ?",
@@ -291,6 +349,7 @@ export const translations = {
     },
     sectionTags: {
       services: "Nos Services",
+      aboutUs:"À propos de nous",
       howItWorks: "Comment ça marche",
       benefits: "Avantages",
       whoWeServe: "Qui nous servons",
@@ -548,35 +607,40 @@ export const translations = {
       },
     },
     footer: {
-      tagline: "Transformez votre entreprise avec l'IA et l'automatisation",
+      tagline: "Transformez votre entreprise avec l'IA et l'automatisation.",
       services: {
         title: "Services",
+        cybersec: "Cybersécurité",
+        digitalTrans: "Transformation Digitale",
         automation: "Automatisation IA",
-        chatbots: "Agents & Chatbots",
+        cloud: "DevOps & Cloud",
+        it: "Stratégie & Infrastructure",
         scraping: "Web Scraping",
-        content: "Génération de contenu",
       },
       company: {
         title: "Entreprise",
+        services: "Services",
         about: "À propos",
+        advantages: "Avantages",
+        faq: "FAQ",
         contact: "Contact",
-        blog: "Blog",
       },
       legal: {
-        title: "Légal",
-        privacy: "Confidentialité",
-        terms: "Conditions",
+        title: "Mentions légales",
+        privacy: "Politique de confidentialité",
+        terms: "Conditions d'utilisation",
       },
-      copyright: "2026 Evobit. Tous droits réservés.",
+      copyright: "© 2026 Evobit. Tous droits réservés.",
       newsletter: "Restez informé",
-      newsletterDesc: "Conseils et actualités sur l'automatisation IA.",
+      newsletterDesc: "Conseils et actualités sur l'automatisation IA, directement dans votre boîte mail.",
       subscribe: "S'abonner",
     },
+   
   },
   en: {
     nav: {
       services: "Services",
-      howItWorks: "How It Works",
+      aboutUs:"About us",
       projects: "Projects",
       advantages: "Advantages",
       testimonials: "Testimonials",
@@ -645,6 +709,36 @@ export const translations = {
       cta: "Discover all our solutions",
       moreDetails: "Learn More",
       andMore: "more",
+    },
+    about: {
+      title: "What we stand for",
+      description: "We are committed to delivering innovative solutions that empower businesses and communities to thrive. Our mission is to combine creativity, technology, and dedication to achieve real impact.",
+      coreValues: [
+        {
+          title: "Innovation",
+          description: "We constantly seek new ideas and technologies to improve the way we work and serve our clients."
+        },
+        {
+          title: "Integrity",
+          description: "We operate with honesty, transparency, and ethical practices in everything we do."
+        },
+        {
+          title: "Collaboration",
+          description: "We believe in teamwork and fostering strong relationships to achieve the best outcomes."
+        },
+        {
+          title: "Excellence",
+          description: "We strive for the highest quality in our work, exceeding expectations and delivering value."
+        },
+        {
+          title: "Sustainability",
+          description: "We aim to create solutions that are environmentally and socially responsible."
+        },
+        {
+          title: "Customer Focus",
+          description: "Our clients are at the heart of everything we do, and we prioritize their needs and success."
+        }
+      ]
     },
     howItWorks: {
       title: "Transform your business with AI",
@@ -814,28 +908,40 @@ export const translations = {
       title: "Frequently Asked Questions",
       subtitle: "Everything you need to know to get started",
       stillHaveQuestions: "Still have questions?",
-      contactUs: "Contact us",
+      contactUs: "Contact Us",
       items: [
         {
-          q: "How does a typical project work?",
-          a: "We start with a free submission of your needs, followed by a scoping document within 48h. Then we design and deploy your automations with ongoing support.",
+          q: "What types of development projects do you handle?",
+          a: "We build modern websites, high-performance web applications, custom e-commerce platforms, and mobile apps for iOS and Android, either native or cross-platform."
         },
         {
-          q: "What tools do you use?",
-          a: "We work with Make, Zapier, n8n, and develop custom solutions with APIs from your existing tools.",
+          q: "How does your SEO content automation work?",
+          a: "We create 100% personalized, SEO-optimized articles. You can automate content creation and publishing strategies using artificial intelligence."
         },
         {
-          q: "How long before seeing results?",
-          a: "First automations are usually operational within 2 weeks. ROI is visible from the first month.",
+          q: "Can you automate my social media posting?",
+          a: "Yes, we develop systems that generate posts for all your networks in a single click, with content adapted to each platform to maximize engagement."
         },
         {
-          q: "Do you offer training?",
-          a: "Yes, we train your teams on using and maintaining the automations we implement.",
+          q: "How can your AI agents and chatbots help my business?",
+          a: "Our multi-tasking AI agents can connect to your tools to provide 24/7 customer support, answer frequent questions, and automate repetitive tasks."
         },
         {
-          q: "What is the cost of automation?",
-          a: "Each project is unique. We offer a free submission to assess your needs and provide a custom quote.",
+          q: "What can you do with web scraping and market monitoring?",
+          a: "We automate data collection and processing for competitive intelligence so you stay informed about your market in real time."
         },
+        {
+          q: "How does business process automation work?",
+          a: "We can automate your internal workflows, such as accounting, HR, project tracking, and invoicing, helping you save time and reduce errors."
+        },
+        {
+          q: "Do you offer training for your automation solutions?",
+          a: "Yes, we train your teams to easily use, monitor, and maintain all implemented automations."
+        },
+        {
+          q: "How can I get a quote for a project?",
+          a: "Every project is unique. We offer a free evaluation of your needs and provide a customized, precise quote."
+        }
       ],
     },
     contact: {
@@ -857,6 +963,20 @@ export const translations = {
       descriptionPlaceholder: "Describe your project or automation needs...",
       submit: "Send",
       sending: "Sending...",
+       toaster: {
+        successTitle: "Message sent successfully",
+        successDescription: "Our team will get back to you as soon as possible.",
+        errorTitle: "Something went wrong",
+        errorDescription: "Please try again or contact us later.",
+        validationTitle: "Missing required fields",
+        validationDescription: "Please fill in all required fields before sending."
+      },
+      errors: {
+        nameRequired: "Please enter your name.",
+        emailRequired: "Please enter a valid email address.",
+        messageRequired: "Please write your message.",
+        companyRequired: "Please enter your company name.",
+      },
     },
     cta: {
       title: "Ready to transform your business?",
@@ -865,6 +985,7 @@ export const translations = {
     },
     sectionTags: {
       services: "Our Services",
+      aboutUs:"About Us",
       howItWorks: "How It Works",
       benefits: "Benefits",
       whoWeServe: "Who We Serve",
@@ -1125,30 +1246,34 @@ export const translations = {
           "Improve data-driven decision making",
         ],
       },
-},
+    },
     footer: {
-      tagline: "Transform your business with AI and automation",
+      tagline: "Transform your business with AI and automation.",
       services: {
         title: "Services",
+        cybersec: "Cyber Security",
+        digitalTrans: "Digital Transformation",
         automation: "AI Automation",
-        chatbots: "Agents & Chatbots",
+        cloud: "DevOps & Cloud",
+        it: "Strategy & Infrastructure",
         scraping: "Web Scraping",
-        content: "Content Generation",
       },
       company: {
         title: "Company",
-        about: "About",
+        services: "Services",
+        about: "About Us",
+        advantages: "Advantages",
+        faq: "FAQ",
         contact: "Contact",
-        blog: "Blog",
       },
       legal: {
         title: "Legal",
-        privacy: "Privacy",
-        terms: "Terms",
+        privacy: "Privacy Policy",
+        terms: "Terms of Use",
       },
-      copyright: "2026 Evobit. All rights reserved.",
-      newsletter: "Stay informed",
-      newsletterDesc: "Tips and news about AI automation.",
+      copyright: "© 2026 Evobit. All rights reserved.",
+      newsletter: "Stay in the loop",
+      newsletterDesc: "Tips and news on AI automation, delivered to your inbox.",
       subscribe: "Subscribe",
     },
   },

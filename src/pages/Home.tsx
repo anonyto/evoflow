@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import { useTheme } from "../context/ThemeContext";
 import HeroSection from "../components/HeroSection";
 import ServiceSection from "../components/ServiceSection";
-import HowItWorksSection from "../components/HowItWorksSection";
 import WhyAutomateSection from "../components/WhyAutomateSection";
 import WhoWeServeSection from "../components/WhoWeServeSection";
 //import TestimonialsSection from "../components/TestimonialsSection";
@@ -10,6 +9,7 @@ import WhoWeServeSection from "../components/WhoWeServeSection";
 import IntegrationsSection from "../components/IntegrationsSection";
 import FAQSection from "../components/FAQSection";
 import ContactSection from "../components/ContactSection";
+import AboutUs from "../components/AboutUs";
 
 export default function Home() {
   const { theme } = useTheme();
@@ -51,7 +51,7 @@ export default function Home() {
     >
       <HeroSection />
       <ServiceSection />
-      <HowItWorksSection />
+      <AboutUs/>
       <WhyAutomateSection />
       <WhoWeServeSection />
       {/*<TestimonialsSection />

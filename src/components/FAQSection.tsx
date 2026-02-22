@@ -9,6 +9,9 @@ export default function FAQSection() {
   const st = t.sectionTags;
 
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
+  const [showAll, setShowAll] = useState(false); // <-- New state to toggle more questions
+
+  const displayedItems = showAll ? t.faq.items : t.faq.items.slice(0, 5);
 
   return (
     <section
@@ -35,9 +38,8 @@ export default function FAQSection() {
         </div>
 
         <div className="max-w-3xl mx-auto space-y-4 scroll-animate">
-          {t.faq.items.map((item, index) => {
+          {displayedItems.map((item, index) => {
             const isOpen = openFaqIndex === index;
-
             return (
               <div
                 key={index}
@@ -49,12 +51,9 @@ export default function FAQSection() {
               >
                 <button
                   type="button"
-                  onClick={() =>
-                    setOpenFaqIndex(isOpen ? null : index)
-                  }
+                  onClick={() => setOpenFaqIndex(isOpen ? null : index)}
                   className="w-full px-6 py-5 flex items-center gap-4 text-left transition-colors duration-200"
                 >
-                  {/* Number badge */}
                   <span
                     className={`flex-shrink-0 w-8 h-8 rounded-lg flex items-center justify-center text-xs font-bold transition-all duration-300 ${
                       isOpen
@@ -65,7 +64,6 @@ export default function FAQSection() {
                     {String(index + 1).padStart(2, "0")}
                   </span>
 
-                  {/* Question */}
                   <span
                     className={`flex-1 font-semibold transition-colors duration-200 ${
                       isOpen
@@ -76,7 +74,6 @@ export default function FAQSection() {
                     {item.q}
                   </span>
 
-                  {/* Toggle icon */}
                   <div
                     className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 ${
                       isOpen
@@ -84,20 +81,13 @@ export default function FAQSection() {
                         : "bg-brand-neutral-100 dark:bg-brand-neutral-800 text-brand-neutral-500 group-hover:bg-brand-primary-100 dark:group-hover:bg-brand-primary-900/30 group-hover:text-brand-primary-600 dark:group-hover:text-brand-primary-400"
                     }`}
                   >
-                    {isOpen ? (
-                      <Minus className="w-4 h-4" />
-                    ) : (
-                      <Plus className="w-4 h-4" />
-                    )}
+                    {isOpen ? <Minus className="w-4 h-4" /> : <Plus className="w-4 h-4" />}
                   </div>
                 </button>
 
-                {/* Answer */}
                 <div
                   className={`grid transition-all duration-300 ease-in-out ${
-                    isOpen
-                      ? "grid-rows-[1fr] opacity-100"
-                      : "grid-rows-[0fr] opacity-0"
+                    isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
                   }`}
                 >
                   <div className="overflow-hidden">
@@ -113,6 +103,18 @@ export default function FAQSection() {
             );
           })}
         </div>
+
+        {/* Show More / Show Less button */}
+        {t.faq.items.length > 5 && (
+          <div className="text-center mt-6 scroll-animate">
+            <button
+              onClick={() => setShowAll(!showAll)}
+              className="text-brand-primary-600 dark:text-brand-primary-400 font-semibold hover:underline transition-colors"
+            >
+              {showAll ? "Show less" : "Show more questions"}
+            </button>
+          </div>
+        )}
 
         {/* Bottom CTA */}
         <div className="text-center mt-12 scroll-animate">
