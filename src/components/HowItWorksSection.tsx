@@ -1,4 +1,3 @@
-import { ArrowRight } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext"; 
 import { translations } from "../i18n/translations";
 

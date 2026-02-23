@@ -1,4 +1,3 @@
-import { services } from "../data/services";
 
 export const translations = {
   fr: {
@@ -16,7 +15,7 @@ export const translations = {
       badge: "Agence IA & Automatisation",
       title: "Transformez votre entreprise",
       titleHighlight: "avec Evobit",
-      subtitle: "Nous fournissons des solutions expertes en cybersécurité, transformation digitale et automatisation IA pour accélérer votre transformation digitale.",
+      subtitle: "Des solutions expertes en cybersécurité, digital, IA, cloud, DevOps et data pour transformer, moderniser et automatiser vos opérations.",
       cta: "Soumission Gratuite",
       ctaSecondary: "Voir nos services",
       stats: {
@@ -75,7 +74,7 @@ export const translations = {
       andMore: "de plus",
     },
     about: {
-      title: "What we stand for",
+      title: "Ce que nous représentons",
       description: "Nous nous engageons à fournir des solutions innovantes qui permettent aux entreprises et aux communautés de prospérer. Notre mission est de combiner créativité, technologie et engagement pour obtenir un impact réel.",
       coreValues: [
         {
@@ -168,10 +167,6 @@ export const translations = {
       subtitle: "Nous accompagnons les entreprises ambitieuses",
       audiences: [
         {
-          title: "Agences Web & Digitales",
-          description: "Automatisez vos processus de production et gagnez en efficacité.",
-        },
-        {
           title: "Start-ups & Scale-ups",
           description: "Accélérez votre croissance sans augmenter vos coûts opérationnels.",
         },
@@ -186,6 +181,10 @@ export const translations = {
         {
           title: "Cabinets & Consultants",
           description: "Libérez du temps pour vos clients à haute valeur ajoutée.",
+        },
+        {
+          title: "Agences Web & Digitales",
+          description: "Automatisez vos processus de production et gagnez en efficacité.",
         },
         {
           title: "Éditeurs SAAS",
@@ -263,8 +262,7 @@ export const translations = {
       ],
     },
     integrations: {
-      title: "Intégrations natives",
-      subtitle: "Connectez tous vos outils préférés",
+      subtitle: "Nous faisons le lien entre tous vos outils pour une automatisation fluide et puissante",
       tools: ["Notion", "Airtable", "HubSpot", "Salesforce", "Make", "Zapier", "n8n", "Slack", "Gmail", "Google Sheets"],
     },
     faq: {
@@ -651,7 +649,7 @@ export const translations = {
       badge: "AI & Automation Agency",
       title: "Transform your business",
       titleHighlight: "with Evobit",
-      subtitle: "We deliver expert solutions in cybersecurity, digital transformation and AI-powered automation to accelerate your digital transformation.",
+      subtitle: "Expert solutions in cybersecurity, digital transformation, AI, cloud, DevOps, and data to transform, modernize, and automate your operations.",
       cta: "Free submission",
       ctaSecondary: "See Our Services",
       stats: {
@@ -803,10 +801,6 @@ export const translations = {
       subtitle: "We support ambitious companies",
       audiences: [
         {
-          title: "Web & Digital Agencies",
-          description: "Automate your production processes and gain efficiency.",
-        },
-        {
           title: "Start-ups & Scale-ups",
           description: "Accelerate your growth without increasing operational costs.",
         },
@@ -821,6 +815,10 @@ export const translations = {
         {
           title: "Consultants & Firms",
           description: "Free up time for high-value client work.",
+        },
+        {
+          title: "Web & Digital Agencies",
+          description: "Automate your production processes and gain efficiency.",
         },
         {
           title: "SAAS Editors",
@@ -898,8 +896,7 @@ export const translations = {
       ],
     },
     integrations: {
-      title: "Native integrations",
-      subtitle: "Connect all your favorite tools",
+      subtitle: "Natively connect your tools and automate your workflows",
       tools: ["Notion", "Airtable", "HubSpot", "Salesforce", "Make", "Zapier", "n8n", "Slack", "Gmail", "Google Sheets"],
     },
     faq: {
