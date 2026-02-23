@@ -6,7 +6,7 @@ import WhyAutomateSection from "../components/WhyAutomateSection";
 import WhoWeServeSection from "../components/WhoWeServeSection";
 //import TestimonialsSection from "../components/TestimonialsSection";
 //import ProjectsSection from "../components/ProjectsSection";
-import IntegrationsSection from "../components/IntegrationsSection";
+//import IntegrationsSection from "../components/IntegrationsSection";
 import FAQSection from "../components/FAQSection";
 import ContactSection from "../components/ContactSection";
 import AboutUs from "../components/AboutUs";
@@ -55,8 +55,8 @@ export default function Home() {
       <WhyAutomateSection />
       <WhoWeServeSection />
       {/*<TestimonialsSection />
-      <ProjectsSection />*/}
-      <IntegrationsSection />
+      <ProjectsSection />
+      <IntegrationsSection />*/}
       <FAQSection />
       <ContactSection />
     </div>

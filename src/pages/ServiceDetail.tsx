@@ -6,6 +6,7 @@ import { useTheme } from "../context/ThemeContext";
 import { useLanguage } from "../context/LanguageContext";
 import { translations } from "../i18n/translations";
 import HowItWorksSection from "../components/HowItWorksSection";
+import IntegrationsSection from "../components/IntegrationsSection";
 
 const ServiceDetail = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -187,8 +188,9 @@ const ServiceDetail = () => {
         </div>
       </section>
 
-      {/*How It Works Section for AI & Automation */}
+      {/*Sections for AI & Automation */}
       {isAIService && <HowItWorksSection />}
+      {isAIService && <IntegrationsSection/>}
 
       {/* CTA */}
       <section className="py-16 md:py-20">
