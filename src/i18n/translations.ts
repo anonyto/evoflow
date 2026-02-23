@@ -604,7 +604,7 @@ export const translations = {
       },
     },
     footer: {
-      tagline: "Transformez votre entreprise avec l'IA et l'automatisation.",
+      tagline: "Transformez votre entreprise avec nous.",
       services: {
         title: "Services",
         cybersec: "Cybersécurité",
@@ -1243,7 +1243,7 @@ export const translations = {
       },
     },
     footer: {
-      tagline: "Transform your business with AI and automation.",
+      tagline: "Transform your business with us.",
       services: {
         title: "Services",
         cybersec: "Cyber Security",
