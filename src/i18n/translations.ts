@@ -125,29 +125,29 @@ export const translations = {
       cta: "Commencer maintenant",
     },
     whyAutomate: {
-      title: "Pourquoi automatiser avec l'IA ?",
-      subtitle: "L'automatisation intelligente au service de votre croissance",
-      description: "Automatiser avec l'intelligence artificielle, c'est arrêter de perdre du temps sur des tâches répétitives.",
+      title: "Pourquoi choisir Evobit ?",
+      subtitle: "L'expertise technologique au service de votre croissance",
+      description: "De la cybersécurité au cloud, de l'IA à la transformation digitale, nous vous accompagnons sur tous les fronts.",
       benefits: [
         {
-          title: "Gain de temps massif",
-          description: "Automatisez les actions chronophages. Nos clients gagnent 15-20h par semaine.",
-          icon: "Clock",
-        },
-        {
-          title: "Écosystème interconnecté",
-          description: "Connectez tous vos outils : Notion, Airtable, CRM, outils marketing...",
-          icon: "Link",
-        },
-        {
-          title: "Zéro erreur humaine",
-          description: "Moins de saisie manuelle = moins d'erreurs. L'automatisation garantit la fiabilité.",
+          title: "Sécurité renforcée",
+          description: "Protégez vos actifs numériques avec nos solutions de cybersécurité avancées et conformes.",
           icon: "CheckCircle",
         },
         {
-          title: "Scalabilité sans limites",
-          description: "Vos processus fonctionnent en continu, même la nuit. Multipliez votre capacité.",
+          title: "Infrastructure scalable",
+          description: "DevOps, Cloud & Kubernetes pour une infrastructure fiable, rapide et évolutive.",
           icon: "TrendingUp",
+        },
+        {
+          title: "Automatisation intelligente",
+          description: "IA et automatisation pour éliminer les tâches répétitives et gagner 15-20h par semaine.",
+          icon: "Clock",
+        },
+        {
+          title: "Écosystème connecté",
+          description: "Intégrez tous vos outils : CRM, ERP, marketing, facturation, communication.",
+          icon: "Link",
         },
         {
           title: "Pilotage data-driven",
@@ -156,23 +156,19 @@ export const translations = {
         },
         {
           title: "ROI mesurable",
-          description: "Temps économisé, coûts réduits, amortissement rapide.",
+          description: "Temps économisé, risques réduits, coûts optimisés, amortissement rapide.",
           icon: "Target",
         },
       ],
-      cta: "Obtenir mon audit gratuit",
+      cta: "Obtenir ma soumission gratuite",
     },
     whoWeServe: {
       title: "Pour qui sont nos solutions ?",
       subtitle: "Nous accompagnons les entreprises ambitieuses",
       audiences: [
         {
-          title: "Start-ups & Scale-ups",
+          title: "Start-ups",
           description: "Accélérez votre croissance sans augmenter vos coûts opérationnels.",
-        },
-        {
-          title: "TPE-PME",
-          description: "Optimisez vos ressources et rivalisez avec les grandes entreprises.",
         },
         {
           title: "E-commerce & Retail",
@@ -189,6 +185,10 @@ export const translations = {
         {
           title: "Éditeurs SAAS",
           description: "Intégrez des fonctionnalités IA dans vos produits.",
+        },
+        {
+          title: "Professionnels",
+          description: "Optimisez votre activité et concentrez-vous sur votre expertise.",
         },
       ],
     },
@@ -272,12 +272,8 @@ export const translations = {
       contactUs: "Contactez-nous",
       items: [
         {
-          q: "Quels types de projets de développement prenez-vous en charge ?",
-          a: "Nous réalisons des sites web modernes, des applications web performantes, des e-commerces sur-mesure ainsi que des applications mobiles iOS et Android, natives ou cross-platform."
-        },
-        {
-          q: "Comment votre automatisation de contenu SEO fonctionne-t-elle ?",
-          a: "Nous générons des articles 100% personnalisés et optimisés pour le référencement. Vous pouvez automatiser la publication et la stratégie de contenu avec l'aide de l'intelligence artificielle."
+          q: "Quels types de services proposez-vous ?",
+          a: "Nous offrons des services en cybersécurité (tests de pénétration, surveillance SOC 24/7, conformité), en DevOps & Cloud (CI/CD, migration cloud, Kubernetes, infrastructure as code), ainsi qu'en IA, automatisation et transformation digitale."
         },
         {
           q: "Pouvez-vous automatiser mes réseaux sociaux ?",
@@ -306,8 +302,8 @@ export const translations = {
       ],
     },
     contact: {
-      title: "Prêt à commencer votre business ?",
-      subtitle: "Réservez directement un créneau avec notre équipe",
+      title: "Prêt à transformer votre business ?",
+      subtitle: "Réservez directement un créneau avec nos expert(e)s",
       generalTab: "Contact général",
       generalTabShort: "Contact",
       enterpriseTab: "Projet entreprise",
@@ -759,29 +755,29 @@ export const translations = {
       cta: "Get Started",
     },
     whyAutomate: {
-      title: "Why automate with AI?",
-      subtitle: "Intelligent automation at the service of your growth",
-      description: "Automating with artificial intelligence means stopping wasting time on repetitive tasks.",
+      title: "Why choose Evobit?",
+      subtitle: "Technology expertise at the service of your growth",
+      description: "From cybersecurity to cloud, from AI to digital transformation, we support you on all fronts.",
       benefits: [
         {
-          title: "Massive time savings",
-          description: "Automate time-consuming tasks. Our clients save 15-20 hours per week.",
+          title: "Enhanced security",
+          description: "Protect your digital assets with our advanced and compliant cybersecurity solutions.",
+          icon: "CheckCircle",
+        },
+        {
+          title: "Scalable infrastructure",
+          description: "DevOps, Cloud & Kubernetes for a reliable, fast, and scalable infrastructure.",
+          icon: "TrendingUp",
+        },
+        {
+          title: "Intelligent automation",
+          description: "AI and automation to eliminate repetitive tasks and save 15-20 hours per week.",
           icon: "Clock",
         },
         {
           title: "Connected ecosystem",
-          description: "Connect all your tools: Notion, Airtable, CRM, marketing tools...",
+          description: "Integrate all your tools: CRM, ERP, marketing, invoicing, communication.",
           icon: "Link",
-        },
-        {
-          title: "Zero human error",
-          description: "Less manual input = fewer errors. Automation guarantees reliability.",
-          icon: "CheckCircle",
-        },
-        {
-          title: "Unlimited scalability",
-          description: "Your processes run continuously, even at night. Multiply your capacity.",
-          icon: "TrendingUp",
         },
         {
           title: "Data-driven management",
@@ -790,7 +786,7 @@ export const translations = {
         },
         {
           title: "Measurable ROI",
-          description: "Time saved, reduced costs, quick payback.",
+          description: "Time saved, reduced risks, optimized costs, quick payback.",
           icon: "Target",
         },
       ],
@@ -801,12 +797,8 @@ export const translations = {
       subtitle: "We support ambitious companies",
       audiences: [
         {
-          title: "Start-ups & Scale-ups",
+          title: "Start-ups",
           description: "Accelerate your growth without increasing operational costs.",
-        },
-        {
-          title: "SMBs",
-          description: "Optimize your resources and compete with large companies.",
         },
         {
           title: "E-commerce & Retail",
@@ -823,6 +815,10 @@ export const translations = {
         {
           title: "SAAS Editors",
           description: "Integrate AI features into your products.",
+        },
+        {
+          title: "Professionals",
+          description: "Optimize your business and focus on your expertise.",
         },
       ],
     },
@@ -906,12 +902,8 @@ export const translations = {
       contactUs: "Contact Us",
       items: [
         {
-          q: "What types of development projects do you handle?",
-          a: "We build modern websites, high-performance web applications, custom e-commerce platforms, and mobile apps for iOS and Android, either native or cross-platform."
-        },
-        {
-          q: "How does your SEO content automation work?",
-          a: "We create 100% personalized, SEO-optimized articles. You can automate content creation and publishing strategies using artificial intelligence."
+          q: "What types of services do you offer?",
+          a: "We provide cybersecurity services (penetration testing, 24/7 SOC monitoring, compliance), DevOps & Cloud engineering (CI/CD, cloud migration, Kubernetes, infrastructure as code), as well as AI, automation, and digital transformation solutions."
         },
         {
           q: "Can you automate my social media posting?",
@@ -940,8 +932,8 @@ export const translations = {
       ],
     },
     contact: {
-      title: "Ready to start your business?",
-      subtitle: "Book a call directly with our team",
+      title: "Ready to transform your business?",
+      subtitle: "Book a slot directly with our expert(e)s",
       generalTab: "General Contact",
       generalTabShort: "Contact",
       enterpriseTab: "Enterprise Project",
