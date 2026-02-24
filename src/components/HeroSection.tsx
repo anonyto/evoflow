@@ -1,6 +1,6 @@
 import { useLanguage } from "../context/LanguageContext";
 import { translations } from "../i18n/translations";
-import { ArrowRight, Clock, Play, TrendingUp, Users2 } from "lucide-react";
+import { ArrowRight, Layers } from "lucide-react";
 //import AnimatedCounter from "./AnimatedCounter";
 
 export default function HeroSection() {
@@ -61,8 +61,8 @@ export default function HeroSection() {
               {t.hero.cta}
               <ArrowRight className="ml-2 w-4 sm:w-5 h-4 sm:h-5 group-hover:translate-x-1 transition-transform" />
             </a>
-            <a href="#services" className="inline-flex items-center justify-center rounded-lg text-sm sm:text-base font-medium transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background border-2 border-brand-neutral-300 dark:border-brand-neutral-600 bg-white dark:bg-brand-neutral-800 hover:bg-brand-neutral-50 dark:hover:bg-brand-neutral-700 text-brand-neutral-800 dark:text-white h-11 sm:h-12 px-6 sm:px-8 group">
-              <Play className="mr-2 w-4 sm:w-5 h-4 sm:h-5" />
+            <a href="#services" className="inline-flex items-center justify-center rounded-lg text-sm sm:text-base font-medium transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background border border-brand-neutral-300 dark:border-brand-neutral-600 bg-white dark:bg-brand-neutral-800 hover:bg-brand-neutral-50 dark:hover:bg-brand-neutral-700 text-brand-neutral-800 dark:text-white h-11 sm:h-12 px-6 sm:px-8 group">
+              <Layers className="mr-2 w-4 sm:w-5 h-4 sm:h-5" />
               {t.hero.ctaSecondary}
             </a>
           </div>

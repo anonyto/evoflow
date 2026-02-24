@@ -317,7 +317,7 @@ export const translations = {
       titleLabel: "Sujet *",
       titlePlaceholder: "Comment pouvons-nous vous aider ?",
       descriptionLabel: "Message *",
-      descriptionPlaceholder: "Décrivez votre projet ou vos besoins en automatisation...",
+      descriptionPlaceholder: "Décrivez votre projet ou vos besoins...",
       submit: "Envoyer",
       sending: "Envoi en cours...",
       toaster: {
@@ -947,7 +947,7 @@ export const translations = {
       titleLabel: "Subject *",
       titlePlaceholder: "How can we help you?",
       descriptionLabel: "Message *",
-      descriptionPlaceholder: "Describe your project or automation needs...",
+      descriptionPlaceholder: "Describe your project or your needs...",
       submit: "Send",
       sending: "Sending...",
        toaster: {
