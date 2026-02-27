@@ -1,9 +1,8 @@
-
 export const translations = {
   fr: {
     nav: {
       services: "Services",
-      aboutUs:"À propos de nous",
+      aboutUs: "À propos de nous",
       projects: "Projets",
       advantages: "Avantages",
       testimonials: "Témoignages",
@@ -15,7 +14,8 @@ export const translations = {
       badge: "Agence IA & Automatisation",
       title: "Transformez votre entreprise",
       titleHighlight: "avec Evobit",
-      subtitle: "Des solutions expertes en cybersécurité, digital, IA, cloud, DevOps et data pour transformer, moderniser et automatiser vos opérations.",
+      subtitle:
+        "Des solutions expertes en cybersécurité, digital, IA, cloud, DevOps et data pour transformer, moderniser et automatiser vos opérations.",
       cta: "Soumission Gratuite",
       ctaSecondary: "Voir nos services",
       stats: {
@@ -26,46 +26,55 @@ export const translations = {
     },
     services: {
       title: "Ce que nous offrons",
-      subtitle: "Piliers d'expertise pour sécuriser, optimiser et automatiser votre business.",
+      subtitle:
+        "Piliers d'expertise pour sécuriser, optimiser et automatiser votre business.",
       items: [
         {
           title: "Développement Web",
-          description: "Sites web modernes, applications web performantes et e-commerce sur-mesure avec les dernières technologies.",
+          description:
+            "Sites web modernes, applications web performantes et e-commerce sur-mesure avec les dernières technologies.",
           icon: "Code",
         },
         {
           title: "Développement Mobile",
-          description: "Applications iOS et Android natives ou cross-platform pour toucher vos clients partout.",
+          description:
+            "Applications iOS et Android natives ou cross-platform pour toucher vos clients partout.",
           icon: "Smartphone",
         },
         {
           title: "Génération de contenu SEO",
-          description: "Articles 100% personnalisés et optimisés pour le référencement. Automatisez votre stratégie de contenu avec l'intelligence artificielle.",
+          description:
+            "Articles 100% personnalisés et optimisés pour le référencement. Automatisez votre stratégie de contenu avec l'intelligence artificielle.",
           icon: "FileText",
         },
         {
           title: "Automatisation réseaux sociaux",
-          description: "Générez des posts pour tous vos réseaux en un clic avec du contenu adapté à chaque plateforme.",
+          description:
+            "Générez des posts pour tous vos réseaux en un clic avec du contenu adapté à chaque plateforme.",
           icon: "Share2",
         },
         {
           title: "Scraping Web & Veille",
-          description: "Automatisez votre veille concurrentielle et le traitement des données pour rester informé de votre marché.",
+          description:
+            "Automatisez votre veille concurrentielle et le traitement des données pour rester informé de votre marché.",
           icon: "Globe",
         },
         {
           title: "Agents IA & Chatbots",
-          description: "Dotez-vous d'agents IA multitâches connectés à vos outils pour un service client 24/7.",
+          description:
+            "Dotez-vous d'agents IA multitâches connectés à vos outils pour un service client 24/7.",
           icon: "Bot",
         },
         {
           title: "Automatisation fiches GMB",
-          description: "Automatisez la gestion de vos fiches Google et la collecte d'avis clients.",
+          description:
+            "Automatisez la gestion de vos fiches Google et la collecte d'avis clients.",
           icon: "MapPin",
         },
         {
           title: "Automatisation processus métier",
-          description: "Automatisez vos processus internes : comptabilité, RH, suivi projets, facturation.",
+          description:
+            "Automatisez vos processus internes : comptabilité, RH, suivi projets, facturation.",
           icon: "Workflow",
         },
       ],
@@ -75,51 +84,62 @@ export const translations = {
     },
     about: {
       title: "Ce que nous représentons",
-      description: "Nous nous engageons à fournir des solutions innovantes qui permettent aux entreprises et aux communautés de prospérer. Notre mission est de combiner créativité, technologie et engagement pour obtenir un impact réel.",
+      description:
+        "Nous nous engageons à fournir des solutions innovantes qui permettent aux entreprises et aux communautés de prospérer. Notre mission est de combiner créativité, technologie et engagement pour obtenir un impact réel.",
       coreValues: [
         {
           title: "Innovation",
-          description: "Nous recherchons constamment de nouvelles idées et technologies pour améliorer notre travail et servir nos clients."
+          description:
+            "Nous recherchons constamment de nouvelles idées et technologies pour améliorer notre travail et servir nos clients.",
         },
         {
           title: "Intégrité",
-          description: "Nous agissons avec honnêteté, transparence et pratiques éthiques dans tout ce que nous faisons."
+          description:
+            "Nous agissons avec honnêteté, transparence et pratiques éthiques dans tout ce que nous faisons.",
         },
         {
           title: "Collaboration",
-          description: "Nous croyons au travail d'équipe et au renforcement des relations pour atteindre les meilleurs résultats."
+          description:
+            "Nous croyons au travail d'équipe et au renforcement des relations pour atteindre les meilleurs résultats.",
         },
         {
           title: "Excellence",
-          description: "Nous visons la plus haute qualité dans notre travail, dépassant les attentes et offrant de la valeur."
+          description:
+            "Nous visons la plus haute qualité dans notre travail, dépassant les attentes et offrant de la valeur.",
         },
         {
           title: "Durabilité",
-          description: "Nous visons à créer des solutions responsables sur le plan environnemental et social."
+          description:
+            "Nous visons à créer des solutions responsables sur le plan environnemental et social.",
         },
         {
           title: "Orientation Client",
-          description: "Nos clients sont au cœur de tout ce que nous faisons, et nous priorisons leurs besoins et leur succès."
-        }
-      ]
+          description:
+            "Nos clients sont au cœur de tout ce que nous faisons, et nous priorisons leurs besoins et leur succès.",
+        },
+      ],
     },
     howItWorks: {
-      subtitle: "Notre méthode éprouvée garantit un déploiement rapide et efficace",
+      subtitle:
+        "Notre méthode éprouvée garantit un déploiement rapide et efficace",
       steps: [
         {
           number: "01",
           title: "Analyse & Cadrage",
-          description: "Note de cadrage détaillée sous 48h. Nous analysons vos processus métier, identifions les gains potentiels et proposons une stratégie personnalisée.",
+          description:
+            "Note de cadrage détaillée sous 48h. Nous analysons vos processus métier, identifions les gains potentiels et proposons une stratégie personnalisée.",
         },
         {
           number: "02",
           title: "Conception des workflows",
-          description: "Nous concevons les scénarios d'automatisation intelligents. Architecture des flux, intégrations API et paramétrage IA.",
+          description:
+            "Nous concevons les scénarios d'automatisation intelligents. Architecture des flux, intégrations API et paramétrage IA.",
         },
         {
           number: "03",
           title: "Déploiement & Optimisation",
-          description: "Connexion à vos outils existants, testing rigoureux, déploiement progressif et optimisation continue.",
+          description:
+            "Connexion à vos outils existants, testing rigoureux, déploiement progressif et optimisation continue.",
         },
       ],
       cta: "Commencer maintenant",
@@ -127,36 +147,43 @@ export const translations = {
     whyAutomate: {
       title: "Pourquoi choisir Evobit ?",
       subtitle: "L'expertise technologique au service de votre croissance",
-      description: "De la cybersécurité au cloud, de l'IA à la transformation digitale, nous vous accompagnons sur tous les fronts.",
+      description:
+        "De la cybersécurité au cloud, de l'IA à la transformation digitale, nous vous accompagnons sur tous les fronts.",
       benefits: [
         {
           title: "Sécurité renforcée",
-          description: "Protégez vos actifs numériques avec nos solutions de cybersécurité avancées et conformes.",
+          description:
+            "Protégez vos actifs numériques avec nos solutions de cybersécurité avancées et conformes.",
           icon: "CheckCircle",
         },
         {
           title: "Infrastructure scalable",
-          description: "DevOps, Cloud & Kubernetes pour une infrastructure fiable, rapide et évolutive.",
+          description:
+            "DevOps, Cloud & Kubernetes pour une infrastructure fiable, rapide et évolutive.",
           icon: "TrendingUp",
         },
         {
           title: "Automatisation intelligente",
-          description: "IA et automatisation pour éliminer les tâches répétitives et gagner 15-20h par semaine.",
+          description:
+            "IA et automatisation pour éliminer les tâches répétitives et gagner 15-20h par semaine.",
           icon: "Clock",
         },
         {
           title: "Écosystème connecté",
-          description: "Intégrez tous vos outils : CRM, ERP, marketing, facturation, communication.",
+          description:
+            "Intégrez tous vos outils : CRM, ERP, marketing, facturation, communication.",
           icon: "Link",
         },
         {
           title: "Pilotage data-driven",
-          description: "Centralisez vos données, automatisez vos dashboards. Vision en temps réel.",
+          description:
+            "Centralisez vos données, automatisez vos dashboards. Vision en temps réel.",
           icon: "BarChart",
         },
         {
           title: "ROI mesurable",
-          description: "Temps économisé, risques réduits, coûts optimisés, amortissement rapide.",
+          description:
+            "Temps économisé, risques réduits, coûts optimisés, amortissement rapide.",
           icon: "Target",
         },
       ],
@@ -168,7 +195,8 @@ export const translations = {
       audiences: [
         {
           title: "Start-ups",
-          description: "Accélérez votre croissance sans augmenter vos coûts opérationnels.",
+          description:
+            "Accélérez votre croissance sans augmenter vos coûts opérationnels.",
         },
         {
           title: "E-commerce & Retail",
@@ -176,11 +204,13 @@ export const translations = {
         },
         {
           title: "Cabinets & Consultants",
-          description: "Libérez du temps pour vos clients à haute valeur ajoutée.",
+          description:
+            "Libérez du temps pour vos clients à haute valeur ajoutée.",
         },
         {
           title: "Agences Web & Digitales",
-          description: "Automatisez vos processus de production et gagnez en efficacité.",
+          description:
+            "Automatisez vos processus de production et gagnez en efficacité.",
         },
         {
           title: "Éditeurs SAAS",
@@ -188,7 +218,8 @@ export const translations = {
         },
         {
           title: "Professionnels",
-          description: "Optimisez votre activité et concentrez-vous sur votre expertise.",
+          description:
+            "Optimisez votre activité et concentrez-vous sur votre expertise.",
         },
       ],
     },
@@ -199,25 +230,29 @@ export const translations = {
       projects: [
         {
           name: "Stockkeep",
-          description: "Plateforme complète de gestion des stocks multi-sites permettant le suivi en temps réel, la validation des mouvements et l'optimisation de la chaîne d'approvisionnement.",
+          description:
+            "Plateforme complète de gestion des stocks multi-sites permettant le suivi en temps réel, la validation des mouvements et l'optimisation de la chaîne d'approvisionnement.",
           category: "Web & Mobile",
           link: null,
         },
         {
           name: "GameSooQ",
-          description: "Marketplace d'échange de jeux vidéo avec messagerie instantanée, suivi des transactions et tableau de bord d'administration pour le pilotage de l'activité.",
+          description:
+            "Marketplace d'échange de jeux vidéo avec messagerie instantanée, suivi des transactions et tableau de bord d'administration pour le pilotage de l'activité.",
           category: "Marketplace",
           link: "https://gamesooq.com",
         },
         {
           name: "SmartCity",
-          description: "Solution intelligente de surveillance routière avec détection automatique des véhicules, suivi des infractions et tableaux de bord analytiques en temps réel.",
+          description:
+            "Solution intelligente de surveillance routière avec détection automatique des véhicules, suivi des infractions et tableaux de bord analytiques en temps réel.",
           category: "IA & Vision",
           link: null,
         },
         {
           name: "Anonyto",
-          description: "Extension de protection de la vie privée qui détecte et anonymise automatiquement vos données personnelles avant leur envoi aux outils d'IA. Protection instantanée, zéro friction.",
+          description:
+            "Extension de protection de la vie privée qui détecte et anonymise automatiquement vos données personnelles avant leur envoi aux outils d'IA. Protection instantanée, zéro friction.",
           category: "Cybersécurité",
           link: "https://anonyto.com",
         },
@@ -228,7 +263,8 @@ export const translations = {
       subtitle: "Des entreprises canadiennes nous font confiance",
       items: [
         {
-          quote: "Evobit a complètement transformé notre façon de gérer les opérations. On a gagné plus de 20 heures par semaine grâce à leurs automatisations. L'équipe est réactive, professionnelle et vraiment à l'écoute.",
+          quote:
+            "Evobit a complètement transformé notre façon de gérer les opérations. On a gagné plus de 20 heures par semaine grâce à leurs automatisations. L'équipe est réactive, professionnelle et vraiment à l'écoute.",
           name: "Sophie Tremblay",
           role: "Directrice des opérations",
           company: "NovaTech Solutions",
@@ -236,7 +272,8 @@ export const translations = {
           rating: 5,
         },
         {
-          quote: "On cherchait un partenaire capable de comprendre nos enjeux business, pas juste la technique. Evobit a su proposer des solutions concrètes qui ont eu un impact mesurable sur notre croissance dès le premier mois.",
+          quote:
+            "On cherchait un partenaire capable de comprendre nos enjeux business, pas juste la technique. Evobit a su proposer des solutions concrètes qui ont eu un impact mesurable sur notre croissance dès le premier mois.",
           name: "Marc-Antoine Dubois",
           role: "Fondateur & CEO",
           company: "Altitude Commerce",
@@ -244,7 +281,8 @@ export const translations = {
           rating: 5,
         },
         {
-          quote: "Le niveau de qualité et d'attention aux détails est exceptionnel. Notre CRM, nos emails et notre facturation sont maintenant entièrement automatisés. Je recommande Evobit sans hésitation.",
+          quote:
+            "Le niveau de qualité et d'attention aux détails est exceptionnel. Notre CRM, nos emails et notre facturation sont maintenant entièrement automatisés. Je recommande Evobit sans hésitation.",
           name: "Isabelle Gagnon",
           role: "VP Marketing",
           company: "Groupe Horizon",
@@ -252,7 +290,8 @@ export const translations = {
           rating: 5,
         },
         {
-          quote: "En tant que startup, chaque minute compte. Evobit nous a permis de nous concentrer sur ce qui compte vraiment : notre produit et nos clients. Leur approche est humaine et les résultats parlent d'eux-mêmes.",
+          quote:
+            "En tant que startup, chaque minute compte. Evobit nous a permis de nous concentrer sur ce qui compte vraiment : notre produit et nos clients. Leur approche est humaine et les résultats parlent d'eux-mêmes.",
           name: "Jean-Philippe Roy",
           role: "Co-fondateur",
           company: "PixelCraft Studio",
@@ -262,8 +301,20 @@ export const translations = {
       ],
     },
     integrations: {
-      subtitle: "Nous faisons le lien entre tous vos outils pour une automatisation fluide et puissante",
-      tools: ["Notion", "Airtable", "HubSpot", "Salesforce", "Make", "Zapier", "n8n", "Slack", "Gmail", "Google Sheets"],
+      subtitle:
+        "Nous faisons le lien entre tous vos outils pour une automatisation fluide et puissante",
+      tools: [
+        "Notion",
+        "Airtable",
+        "HubSpot",
+        "Salesforce",
+        "Make",
+        "Zapier",
+        "n8n",
+        "Slack",
+        "Gmail",
+        "Google Sheets",
+      ],
     },
     faq: {
       title: "Questions fréquentes",
@@ -273,32 +324,60 @@ export const translations = {
       items: [
         {
           q: "Quels types de services proposez-vous ?",
-          a: "Nous offrons des services en cybersécurité (tests de pénétration, surveillance SOC 24/7, conformité), en DevOps & Cloud (CI/CD, migration cloud, Kubernetes, infrastructure as code), ainsi qu'en IA, automatisation et transformation digitale."
+          a: "Nous couvrons un large spectre : développement web et mobile, cybersécurité, DevOps & Cloud, IA et automatisation, transformation digitale, stratégie IT, scraping web et veille concurrentielle. Chaque service est adapté aux besoins spécifiques de votre entreprise.",
         },
         {
-          q: "Pouvez-vous automatiser mes réseaux sociaux ?",
-          a: "Oui, nous créons des systèmes qui génèrent des posts pour tous vos réseaux en un clic, en adaptant le contenu à chaque plateforme pour maximiser l'engagement."
+          q: "Comment protégez-vous mon entreprise contre les cybermenaces ?",
+          a: "Nous réalisons des tests de pénétration, mettons en place une surveillance SOC 24/7, assurons la conformité réglementaire et déployons des solutions de sécurité avancées pour protéger vos données et vos infrastructures.",
         },
         {
-          q: "Comment vos agents IA et chatbots peuvent aider mon entreprise ?",
-          a: "Nos agents IA multitâches peuvent se connecter à vos outils pour offrir un service client 24/7, répondre aux questions fréquentes, et automatiser des tâches répétitives."
+          q: "Pouvez-vous développer un site web ou une application mobile sur-mesure ?",
+          a: "Absolument. Nous concevons des sites web modernes et performants ainsi que des applications iOS et Android natives ou cross-platform, adaptés à votre image de marque et vos objectifs business.",
         },
         {
-          q: "Que pouvez-vous faire avec le scraping et la veille web ?",
-          a: "Nous automatisons la collecte et le traitement de données pour votre veille concurrentielle, afin que vous restiez informé de votre marché en temps réel."
+          q: "Qu'est-ce que le DevOps et comment ça peut aider mon entreprise ?",
+          a: "Le DevOps combine développement et opérations pour accélérer vos déploiements. Nous mettons en place des pipelines CI/CD, la migration cloud, Kubernetes et l'infrastructure as code pour fiabiliser et automatiser vos livraisons.",
         },
         {
-          q: "Comment l'automatisation de mes processus métier fonctionne-t-elle ?",
-          a: "Nous pouvons automatiser vos processus internes comme la comptabilité, la gestion RH, le suivi de projets et la facturation, vous permettant de gagner du temps et réduire les erreurs."
+          q: "Comment l'IA et l'automatisation peuvent optimiser mes opérations ?",
+          a: "Nous déployons des agents IA, chatbots, automatisation des réseaux sociaux, génération de contenu SEO et automatisation de processus métier (comptabilité, RH, facturation) pour vous faire gagner du temps et réduire les erreurs.",
         },
         {
-          q: "Proposez-vous de la formation pour vos solutions automatisées ?",
-          a: "Oui, nous formons vos équipes pour qu'elles puissent utiliser, superviser et maintenir facilement toutes les automatisations mises en place."
+          q: "Proposez-vous un accompagnement en stratégie IT et transformation digitale ?",
+          a: "Oui, nous auditons vos systèmes existants, définissons une feuille de route technologique et vous accompagnons pas à pas dans la modernisation de votre infrastructure et de vos processus.",
         },
         {
-          q: "Comment puis-je obtenir un devis pour un projet ?",
-          a: "Chaque projet est unique. Nous proposons une soumission gratuite après analyse de vos besoins pour vous fournir un devis précis et adapté."
-        }
+          q: "Comment fonctionne votre service de scraping web et veille concurrentielle ?",
+          a: "Nous automatisons la collecte et l'analyse de données en temps réel pour surveiller votre marché, suivre vos concurrents et identifier les opportunités de croissance.",
+        },
+        {
+          q: "Travaillez-vous avec des entreprises de toutes tailles ?",
+          a: "Oui, nous accompagnons aussi bien les startups, PME que les grandes entreprises. Nos solutions sont modulables et s'adaptent à votre budget et à vos ambitions.",
+        },
+        {
+          q: "Combien de temps prend la mise en place d'un projet ?",
+          a: "Cela dépend de la complexité. Un projet d'automatisation simple peut être livré en quelques jours, tandis qu'une solution complète (site web, infrastructure cloud, sécurité) peut prendre de 4 à 12 semaines.",
+        },
+        {
+          q: "Offrez-vous du support et de la maintenance après livraison ?",
+          a: "Oui, nous proposons des forfaits de support et maintenance pour garantir la performance, la sécurité et l'évolution continue de vos solutions.",
+        },
+        {
+          q: "Pouvez-vous migrer notre infrastructure existante vers le cloud ?",
+          a: "Absolument. Nous planifions et exécutons la migration de vos serveurs, bases de données et applications vers AWS, Azure ou Google Cloud avec un minimum de temps d'arrêt.",
+        },
+        {
+          q: "Comment améliorez-vous le référencement (SEO) de mon site ?",
+          a: "Nous utilisons l'IA pour générer du contenu optimisé, améliorons la structure technique de votre site et mettons en place des stratégies de mots-clés pour augmenter votre visibilité organique.",
+        },
+        {
+          q: "Vos solutions sont-elles conformes aux réglementations (RGPD, SOC 2) ?",
+          a: "Oui, la conformité est au cœur de notre approche. Nous concevons chaque solution en respectant les normes RGPD, SOC 2, ISO 27001 et les réglementations propres à votre secteur.",
+        },
+        {
+          q: "Comment puis-je obtenir un devis pour mon projet ?",
+          a: "Chaque projet est unique. Nous offrons une soumission gratuite : après analyse de vos besoins, nous vous fournissons un devis précis, détaillé et sans engagement.",
+        },
       ],
     },
     contact: {
@@ -322,11 +401,14 @@ export const translations = {
       sending: "Envoi en cours...",
       toaster: {
         successTitle: "Message envoyé avec succès",
-        successDescription: "Notre équipe vous contactera dans les plus brefs délais.",
+        successDescription:
+          "Notre équipe vous contactera dans les plus brefs délais.",
         errorTitle: "Une erreur est survenue",
-        errorDescription: "Veuillez réessayer ou nous contacter ultérieurement.",
+        errorDescription:
+          "Veuillez réessayer ou nous contacter ultérieurement.",
         validationTitle: "Champs obligatoires manquants",
-        validationDescription: "Veuillez remplir tous les champs requis avant l’envoi."
+        validationDescription:
+          "Veuillez remplir tous les champs requis avant l’envoi.",
       },
       errors: {
         nameRequired: "Veuillez saisir votre nom.",
@@ -337,12 +419,13 @@ export const translations = {
     },
     cta: {
       title: "Prêt à transformer votre entreprise ?",
-      subtitle: "Réservez un appel découverte gratuit et discutons de vos besoins en automatisation.",
+      subtitle:
+        "Réservez un appel découverte gratuit et discutons de vos besoins en automatisation.",
       button: "Réserver un appel",
     },
     sectionTags: {
       services: "Nos Services",
-      aboutUs:"À propos de nous",
+      aboutUs: "À propos de nous",
       howItWorks: "Comment ça marche",
       benefits: "Avantages",
       whoWeServe: "Qui nous servons",
@@ -366,30 +449,68 @@ export const translations = {
       whyChooseUs: "Pourquoi nous choisir",
       realResults: "Vrais résultats, mesurés",
       readyToGetStarted: "Prêt à commencer ?",
-      transformYourBusiness: "Parlons de comment notre expertise en {service} peut transformer votre entreprise.",
+      transformYourBusiness:
+        "Parlons de comment notre expertise en {service} peut transformer votre entreprise.",
       getAFreeSubmission: "Obtenir une soumission gratuite",
       exploreOtherServices: "Explorez nos autres services",
-      
     },
     serviceDetails: {
       cyber: {
         title: "Cybersécurité",
         subtitle: "Protégez vos actifs numériques",
         tagline: "Défense en profondeur pour l'entreprise moderne",
-        description: "Solutions de sécurité complètes pour défendre votre infrastructure, vos données et vos utilisateurs contre les menaces évolutives.",
-        longDescription: "Dans le paysage des menaces actuel, une approche réactive de la sécurité n'est plus suffisante. Notre pratique de cybersécurité offre des défenses proactives et multicouches qui protègent votre organisation contre les menaces persistantes avancées, les rançongiciels, l'ingénierie sociale et les vulnérabilités zero-day. Nous combinons la technologie de pointe avec une expertise approfondie pour construire des postures de sécurité résilientes, conformes et alignées sur le business.",
+        description:
+          "Solutions de sécurité complètes pour défendre votre infrastructure, vos données et vos utilisateurs contre les menaces évolutives.",
+        longDescription:
+          "Dans le paysage des menaces actuel, une approche réactive de la sécurité n'est plus suffisante. Notre pratique de cybersécurité offre des défenses proactives et multicouches qui protègent votre organisation contre les menaces persistantes avancées, les rançongiciels, l'ingénierie sociale et les vulnérabilités zero-day. Nous combinons la technologie de pointe avec une expertise approfondie pour construire des postures de sécurité résilientes, conformes et alignées sur le business.",
         subServices: [
-          { title: "Test de pénétration", description: "Simulez les attaques du monde réel pour identifier les vulnérabilités avant que les acteurs malveillants ne les exploitent. Nos exercices d'équipe rouge couvrent les applications web, les API, le mobile et l'infrastructure." },
-          { title: "Surveillance de la sécurité (SOC)", description: "Centre des opérations de sécurité 24/7 avec intégration SIEM, alertes en temps réel et analystes experts pour la détection continue des menaces et la réponse aux incidents." },
-          { title: "Gestion des vulnérabilités", description: "Analyse continue, priorisation et suivi des corrections sur toute votre empreinte numérique — des charges de travail cloud aux systèmes sur site." },
-          { title: "Réponse aux incidents et forensique", description: "Confinement rapide, analyse des causes profondes et planification de la récupération lors de violations. Nous vous aidons à minimiser les dégâts et à restaurer rapidement les opérations." },
-          { title: "Sécurité du cloud et de l'infrastructure", description: "Renforcez vos environnements AWS, Azure ou GCP avec des configurations selon les meilleures pratiques, la segmentation réseau et l'architecture zéro confiance." },
-          { title: "Conformité et gouvernance", description: "Naviguez les exigences ISO 27001, SOC 2, GDPR, HIPAA et PCI-DSS avec un guidage expert, des évaluations d'écarts et la préparation aux audits." },
+          {
+            title: "Test de pénétration",
+            description:
+              "Simulez les attaques du monde réel pour identifier les vulnérabilités avant que les acteurs malveillants ne les exploitent. Nos exercices d'équipe rouge couvrent les applications web, les API, le mobile et l'infrastructure.",
+          },
+          {
+            title: "Surveillance de la sécurité (SOC)",
+            description:
+              "Centre des opérations de sécurité 24/7 avec intégration SIEM, alertes en temps réel et analystes experts pour la détection continue des menaces et la réponse aux incidents.",
+          },
+          {
+            title: "Gestion des vulnérabilités",
+            description:
+              "Analyse continue, priorisation et suivi des corrections sur toute votre empreinte numérique — des charges de travail cloud aux systèmes sur site.",
+          },
+          {
+            title: "Réponse aux incidents et forensique",
+            description:
+              "Confinement rapide, analyse des causes profondes et planification de la récupération lors de violations. Nous vous aidons à minimiser les dégâts et à restaurer rapidement les opérations.",
+          },
+          {
+            title: "Sécurité du cloud et de l'infrastructure",
+            description:
+              "Renforcez vos environnements AWS, Azure ou GCP avec des configurations selon les meilleures pratiques, la segmentation réseau et l'architecture zéro confiance.",
+          },
+          {
+            title: "Conformité et gouvernance",
+            description:
+              "Naviguez les exigences ISO 27001, SOC 2, GDPR, HIPAA et PCI-DSS avec un guidage expert, des évaluations d'écarts et la préparation aux audits.",
+          },
         ],
         features: [
-          { title: "Renseignement sur les menaces", description: "Gardez l'avance avec des flux de renseignements organisés et la surveillance du dark web adaptés à votre industrie." },
-          { title: "Architecture zéro confiance", description: "Implémentez des modèles de sécurité centrés sur l'identité qui vérifient chaque demande d'accès indépendamment de la localisation du réseau." },
-          { title: "Formation de sensibilisation à la sécurité", description: "Habilitez les employés avec des simulations de phishing et des programmes de formation de sécurité interactifs." },
+          {
+            title: "Renseignement sur les menaces",
+            description:
+              "Gardez l'avance avec des flux de renseignements organisés et la surveillance du dark web adaptés à votre industrie.",
+          },
+          {
+            title: "Architecture zéro confiance",
+            description:
+              "Implémentez des modèles de sécurité centrés sur l'identité qui vérifient chaque demande d'accès indépendamment de la localisation du réseau.",
+          },
+          {
+            title: "Formation de sensibilisation à la sécurité",
+            description:
+              "Habilitez les employés avec des simulations de phishing et des programmes de formation de sécurité interactifs.",
+          },
         ],
         benefits: [
           "Réduire le risque de violation de données jusqu'à 85%",
@@ -402,23 +523,59 @@ export const translations = {
       digital: {
         title: "Transformation Digitale",
         subtitle: "Réinventez votre entreprise pour l’ère numérique",
-        tagline: "Stratégie, technologie et innovation alignées pour la croissance",
+        tagline:
+          "Stratégie, technologie et innovation alignées pour la croissance",
         description:
           "Services complets de transformation digitale pour moderniser les opérations, améliorer l’expérience client et stimuler l’innovation durable.",
         longDescription:
           "La transformation digitale ne consiste pas seulement à adopter de nouvelles technologies — il s'agit de repenser fondamentalement la manière dont votre organisation crée de la valeur. Nous aidons les entreprises à moderniser leurs systèmes legacy, repenser leurs processus, adopter le cloud et développer une culture orientée données afin d’accélérer l’innovation et la performance.",
         subServices: [
-          { title: "Stratégie & feuille de route digitale", description: "Définition d’une vision claire et d’un plan de transformation aligné sur vos objectifs business." },
-          { title: "Transformation Cloud", description: "Migration et modernisation des applications et infrastructures vers le cloud." },
-          { title: "Modernisation des systèmes legacy", description: "Remplacement des systèmes obsolètes par des architectures évolutives." },
-          { title: "Transformation de l’expérience client (CX)", description: "Conception de parcours digitaux fluides et personnalisés." },
-          { title: "Architecture d’entreprise", description: "Conception d’écosystèmes technologiques intégrés et scalables." },
-          { title: "Transformation orientée données", description: "Exploitation de la data et de l’analytique pour des décisions intelligentes." },
+          {
+            title: "Stratégie & feuille de route digitale",
+            description:
+              "Définition d’une vision claire et d’un plan de transformation aligné sur vos objectifs business.",
+          },
+          {
+            title: "Transformation Cloud",
+            description:
+              "Migration et modernisation des applications et infrastructures vers le cloud.",
+          },
+          {
+            title: "Modernisation des systèmes legacy",
+            description:
+              "Remplacement des systèmes obsolètes par des architectures évolutives.",
+          },
+          {
+            title: "Transformation de l’expérience client (CX)",
+            description:
+              "Conception de parcours digitaux fluides et personnalisés.",
+          },
+          {
+            title: "Architecture d’entreprise",
+            description:
+              "Conception d’écosystèmes technologiques intégrés et scalables.",
+          },
+          {
+            title: "Transformation orientée données",
+            description:
+              "Exploitation de la data et de l’analytique pour des décisions intelligentes.",
+          },
         ],
         features: [
-          { title: "Ateliers d’innovation", description: "Sessions collaboratives pour définir les priorités de transformation." },
-          { title: "Activation technologique", description: "Implémentation des plateformes digitales modernes." },
-          { title: "Gestion du changement", description: "Accompagnement à l’adoption et à la transition organisationnelle." },
+          {
+            title: "Ateliers d’innovation",
+            description:
+              "Sessions collaboratives pour définir les priorités de transformation.",
+          },
+          {
+            title: "Activation technologique",
+            description: "Implémentation des plateformes digitales modernes.",
+          },
+          {
+            title: "Gestion du changement",
+            description:
+              "Accompagnement à l’adoption et à la transition organisationnelle.",
+          },
         ],
         benefits: [
           "Efficacité opérationnelle accrue",
@@ -431,21 +588,60 @@ export const translations = {
       ai: {
         title: "IA et automatisation",
         subtitle: "Automatisation de processus intelligents",
-        tagline: "Déverrouille l'efficacité exponentielle avec des systèmes intelligents",
-        description: "Exploitez l'IA et l'automatisation pour rationaliser les flux de travail, réduire les coûts et déverrouiller de nouvelles capacités.",
-        longDescription: "L'intelligence artificielle n'est pas une promesse future — c'est l'avantage concurrentiel d'aujourd'hui. Notre pratique d'IA et d'automatisation aide les organisations à dépasser les projets pilotes vers l'automatisation intelligente à l'échelle de l'entreprise. Nous combinons une expertise approfondie en apprentissage automatique avec une compréhension pratique du business pour fournir des solutions qui automatisent les tâches routinières, augmentent la prise de décision humaine et créent des flux de valeur entièrement nouveaux. Des chatbots à l'analytique prédictive, nous transformons le potentiel de l'IA en réalité opérationnelle.",
+        tagline:
+          "Déverrouille l'efficacité exponentielle avec des systèmes intelligents",
+        description:
+          "Exploitez l'IA et l'automatisation pour rationaliser les flux de travail, réduire les coûts et déverrouiller de nouvelles capacités.",
+        longDescription:
+          "L'intelligence artificielle n'est pas une promesse future — c'est l'avantage concurrentiel d'aujourd'hui. Notre pratique d'IA et d'automatisation aide les organisations à dépasser les projets pilotes vers l'automatisation intelligente à l'échelle de l'entreprise. Nous combinons une expertise approfondie en apprentissage automatique avec une compréhension pratique du business pour fournir des solutions qui automatisent les tâches routinières, augmentent la prise de décision humaine et créent des flux de valeur entièrement nouveaux. Des chatbots à l'analytique prédictive, nous transformons le potentiel de l'IA en réalité opérationnelle.",
         subServices: [
-          { title: "Stratégie et feuille de route IA", description: "Définissez votre vision de l'IA, identifiez les cas d'usage à haute valeur et créez un plan de mise en œuvre par phases aligné sur votre stratégie commerciale." },
-          { title: "IA conversationnelle", description: "Déployez des chatbots intelligents et des agents virtuels pour le service client, les ventes et le support interne — avec compréhension du langage naturel et intégration multi-canaux." },
-          { title: "Automatisation des processus métier", description: "Automatisez les processus métier de bout en bout dans tous les départements avec des flux de travail intelligents qui apprennent et s'adaptent au fil du temps." },
-          { title: "Automatisation des processus robotisés", description: "Automatisation de tâches basées sur des règles à haut volume pour la finance, les RH, les opérations et le service client en utilisant les plates-formes RPA leaders." },
-          { title: "Modèles ML personnalisés et prédictifs", description: "Modèles d'apprentissage automatique conçus sur mesure pour la prévision de la demande, la détection d'anomalies, les moteurs de recommandation et la maintenance prédictive." },
-          { title: "Analytique intelligente", description: "Tableaux de bord alimentés par l'IA, rapports automatisés et interrogation en langage naturel qui font surface les insights et pilotent les décisions informées par les données." },
+          {
+            title: "Stratégie et feuille de route IA",
+            description:
+              "Définissez votre vision de l'IA, identifiez les cas d'usage à haute valeur et créez un plan de mise en œuvre par phases aligné sur votre stratégie commerciale.",
+          },
+          {
+            title: "IA conversationnelle",
+            description:
+              "Déployez des chatbots intelligents et des agents virtuels pour le service client, les ventes et le support interne — avec compréhension du langage naturel et intégration multi-canaux.",
+          },
+          {
+            title: "Automatisation des processus métier",
+            description:
+              "Automatisez les processus métier de bout en bout dans tous les départements avec des flux de travail intelligents qui apprennent et s'adaptent au fil du temps.",
+          },
+          {
+            title: "Automatisation des processus robotisés",
+            description:
+              "Automatisation de tâches basées sur des règles à haut volume pour la finance, les RH, les opérations et le service client en utilisant les plates-formes RPA leaders.",
+          },
+          {
+            title: "Modèles ML personnalisés et prédictifs",
+            description:
+              "Modèles d'apprentissage automatique conçus sur mesure pour la prévision de la demande, la détection d'anomalies, les moteurs de recommandation et la maintenance prédictive.",
+          },
+          {
+            title: "Analytique intelligente",
+            description:
+              "Tableaux de bord alimentés par l'IA, rapports automatisés et interrogation en langage naturel qui font surface les insights et pilotent les décisions informées par les données.",
+          },
         ],
         features: [
-          { title: "Solutions d'IA générative", description: "Exploitez les LLM pour la génération de contenu, l'analyse de documents, l'assistance au codage et les flux de travail créatifs." },
-          { title: "Hub d'intégration", description: "Connectez les capacités d'IA à votre pile technologique existante avec des connecteurs pré-construits pour 200+ applications d'entreprise." },
-          { title: "Gouvernance de l'IA", description: "Cadres d'IA responsables couvrant la détection des biais, l'explicabilité, la confidentialité des données et le suivi des modèles." },
+          {
+            title: "Solutions d'IA générative",
+            description:
+              "Exploitez les LLM pour la génération de contenu, l'analyse de documents, l'assistance au codage et les flux de travail créatifs.",
+          },
+          {
+            title: "Hub d'intégration",
+            description:
+              "Connectez les capacités d'IA à votre pile technologique existante avec des connecteurs pré-construits pour 200+ applications d'entreprise.",
+          },
+          {
+            title: "Gouvernance de l'IA",
+            description:
+              "Cadres d'IA responsables couvrant la détection des biais, l'explicabilité, la confidentialité des données et le suivi des modèles.",
+          },
         ],
         benefits: [
           "Réduire les coûts opérationnels jusqu'à 60%",
@@ -466,30 +662,72 @@ export const translations = {
           "Vous souhaitez révolutionner votre entreprise avec des services DevOps ? Vous voulez automatiser les flux de travail et augmenter la productivité de votre département IT ? Faites-nous confiance pour transformer vos opérations, intégrer des solutions cloud, l'intégration et la livraison continues (CI/CD), GitOps, la conteneurisation, DevSecOps, et une gamme d'autres services.",
 
         subServices: [
-          { title: "Services DevOps", description: "Vous souhaitez révolutionner votre entreprise avec des services DevOps ? Vous voulez automatiser les flux de travail et augmenter la productivité de votre département IT ? Faites-nous confiance pour transformer vos opérations, intégrer des solutions cloud, l'intégration et la livraison continues (CI/CD), GitOps, la conteneurisation, DevSecOps, et une gamme d'autres services.", subItems: ["Conseil DevOps", "Services CI/CD", "Ingénierie Cloud Azure", "Services AWS DevOps"] },
-          { title: "Ingénierie de plateforme", description: "Votre entreprise a besoin d'une plateforme cloud performante, sécurisée et évolutive. Réinventez votre architecture technologique avec nos services experts de développement de plateforme. Passez en douceur d'un système legacy rigide à un écosystème flexible et modulaire construit sur des couches connectées. Exploitez la puissance du cloud, des microservices et des API internes et externes pour accélérer votre infrastructure." },
-          { title: "CTO Fractionnel", description: "Accédez à un leadership technologique de premier plan sans engagement à temps plein. Notre service de CTO fractionnel vous donne accès à des dirigeants technologiques expérimentés qui guident votre stratégie IT à temps partiel. Nous vous aidons à aligner votre technologie avec vos objectifs business, à prendre des décisions technologiques éclairées et à stimuler l'innovation." },
-          { title: "Services d'audit IT", description: "Nous examinons votre technologie pour assurer la sécurité et l'efficacité de votre entreprise. Notre audit IT vérifie vos systèmes pour détecter les faiblesses, s'assure que vous respectez les règles importantes et suggère des moyens d'améliorer votre infrastructure technologique.", subItems: ["Audit d'infrastructure", "Audit de sécurité", "Audit de conformité"] },
-          { title: "Conseil et services en transformation digitale", description: "Nous aidons votre entreprise à utiliser les nouvelles technologies pour mieux fonctionner. Nos consultants travaillent en étroite collaboration avec votre équipe pour identifier les opportunités, implémenter des solutions de pointe et favoriser une culture d'innovation. De la migration cloud à l'analyse de données, nous vous guidons à travers les complexités du changement numérique." },
-          { title: "Gestion d'infrastructure", description: "Découvrez la force transformatrice de nos services de gestion d'infrastructure sans faille. Si votre personnel IT ne gère plus les charges de travail croissantes, nous construisons et gérons une architecture de projet numérique, vous propulsant vers un succès sans précédent.", subItems: ["Services gérés d'infrastructure IT", "Services de gestion d'infrastructure cloud", "Support d'infrastructure IT", "Conseil en infrastructure IT"] },
-          { title: "Service de cloud computing", description: "Découvrez le potentiel inégalé des services de cloud computing. Transférez votre solution numérique dans le cloud et économisez avec nos services d'optimisation cloud. Débloquez l'agilité, la scalabilité et l'innovation comme jamais auparavant.", subItems: ["Services de migration de bases de données", "Services de migration cloud", "Services de migration Google Cloud", "Services de migration Azure", "Services de migration AWS", "Conseil cloud"] },
-          { title: "Services SRE", description: "Vous recherchez des professionnels pour aider votre entreprise à faire face à l'augmentation de la charge de travail en dimensionnant et en optimisant les flux de travail ? Associez-vous à nous dès aujourd'hui pour répondre aux incidents ou même assister avec la sauvegarde et la reprise après sinistre.", subItems: ["Surveillance IT", "Services de sauvegarde et reprise après sinistre"] },
-          { title: "Services Kubernetes", description: "Boostez vos applications avec nos services Kubernetes de pointe. Facilitez la personnalisation et l'automatisation avec des charges de travail conteneurisées et des services Kubernetes. Donnez à vos équipes de développement et d'exploitation les moyens de stimuler l'innovation." },
-          { title: "Blockchain DevOps", description: "Renforcez votre parcours blockchain avec nos services DevOps experts. Rationalisez le déploiement, accélérez les cycles de développement et révolutionnez la livraison de vos produits. Adoptez l'efficacité, la collaboration et l'agilité du marché." },
+          {
+            title: "Services DevOps",
+            description:
+              "Automatisez vos flux de travail et augmentez la productivité de votre département IT grâce à l'intégration et la livraison continues (CI/CD), GitOps, la conteneurisation et DevSecOps.",
+            subItems: [
+              "Conseil DevOps",
+              "Services CI/CD",
+              "Ingénierie Cloud Azure",
+              "Services AWS DevOps",
+            ],
+          },
+          {
+            title: "Ingénierie de plateforme",
+            description:
+              "Réinventez votre architecture technologique avec une plateforme cloud performante, sécurisée et évolutive. Passez d'un système legacy rigide à un écosystème modulaire basé sur les microservices et les API.",
+          },
+          {
+            title: "Service de cloud computing",
+            description:
+              "Transférez vos solutions dans le cloud et optimisez vos coûts. Migration, multi-cloud et optimisation pour débloquer l'agilité et la scalabilité.",
+            subItems: [
+              "Services de migration de bases de données",
+              "Services de migration cloud",
+              "Services de migration Google Cloud",
+              "Services de migration Azure",
+              "Services de migration AWS",
+              "Conseil cloud",
+            ],
+          },
+          {
+            title: "Services SRE & Observabilité",
+            description:
+              "Assurez la fiabilité de vos systèmes grâce à la surveillance proactive, la gestion des incidents et l'optimisation continue des performances.",
+            subItems: [
+              "Surveillance et monitoring IT",
+              "Gestion des incidents et alertes",
+              "Optimisation de la fiabilité",
+            ],
+          },
+          {
+            title: "Services Kubernetes",
+            description:
+              "Orchestrez vos applications conteneurisées avec Kubernetes. Déploiement, scaling automatique et gestion simplifiée pour vos équipes de développement et d'exploitation.",
+          },
+          {
+            title: "Blockchain DevOps",
+            description:
+              "Rationalisez le déploiement blockchain, accélérez les cycles de développement et révolutionnez la livraison de vos produits décentralisés.",
+          },
         ],
 
         features: [
           {
             title: "Automatisation complète",
-            description: "Réduisez les interventions manuelles grâce aux déploiements, tests et gestion d'infrastructure automatisés.",
+            description:
+              "Réduisez les interventions manuelles grâce aux déploiements, tests et gestion d'infrastructure automatisés.",
           },
           {
             title: "Architecture Cloud-Native",
-            description: "Des environnements hautement disponibles et tolérants aux pannes, optimisés pour la performance.",
+            description:
+              "Des environnements hautement disponibles et tolérants aux pannes, optimisés pour la performance.",
           },
           {
             title: "Observabilité avancée",
-            description: "Surveillance proactive avec métriques, journaux et alertes intelligentes pour prévenir les incidents.",
+            description:
+              "Surveillance proactive avec métriques, journaux et alertes intelligentes pour prévenir les incidents.",
           },
         ],
 
@@ -512,25 +750,48 @@ export const translations = {
           "Une stratégie IT efficace est essentielle pour soutenir la croissance et maintenir la compétitivité de l'entreprise. Notre service Stratégie IT & Infrastructure combine leadership technologique, gestion opérationnelle et expertise en gouvernance pour aligner vos systèmes avec vos objectifs business. Nous aidons les organisations à moderniser leur infrastructure, renforcer la résilience, optimiser les coûts et assurer la conformité réglementaire tout en préparant les transformations futures.",
 
         subServices: [
-          { title: "CTO Fractionnel", description: "Leadership technologique exécutif à temps partiel pour votre organisation." },
-          { title: "Gestion d'infrastructure IT", description: "Surveillance, maintenance et optimisation des systèmes informatiques." },
-          { title: "Audits IT & Conformité", description: "Évaluations de sécurité, d'infrastructure et de conformité réglementaire." },
-          { title: "Reprise après sinistre & Sauvegarde", description: "Assurez la continuité d'activité et la résilience des données." },
-          { title: "Optimisation des performances", description: "Améliorez la fiabilité et la scalabilité des systèmes." },
+          {
+            title: "CTO Fractionnel",
+            description:
+              "Leadership technologique exécutif à temps partiel pour votre organisation.",
+          },
+          {
+            title: "Gestion d'infrastructure IT",
+            description:
+              "Surveillance, maintenance et optimisation des systèmes informatiques.",
+          },
+          {
+            title: "Audits IT & Conformité",
+            description:
+              "Évaluations de sécurité, d'infrastructure et de conformité réglementaire.",
+          },
+          {
+            title: "Reprise après sinistre & Sauvegarde",
+            description:
+              "Assurez la continuité d'activité et la résilience des données.",
+          },
+          {
+            title: "Optimisation des performances",
+            description:
+              "Améliorez la fiabilité et la scalabilité des systèmes.",
+          },
         ],
 
         features: [
           {
             title: "Leadership technologique stratégique",
-            description: "Accédez à une expertise IT de niveau exécutif pour guider les décisions technologiques critiques.",
+            description:
+              "Accédez à une expertise IT de niveau exécutif pour guider les décisions technologiques critiques.",
           },
           {
             title: "Infrastructure haute disponibilité",
-            description: "Mise en place de systèmes fiables et sécurisés capables de supporter des charges de travail élevées.",
+            description:
+              "Mise en place de systèmes fiables et sécurisés capables de supporter des charges de travail élevées.",
           },
           {
             title: "Gouvernance & Conformité",
-            description: "Cadres et processus garantissant le respect des normes et le contrôle des risques IT.",
+            description:
+              "Cadres et processus garantissant le respect des normes et le contrôle des risques IT.",
           },
         ],
 
@@ -545,49 +806,59 @@ export const translations = {
       webScraping: {
         title: "Web Scraping",
         subtitle: "Transformez le web en informations exploitables",
-        tagline: "Collectez, analysez et exploitez les données web efficacement",
+        tagline:
+          "Collectez, analysez et exploitez les données web efficacement",
         description:
           "Services automatisés de collecte et traitement de données web pour extraire des insights, suivre les tendances et améliorer la prise de décision.",
         longDescription:
           "À l’ère de la donnée, l’information est un atout stratégique. Notre service de Web Scraping & Extraction de Données permet aux entreprises de collecter systématiquement des informations depuis des sites web, plateformes en ligne et sources publiques. Nous fournissons des solutions fiables, scalables et conformes, pour surveiller la concurrence, collecter de l’intelligence marché, suivre les tendances et alimenter vos modèles IA/ML. Des scrapers sur-mesure aux pipelines automatisés, nous transformons le contenu web non structuré en données structurées et exploitables.",
         subServices: [
-          { 
-            title: "Web Scraping sur-mesure", 
-            description: "Développement de solutions adaptées pour sites web, portails et plateformes e-commerce." 
+          {
+            title: "Web Scraping sur-mesure",
+            description:
+              "Développement de solutions adaptées pour sites web, portails et plateformes e-commerce.",
           },
-          { 
-            title: "Nettoyage & Transformation des Données", 
-            description: "Traitement des données brutes pour obtenir des formats structurés et prêts à l’analyse ou à l’intégration." 
+          {
+            title: "Nettoyage & Transformation des Données",
+            description:
+              "Traitement des données brutes pour obtenir des formats structurés et prêts à l’analyse ou à l’intégration.",
           },
-          { 
-            title: "Flux de Données en Temps Réel", 
-            description: "Mise en place de pipelines automatisés pour la collecte continue et la mise à jour des données." 
+          {
+            title: "Flux de Données en Temps Réel",
+            description:
+              "Mise en place de pipelines automatisés pour la collecte continue et la mise à jour des données.",
           },
-          { 
-            title: "Veille Marché & Concurrence", 
-            description: "Suivi des concurrents, des prix et des tendances sectorielles pour éclairer vos décisions stratégiques." 
+          {
+            title: "Veille Marché & Concurrence",
+            description:
+              "Suivi des concurrents, des prix et des tendances sectorielles pour éclairer vos décisions stratégiques.",
           },
-          { 
-            title: "Extraction de Leads & Contacts", 
-            description: "Collecte de leads qualifiés et d’informations de contact à partir de sources publiques." 
+          {
+            title: "Extraction de Leads & Contacts",
+            description:
+              "Collecte de leads qualifiés et d’informations de contact à partir de sources publiques.",
           },
-          { 
-            title: "Scraping Conforme & Éthique", 
-            description: "Assurer une collecte de données respectant les limites légales et éthiques, y compris le RGPD et les conditions d’utilisation des sites." 
+          {
+            title: "Scraping Conforme & Éthique",
+            description:
+              "Assurer une collecte de données respectant les limites légales et éthiques, y compris le RGPD et les conditions d’utilisation des sites.",
           },
         ],
         features: [
-          { 
-            title: "Pipelines Scalables", 
-            description: "Collecte et traitement de grandes quantités de données de manière efficace grâce à des workflows automatisés." 
+          {
+            title: "Pipelines Scalables",
+            description:
+              "Collecte et traitement de grandes quantités de données de manière efficace grâce à des workflows automatisés.",
           },
-          { 
-            title: "Intégrations Personnalisées", 
-            description: "Injection directe des données extraites dans vos bases, CRM ou plateformes d’analyse." 
+          {
+            title: "Intégrations Personnalisées",
+            description:
+              "Injection directe des données extraites dans vos bases, CRM ou plateformes d’analyse.",
           },
-          { 
-            title: "Collecte Planifiée ou à la Demande", 
-            description: "Flexibilité pour des mises à jour périodiques ou en temps réel." 
+          {
+            title: "Collecte Planifiée ou à la Demande",
+            description:
+              "Flexibilité pour des mises à jour périodiques ou en temps réel.",
           },
         ],
         benefits: [
@@ -625,15 +896,15 @@ export const translations = {
       },
       copyright: "© 2026 Evobit. Tous droits réservés.",
       newsletter: "Restez informé",
-      newsletterDesc: "Conseils et actualités sur l'automatisation IA, directement dans votre boîte mail.",
+      newsletterDesc:
+        "Conseils et actualités sur l'automatisation IA, directement dans votre boîte mail.",
       subscribe: "S'abonner",
     },
-   
   },
   en: {
     nav: {
       services: "Services",
-      aboutUs:"About us",
+      aboutUs: "About us",
       projects: "Projects",
       advantages: "Advantages",
       testimonials: "Testimonials",
@@ -645,7 +916,8 @@ export const translations = {
       badge: "AI & Automation Agency",
       title: "Transform your business",
       titleHighlight: "with Evobit",
-      subtitle: "Expert solutions in cybersecurity, digital transformation, AI, cloud, DevOps, and data to transform, modernize, and automate your operations.",
+      subtitle:
+        "Expert solutions in cybersecurity, digital transformation, AI, cloud, DevOps, and data to transform, modernize, and automate your operations.",
       cta: "Free submission",
       ctaSecondary: "See Our Services",
       stats: {
@@ -656,46 +928,55 @@ export const translations = {
     },
     services: {
       title: "What we deliver",
-      subtitle: "Pillars of expertise to secure, optimize, and automate your business.",
+      subtitle:
+        "Pillars of expertise to secure, optimize, and automate your business.",
       items: [
         {
           title: "Web Development",
-          description: "Modern websites, performant web applications, and custom e-commerce with the latest technologies.",
+          description:
+            "Modern websites, performant web applications, and custom e-commerce with the latest technologies.",
           icon: "Code",
         },
         {
           title: "Mobile Development",
-          description: "Native or cross-platform iOS and Android apps to reach your customers everywhere.",
+          description:
+            "Native or cross-platform iOS and Android apps to reach your customers everywhere.",
           icon: "Smartphone",
         },
         {
           title: "SEO Content Generation",
-          description: "100% personalized articles optimized for search engines. Automate your content strategy with AI.",
+          description:
+            "100% personalized articles optimized for search engines. Automate your content strategy with AI.",
           icon: "FileText",
         },
         {
           title: "Social Media Automation",
-          description: "Generate posts for all your networks in one click with platform-adapted content.",
+          description:
+            "Generate posts for all your networks in one click with platform-adapted content.",
           icon: "Share2",
         },
         {
           title: "Web Scraping & Monitoring",
-          description: "Automate your competitive intelligence and data processing to stay informed.",
+          description:
+            "Automate your competitive intelligence and data processing to stay informed.",
           icon: "Globe",
         },
         {
           title: "AI Agents & Chatbots",
-          description: "Deploy multi-task AI agents connected to your tools for 24/7 customer service.",
+          description:
+            "Deploy multi-task AI agents connected to your tools for 24/7 customer service.",
           icon: "Bot",
         },
         {
           title: "GMB Automation",
-          description: "Automate Google Business listing management and customer review collection.",
+          description:
+            "Automate Google Business listing management and customer review collection.",
           icon: "MapPin",
         },
         {
           title: "Business Process Automation",
-          description: "Automate internal processes: accounting, HR, project tracking, invoicing.",
+          description:
+            "Automate internal processes: accounting, HR, project tracking, invoicing.",
           icon: "Workflow",
         },
       ],
@@ -705,33 +986,40 @@ export const translations = {
     },
     about: {
       title: "What we stand for",
-      description: "We are committed to delivering innovative solutions that empower businesses and communities to thrive. Our mission is to combine creativity, technology, and dedication to achieve real impact.",
+      description:
+        "We are committed to delivering innovative solutions that empower businesses and communities to thrive. Our mission is to combine creativity, technology, and dedication to achieve real impact.",
       coreValues: [
         {
           title: "Innovation",
-          description: "We constantly seek new ideas and technologies to improve the way we work and serve our clients."
+          description:
+            "We constantly seek new ideas and technologies to improve the way we work and serve our clients.",
         },
         {
           title: "Integrity",
-          description: "We operate with honesty, transparency, and ethical practices in everything we do."
+          description:
+            "We operate with honesty, transparency, and ethical practices in everything we do.",
         },
         {
           title: "Collaboration",
-          description: "We believe in teamwork and fostering strong relationships to achieve the best outcomes."
+          description:
+            "We believe in teamwork and fostering strong relationships to achieve the best outcomes.",
         },
         {
           title: "Excellence",
-          description: "We strive for the highest quality in our work, exceeding expectations and delivering value."
+          description:
+            "We strive for the highest quality in our work, exceeding expectations and delivering value.",
         },
         {
           title: "Sustainability",
-          description: "We aim to create solutions that are environmentally and socially responsible."
+          description:
+            "We aim to create solutions that are environmentally and socially responsible.",
         },
         {
           title: "Customer Focus",
-          description: "Our clients are at the heart of everything we do, and we prioritize their needs and success."
-        }
-      ]
+          description:
+            "Our clients are at the heart of everything we do, and we prioritize their needs and success.",
+        },
+      ],
     },
     howItWorks: {
       subtitle: "Our proven method ensures fast and efficient deployment",
@@ -739,17 +1027,20 @@ export const translations = {
         {
           number: "01",
           title: "Analysis & Scoping",
-          description: "Detailed scope document within 48h. We analyze your business processes, identify potential gains and propose a custom strategy.",
+          description:
+            "Detailed scope document within 48h. We analyze your business processes, identify potential gains and propose a custom strategy.",
         },
         {
           number: "02",
           title: "Workflow Design",
-          description: "We design intelligent automation scenarios. Flow architecture, API integrations and AI configuration.",
+          description:
+            "We design intelligent automation scenarios. Flow architecture, API integrations and AI configuration.",
         },
         {
           number: "03",
           title: "Deployment & Optimization",
-          description: "Connection to your existing tools, rigorous testing, progressive deployment and continuous optimization.",
+          description:
+            "Connection to your existing tools, rigorous testing, progressive deployment and continuous optimization.",
         },
       ],
       cta: "Get Started",
@@ -757,36 +1048,43 @@ export const translations = {
     whyAutomate: {
       title: "Why choose Evobit?",
       subtitle: "Technology expertise at the service of your growth",
-      description: "From cybersecurity to cloud, from AI to digital transformation, we support you on all fronts.",
+      description:
+        "From cybersecurity to cloud, from AI to digital transformation, we support you on all fronts.",
       benefits: [
         {
           title: "Enhanced security",
-          description: "Protect your digital assets with our advanced and compliant cybersecurity solutions.",
+          description:
+            "Protect your digital assets with our advanced and compliant cybersecurity solutions.",
           icon: "CheckCircle",
         },
         {
           title: "Scalable infrastructure",
-          description: "DevOps, Cloud & Kubernetes for a reliable, fast, and scalable infrastructure.",
+          description:
+            "DevOps, Cloud & Kubernetes for a reliable, fast, and scalable infrastructure.",
           icon: "TrendingUp",
         },
         {
           title: "Intelligent automation",
-          description: "AI and automation to eliminate repetitive tasks and save 15-20 hours per week.",
+          description:
+            "AI and automation to eliminate repetitive tasks and save 15-20 hours per week.",
           icon: "Clock",
         },
         {
           title: "Connected ecosystem",
-          description: "Integrate all your tools: CRM, ERP, marketing, invoicing, communication.",
+          description:
+            "Integrate all your tools: CRM, ERP, marketing, invoicing, communication.",
           icon: "Link",
         },
         {
           title: "Data-driven management",
-          description: "Centralize your data, automate your dashboards. Real-time visibility.",
+          description:
+            "Centralize your data, automate your dashboards. Real-time visibility.",
           icon: "BarChart",
         },
         {
           title: "Measurable ROI",
-          description: "Time saved, reduced risks, optimized costs, quick payback.",
+          description:
+            "Time saved, reduced risks, optimized costs, quick payback.",
           icon: "Target",
         },
       ],
@@ -798,11 +1096,13 @@ export const translations = {
       audiences: [
         {
           title: "Start-ups",
-          description: "Accelerate your growth without increasing operational costs.",
+          description:
+            "Accelerate your growth without increasing operational costs.",
         },
         {
           title: "E-commerce & Retail",
-          description: "Automate your logistics, customer service and marketing.",
+          description:
+            "Automate your logistics, customer service and marketing.",
         },
         {
           title: "Consultants & Firms",
@@ -810,7 +1110,8 @@ export const translations = {
         },
         {
           title: "Web & Digital Agencies",
-          description: "Automate your production processes and gain efficiency.",
+          description:
+            "Automate your production processes and gain efficiency.",
         },
         {
           title: "SAAS Editors",
@@ -829,25 +1130,29 @@ export const translations = {
       projects: [
         {
           name: "Stockkeep",
-          description: "End-to-end inventory management platform with real-time tracking, multi-role approval workflows, and supply chain optimization across multiple locations.",
+          description:
+            "End-to-end inventory management platform with real-time tracking, multi-role approval workflows, and supply chain optimization across multiple locations.",
           category: "Web & Mobile",
           link: null,
         },
         {
           name: "GameSooQ",
-          description: "Video game exchange marketplace with instant messaging, transaction tracking, and a comprehensive admin dashboard for monitoring activity and performance.",
+          description:
+            "Video game exchange marketplace with instant messaging, transaction tracking, and a comprehensive admin dashboard for monitoring activity and performance.",
           category: "Marketplace",
           link: "https://gamesooq.com",
         },
         {
           name: "SmartCity",
-          description: "Intelligent traffic monitoring solution with automated vehicle detection, violation tracking, and real-time analytics dashboards for smart city management.",
+          description:
+            "Intelligent traffic monitoring solution with automated vehicle detection, violation tracking, and real-time analytics dashboards for smart city management.",
           category: "AI & Vision",
           link: null,
         },
         {
           name: "Anonyto",
-          description: "Privacy protection extension that automatically detects and anonymizes your personal data before it's sent to AI tools. Instant protection, zero friction.",
+          description:
+            "Privacy protection extension that automatically detects and anonymizes your personal data before it's sent to AI tools. Instant protection, zero friction.",
           category: "Cybersecurity",
           link: "https://anonyto.com",
         },
@@ -858,7 +1163,8 @@ export const translations = {
       subtitle: "Trusted by Canadian businesses",
       items: [
         {
-          quote: "Evobit completely transformed how we manage operations. We saved over 20 hours a week thanks to their automations. The team is responsive, professional, and truly listens to our needs.",
+          quote:
+            "Evobit completely transformed how we manage operations. We saved over 20 hours a week thanks to their automations. The team is responsive, professional, and truly listens to our needs.",
           name: "Sophie Tremblay",
           role: "Director of Operations",
           company: "NovaTech Solutions",
@@ -866,7 +1172,8 @@ export const translations = {
           rating: 5,
         },
         {
-          quote: "We were looking for a partner who understands business challenges, not just the technical side. Evobit delivered concrete solutions that had a measurable impact on our growth from the very first month.",
+          quote:
+            "We were looking for a partner who understands business challenges, not just the technical side. Evobit delivered concrete solutions that had a measurable impact on our growth from the very first month.",
           name: "Marc-Antoine Dubois",
           role: "Founder & CEO",
           company: "Altitude Commerce",
@@ -874,7 +1181,8 @@ export const translations = {
           rating: 5,
         },
         {
-          quote: "The level of quality and attention to detail is exceptional. Our CRM, emails, and invoicing are now fully automated. I recommend Evobit without hesitation.",
+          quote:
+            "The level of quality and attention to detail is exceptional. Our CRM, emails, and invoicing are now fully automated. I recommend Evobit without hesitation.",
           name: "Isabelle Gagnon",
           role: "VP Marketing",
           company: "Groupe Horizon",
@@ -882,7 +1190,8 @@ export const translations = {
           rating: 5,
         },
         {
-          quote: "As a startup, every minute counts. Evobit allowed us to focus on what truly matters: our product and our clients. Their approach is human-centered and the results speak for themselves.",
+          quote:
+            "As a startup, every minute counts. Evobit allowed us to focus on what truly matters: our product and our clients. Their approach is human-centered and the results speak for themselves.",
           name: "Jean-Philippe Roy",
           role: "Co-founder",
           company: "PixelCraft Studio",
@@ -893,7 +1202,18 @@ export const translations = {
     },
     integrations: {
       subtitle: "Natively connect your tools and automate your workflows",
-      tools: ["Notion", "Airtable", "HubSpot", "Salesforce", "Make", "Zapier", "n8n", "Slack", "Gmail", "Google Sheets"],
+      tools: [
+        "Notion",
+        "Airtable",
+        "HubSpot",
+        "Salesforce",
+        "Make",
+        "Zapier",
+        "n8n",
+        "Slack",
+        "Gmail",
+        "Google Sheets",
+      ],
     },
     faq: {
       title: "Frequently Asked Questions",
@@ -903,32 +1223,60 @@ export const translations = {
       items: [
         {
           q: "What types of services do you offer?",
-          a: "We provide cybersecurity services (penetration testing, 24/7 SOC monitoring, compliance), DevOps & Cloud engineering (CI/CD, cloud migration, Kubernetes, infrastructure as code), as well as AI, automation, and digital transformation solutions."
+          a: "We cover a broad spectrum: web and mobile development, cybersecurity, DevOps & Cloud, AI and automation, digital transformation, IT strategy, web scraping and competitive intelligence. Every service is tailored to your specific business needs.",
         },
         {
-          q: "Can you automate my social media posting?",
-          a: "Yes, we develop systems that generate posts for all your networks in a single click, with content adapted to each platform to maximize engagement."
+          q: "How do you protect my business against cyber threats?",
+          a: "We perform penetration testing, deploy 24/7 SOC monitoring, ensure regulatory compliance, and implement advanced security solutions to safeguard your data and infrastructure.",
         },
         {
-          q: "How can your AI agents and chatbots help my business?",
-          a: "Our multi-tasking AI agents can connect to your tools to provide 24/7 customer support, answer frequent questions, and automate repetitive tasks."
+          q: "Can you build a custom website or mobile app?",
+          a: "Absolutely. We design modern, high-performance websites and native or cross-platform iOS and Android applications, tailored to your brand identity and business goals.",
         },
         {
-          q: "What can you do with web scraping and market monitoring?",
-          a: "We automate data collection and processing for competitive intelligence so you stay informed about your market in real time."
+          q: "What is DevOps and how can it help my business?",
+          a: "DevOps combines development and operations to accelerate your deployments. We set up CI/CD pipelines, cloud migration, Kubernetes, and infrastructure as code to make your delivery process reliable and automated.",
         },
         {
-          q: "How does business process automation work?",
-          a: "We can automate your internal workflows, such as accounting, HR, project tracking, and invoicing, helping you save time and reduce errors."
+          q: "How can AI and automation optimize my operations?",
+          a: "We deploy AI agents, chatbots, social media automation, SEO content generation, and business process automation (accounting, HR, invoicing) to save you time and reduce errors.",
         },
         {
-          q: "Do you offer training for your automation solutions?",
-          a: "Yes, we train your teams to easily use, monitor, and maintain all implemented automations."
+          q: "Do you offer IT strategy and digital transformation consulting?",
+          a: "Yes, we audit your existing systems, define a technology roadmap, and guide you step by step through modernizing your infrastructure and processes.",
         },
         {
-          q: "How can I get a quote for a project?",
-          a: "Every project is unique. We offer a free evaluation of your needs and provide a customized, precise quote."
-        }
+          q: "How does your web scraping and competitive intelligence service work?",
+          a: "We automate real-time data collection and analysis to monitor your market, track competitors, and identify growth opportunities.",
+        },
+        {
+          q: "Do you work with businesses of all sizes?",
+          a: "Yes, we support startups, SMBs, and large enterprises alike. Our solutions are modular and scale to fit your budget and ambitions.",
+        },
+        {
+          q: "How long does it take to deliver a project?",
+          a: "It depends on complexity. A simple automation project can be delivered in a few days, while a full solution (website, cloud infrastructure, security) can take 4 to 12 weeks.",
+        },
+        {
+          q: "Do you offer support and maintenance after delivery?",
+          a: "Yes, we offer support and maintenance packages to ensure the performance, security, and continuous evolution of your solutions.",
+        },
+        {
+          q: "Can you migrate our existing infrastructure to the cloud?",
+          a: "Absolutely. We plan and execute the migration of your servers, databases, and applications to AWS, Azure, or Google Cloud with minimal downtime.",
+        },
+        {
+          q: "How do you improve my website's SEO?",
+          a: "We use AI to generate optimized content, improve your site's technical structure, and implement keyword strategies to boost your organic visibility.",
+        },
+        {
+          q: "Are your solutions compliant with regulations (GDPR, SOC 2)?",
+          a: "Yes, compliance is at the core of our approach. We design every solution in accordance with GDPR, SOC 2, ISO 27001, and industry-specific regulations.",
+        },
+        {
+          q: "How can I get a quote for my project?",
+          a: "Every project is unique. We offer a free evaluation: after analyzing your needs, we provide a detailed, precise, and no-obligation quote.",
+        },
       ],
     },
     contact: {
@@ -950,13 +1298,15 @@ export const translations = {
       descriptionPlaceholder: "Describe your project or your needs...",
       submit: "Send",
       sending: "Sending...",
-       toaster: {
+      toaster: {
         successTitle: "Message sent successfully",
-        successDescription: "Our team will get back to you as soon as possible.",
+        successDescription:
+          "Our team will get back to you as soon as possible.",
         errorTitle: "Something went wrong",
         errorDescription: "Please try again or contact us later.",
         validationTitle: "Missing required fields",
-        validationDescription: "Please fill in all required fields before sending."
+        validationDescription:
+          "Please fill in all required fields before sending.",
       },
       errors: {
         nameRequired: "Please enter your name.",
@@ -967,12 +1317,13 @@ export const translations = {
     },
     cta: {
       title: "Ready to transform your business?",
-      subtitle: "Book a free discovery call and let's discuss your automation needs.",
+      subtitle:
+        "Book a free discovery call and let's discuss your automation needs.",
       button: "Book a Call",
     },
     sectionTags: {
       services: "Our Services",
-      aboutUs:"About Us",
+      aboutUs: "About Us",
       howItWorks: "How It Works",
       benefits: "Benefits",
       whoWeServe: "Who We Serve",
@@ -996,10 +1347,10 @@ export const translations = {
       whyChooseUs: "Why Choose Us",
       realResults: "Real results, measured",
       readyToGetStarted: "Ready to get started?",
-      transformYourBusiness: "Let's discuss how our {service} expertise can transform your business.",
+      transformYourBusiness:
+        "Let's discuss how our {service} expertise can transform your business.",
       getAFreeSubmission: "Get a free submission",
       exploreOtherServices: "Explore our other services",
- 
     },
     serviceDetails: {
       cyber: {
@@ -1011,17 +1362,53 @@ export const translations = {
         longDescription:
           "In today's threat landscape, a reactive approach to security is no longer enough. Our cybersecurity practice delivers proactive, layered defenses that protect your organization from advanced persistent threats, ransomware, social engineering, and zero-day vulnerabilities. We combine cutting-edge technology with deep expertise to build security postures that are resilient, compliant, and business-aligned.",
         subServices: [
-          { title: "Penetration Testing", description: "Simulate real-world attacks to identify vulnerabilities before malicious actors exploit them." },
-          { title: "Security Monitoring (SOC)", description: "24/7 Security Operations Center with SIEM integration and real-time threat detection." },
-          { title: "Vulnerability Management", description: "Continuous scanning, prioritization, and remediation tracking across your systems." },
-          { title: "Incident Response & Forensics", description: "Rapid containment, investigation, and recovery support during security incidents." },
-          { title: "Cloud & Infrastructure Security", description: "Secure AWS, Azure, and GCP environments with zero-trust architecture." },
-          { title: "Compliance & Governance", description: "Support for ISO 27001, SOC 2, GDPR, HIPAA, and PCI-DSS compliance." },
+          {
+            title: "Penetration Testing",
+            description:
+              "Simulate real-world attacks to identify vulnerabilities before malicious actors exploit them.",
+          },
+          {
+            title: "Security Monitoring (SOC)",
+            description:
+              "24/7 Security Operations Center with SIEM integration and real-time threat detection.",
+          },
+          {
+            title: "Vulnerability Management",
+            description:
+              "Continuous scanning, prioritization, and remediation tracking across your systems.",
+          },
+          {
+            title: "Incident Response & Forensics",
+            description:
+              "Rapid containment, investigation, and recovery support during security incidents.",
+          },
+          {
+            title: "Cloud & Infrastructure Security",
+            description:
+              "Secure AWS, Azure, and GCP environments with zero-trust architecture.",
+          },
+          {
+            title: "Compliance & Governance",
+            description:
+              "Support for ISO 27001, SOC 2, GDPR, HIPAA, and PCI-DSS compliance.",
+          },
         ],
         features: [
-          { title: "Threat Intelligence", description: "Industry-specific intelligence feeds and proactive monitoring." },
-          { title: "Zero Trust Architecture", description: "Identity-first security approach for modern infrastructures." },
-          { title: "Security Awareness Training", description: "Interactive phishing simulations and employee training programs." },
+          {
+            title: "Threat Intelligence",
+            description:
+              "Industry-specific intelligence feeds and proactive monitoring.",
+          },
+          {
+            title: "Zero Trust Architecture",
+            description:
+              "Identity-first security approach for modern infrastructures.",
+          },
+          {
+            title: "Security Awareness Training",
+            description:
+              "Interactive phishing simulations and employee training programs.",
+          },
         ],
         benefits: [
           "Reduce risk of data breaches",
@@ -1040,17 +1427,53 @@ export const translations = {
         longDescription:
           "Digital transformation is more than adopting new technologies — it is about fundamentally rethinking how your organization delivers value. We help businesses modernize legacy systems, redesign processes, embrace cloud-native architectures, and build data-driven cultures. From strategy to execution, we partner with you to accelerate innovation, improve agility, and create measurable business impact.",
         subServices: [
-          { title: "Digital Strategy & Roadmap", description: "Define a clear transformation vision aligned with your business objectives and competitive landscape." },
-          { title: "Cloud Transformation", description: "Migrate, modernize, and optimize applications and infrastructure in cloud environments." },
-          { title: "Legacy System Modernization", description: "Upgrade outdated systems with scalable, future-ready architectures." },
-          { title: "Customer Experience (CX) Transformation", description: "Redesign digital journeys to deliver seamless and personalized user experiences." },
-          { title: "Enterprise Architecture", description: "Design scalable and integrated technology ecosystems that support long-term growth." },
-          { title: "Data-Driven Transformation", description: "Leverage analytics, BI, and governance frameworks to enable smarter decision-making." },
+          {
+            title: "Digital Strategy & Roadmap",
+            description:
+              "Define a clear transformation vision aligned with your business objectives and competitive landscape.",
+          },
+          {
+            title: "Cloud Transformation",
+            description:
+              "Migrate, modernize, and optimize applications and infrastructure in cloud environments.",
+          },
+          {
+            title: "Legacy System Modernization",
+            description:
+              "Upgrade outdated systems with scalable, future-ready architectures.",
+          },
+          {
+            title: "Customer Experience (CX) Transformation",
+            description:
+              "Redesign digital journeys to deliver seamless and personalized user experiences.",
+          },
+          {
+            title: "Enterprise Architecture",
+            description:
+              "Design scalable and integrated technology ecosystems that support long-term growth.",
+          },
+          {
+            title: "Data-Driven Transformation",
+            description:
+              "Leverage analytics, BI, and governance frameworks to enable smarter decision-making.",
+          },
         ],
         features: [
-          { title: "Innovation Workshops", description: "Collaborative sessions to identify opportunities and define transformation priorities." },
-          { title: "Technology Enablement", description: "Selection and implementation of modern digital platforms and tools." },
-          { title: "Change & Adoption Programs", description: "Ensure smooth organizational transition and user adoption." },
+          {
+            title: "Innovation Workshops",
+            description:
+              "Collaborative sessions to identify opportunities and define transformation priorities.",
+          },
+          {
+            title: "Technology Enablement",
+            description:
+              "Selection and implementation of modern digital platforms and tools.",
+          },
+          {
+            title: "Change & Adoption Programs",
+            description:
+              "Ensure smooth organizational transition and user adoption.",
+          },
         ],
         benefits: [
           "Increased operational efficiency",
@@ -1069,17 +1492,52 @@ export const translations = {
         longDescription:
           "Artificial intelligence isn't a future promise — it's today's competitive advantage. Our AI & Automation practice helps organizations move beyond pilot projects to enterprise-scale intelligent automation. We deliver solutions that automate routine tasks, augment decision-making, and create new value streams.",
         subServices: [
-          { title: "AI Strategy & Roadmap", description: "Identify high-impact AI use cases and define phased implementation plans." },
-          { title: "Conversational AI", description: "Deploy intelligent chatbots and virtual agents with natural language capabilities." },
-          { title: "Business Process Automation", description: "Automate end-to-end workflows across departments." },
-          { title: "Robotic Process Automation", description: "High-volume rule-based task automation using RPA platforms." },
-          { title: "Custom ML Models", description: "Predictive models for forecasting, anomaly detection, and recommendations." },
-          { title: "Intelligent Analytics", description: "AI-powered dashboards and automated reporting solutions." },
+          {
+            title: "AI Strategy & Roadmap",
+            description:
+              "Identify high-impact AI use cases and define phased implementation plans.",
+          },
+          {
+            title: "Conversational AI",
+            description:
+              "Deploy intelligent chatbots and virtual agents with natural language capabilities.",
+          },
+          {
+            title: "Business Process Automation",
+            description: "Automate end-to-end workflows across departments.",
+          },
+          {
+            title: "Robotic Process Automation",
+            description:
+              "High-volume rule-based task automation using RPA platforms.",
+          },
+          {
+            title: "Custom ML Models",
+            description:
+              "Predictive models for forecasting, anomaly detection, and recommendations.",
+          },
+          {
+            title: "Intelligent Analytics",
+            description:
+              "AI-powered dashboards and automated reporting solutions.",
+          },
         ],
         features: [
-          { title: "Generative AI Solutions", description: "LLM-powered content generation, document analysis, and automation." },
-          { title: "Integration Hub", description: "Connect AI solutions with your enterprise applications." },
-          { title: "AI Governance", description: "Responsible AI frameworks ensuring transparency and compliance." },
+          {
+            title: "Generative AI Solutions",
+            description:
+              "LLM-powered content generation, document analysis, and automation.",
+          },
+          {
+            title: "Integration Hub",
+            description:
+              "Connect AI solutions with your enterprise applications.",
+          },
+          {
+            title: "AI Governance",
+            description:
+              "Responsible AI frameworks ensuring transparency and compliance.",
+          },
         ],
         benefits: [
           "Reduce operational costs",
@@ -1100,30 +1558,72 @@ export const translations = {
           "Looking to revolutionize your business with DevOps services? Do you want to automate workflows and increase the productivity of your IT department? Trust us to transform your operations, integrate cloud solutions, continuous integration and delivery (CI/CD), GitOps, containerization, DevSecOps, and a suite of other services.",
 
         subServices: [
-          { title: "DevOps Services", description: "Looking to revolutionize your business with DevOps services? Do you want to automate workflows and increase the productivity of your IT department? Trust us to transform your operations, integrate cloud solutions, continuous integration and delivery (CI/CD), GitOps, containerization, DevSecOps, and a suite of other services.", subItems: ["DevOps Consulting", "CI/CD Services", "Azure Cloud Engineering", "AWS DevOps Services"] },
-          { title: "Platform Engineering", description: "Your business needs a high-performing, secure, and scalable cloud platform. Revamp your technology architecture with our expert platform development services. Transition seamlessly from a rigid legacy core system to a flexible, modular ecosystem built on connected layers. Leverage the power of cloud, microservices, and internal and external APIs to accelerate your infrastructure." },
-          { title: "Fractional CTO", description: "Gain top-tier tech leadership without the full-time commitment. Our Fractional CTO service gives you access to experienced technology executives who guide your IT strategy part-time. We help align your tech with your business goals, make smart technology decisions, and drive innovation. Whether you're a growing startup or an established company, our Fractional CTOs bring the expertise you need to thrive in the digital age." },
-          { title: "IT Audit Services", description: "We examine your technology to keep your business safe and efficient. Our IT audit checks your systems for weaknesses, ensures you follow important rules, and suggests ways to improve your tech setup. We help protect your valuable data and strengthen your digital defenses.", subItems: ["Infrastructure Audit", "Security Audit", "Compliance Audit"] },
-          { title: "Digital Transformation Consulting & Services", description: "We help your business use new tech to work better. Our consultants work closely with your team to identify opportunities, implement cutting-edge solutions, and foster a culture of innovation. From cloud migration to data analytics, we'll help you navigate the complexities of digital change." },
-          { title: "Infrastructure Management", description: "Experience the transformative force of our unwavering infrastructure management services. If your IT staff doesn't handle growing workloads anymore, we construct and manage a digital project architecture, propelling you towards unparalleled success. Embrace optimal conditions, thrive amidst competition, and witness your ambitions become reality.", subItems: ["IT Infrastructure Managed Services", "Cloud Infrastructure Management Services", "IT Infrastructure Support", "IT Infrastructure Consulting"] },
-          { title: "Cloud Computing Service", description: "Experience the unrivaled potential of cloud computing services. Transfer your digital solution into the cloud and save money with our Cloud optimization services. Unlock agility, scalability, and innovation like never before.", subItems: ["Database Migration Services", "Cloud Migration Services", "Google Cloud Migration Services", "Azure Migration Services", "AWS Migration Services", "Cloud Consulting"] },
-          { title: "SRE Services", description: "Looking for professionals that will help your business cope with the increase in workload by scaling and optimizing workflows? Partner with us today and respond to incidents or even assist with Backup and Disaster Recovery by adding new resources and expertise.", subItems: ["IT Monitoring", "Backup and Disaster Recovery Services"] },
-          { title: "Kubernetes Services", description: "Supercharge your applications with our cutting-edge Kubernetes services. Facilitate customization and automation with containerized workloads and Kubernetes services. Empower your development and operations teams to drive innovation and unlock new possibilities." },
-          { title: "Blockchain DevOps", description: "Empower your blockchain journey with our expert DevOps services. Streamline deployment, accelerate development cycles, and revolutionize your product delivery. Embrace efficiency, collaboration, and market agility like never before." },
+          {
+            title: "DevOps Services",
+            description:
+              "Automate workflows and boost your IT department's productivity with continuous integration and delivery (CI/CD), GitOps, containerization, and DevSecOps.",
+            subItems: [
+              "DevOps Consulting",
+              "CI/CD Services",
+              "Azure Cloud Engineering",
+              "AWS DevOps Services",
+            ],
+          },
+          {
+            title: "Platform Engineering",
+            description:
+              "Revamp your technology architecture with a high-performing, secure, and scalable cloud platform. Transition from rigid legacy systems to a modular ecosystem built on microservices and APIs.",
+          },
+          {
+            title: "Cloud Computing Service",
+            description:
+              "Transfer your solutions to the cloud and optimize costs. Migration, multi-cloud, and optimization to unlock agility and scalability.",
+            subItems: [
+              "Database Migration Services",
+              "Cloud Migration Services",
+              "Google Cloud Migration Services",
+              "Azure Migration Services",
+              "AWS Migration Services",
+              "Cloud Consulting",
+            ],
+          },
+          {
+            title: "SRE & Observability Services",
+            description:
+              "Ensure system reliability through proactive monitoring, incident management, and continuous performance optimization.",
+            subItems: [
+              "IT Monitoring & Observability",
+              "Incident Management & Alerting",
+              "Reliability Optimization",
+            ],
+          },
+          {
+            title: "Kubernetes Services",
+            description:
+              "Orchestrate your containerized applications with Kubernetes. Automated deployment, scaling, and simplified management for your dev and ops teams.",
+          },
+          {
+            title: "Blockchain DevOps",
+            description:
+              "Streamline blockchain deployment, accelerate development cycles, and revolutionize your decentralized product delivery.",
+          },
         ],
 
         features: [
           {
             title: "End-to-End Automation",
-            description: "Reduce manual work through automated deployments, testing, and infrastructure management.",
+            description:
+              "Reduce manual work through automated deployments, testing, and infrastructure management.",
           },
           {
             title: "Cloud-Native Architecture",
-            description: "Highly available, fault-tolerant environments designed for performance and scalability.",
+            description:
+              "Highly available, fault-tolerant environments designed for performance and scalability.",
           },
           {
             title: "Advanced Observability",
-            description: "Proactive monitoring with metrics, logs, and intelligent alerts to prevent incidents.",
+            description:
+              "Proactive monitoring with metrics, logs, and intelligent alerts to prevent incidents.",
           },
         ],
 
@@ -1147,25 +1647,45 @@ export const translations = {
           "A strong IT strategy is essential for sustainable business growth and competitiveness. Our IT Strategy & Infrastructure services combine executive technology leadership, operational management, and governance expertise to align your IT systems with business objectives. We help organizations modernize infrastructure, improve resilience, optimize costs, and ensure regulatory compliance while preparing them for future digital transformation.",
 
         subServices: [
-          { title: "Fractional CTO", description: "Part-time executive technology leadership." },
-          { title: "IT Infrastructure Management", description: "Monitoring, maintenance, and optimization of IT systems." },
-          { title: "IT Audits & Compliance", description: "Security, infrastructure, and regulatory assessments." },
-          { title: "Disaster Recovery & Backup", description: "Ensure business continuity and resilience." },
-          { title: "Performance Optimization", description: "Improve system reliability and scalability." },
+          {
+            title: "Fractional CTO",
+            description: "Part-time executive technology leadership.",
+          },
+          {
+            title: "IT Infrastructure Management",
+            description:
+              "Monitoring, maintenance, and optimization of IT systems.",
+          },
+          {
+            title: "IT Audits & Compliance",
+            description:
+              "Security, infrastructure, and regulatory assessments.",
+          },
+          {
+            title: "Disaster Recovery & Backup",
+            description: "Ensure business continuity and resilience.",
+          },
+          {
+            title: "Performance Optimization",
+            description: "Improve system reliability and scalability.",
+          },
         ],
 
         features: [
           {
             title: "Strategic IT Leadership",
-            description: "Expert guidance to drive informed technology decisions and long-term planning.",
+            description:
+              "Expert guidance to drive informed technology decisions and long-term planning.",
           },
           {
             title: "Highly Available Systems",
-            description: "Reliable and secure infrastructure designed to support high workloads.",
+            description:
+              "Reliable and secure infrastructure designed to support high workloads.",
           },
           {
             title: "Governance & Compliance",
-            description: "Frameworks and processes ensuring standards compliance and risk management.",
+            description:
+              "Frameworks and processes ensuring standards compliance and risk management.",
           },
         ],
 
@@ -1186,43 +1706,52 @@ export const translations = {
         longDescription:
           "In the data-driven era, information is power. Our Web Scraping & Data Extraction service enables organizations to systematically collect data from websites, online platforms, and public sources. We provide reliable, scalable, and compliant solutions that help you monitor competitors, gather market intelligence, track trends, and fuel AI/ML models. From custom scrapers to automated pipelines, we transform unstructured web content into structured, actionable data.",
         subServices: [
-          { 
-            title: "Custom Web Scraping", 
-            description: "Develop tailored scraping solutions for websites, portals, and e-commerce platforms." 
+          {
+            title: "Custom Web Scraping",
+            description:
+              "Develop tailored scraping solutions for websites, portals, and e-commerce platforms.",
           },
-          { 
-            title: "Data Cleaning & Transformation", 
-            description: "Process raw web data into structured formats ready for analysis or integration." 
+          {
+            title: "Data Cleaning & Transformation",
+            description:
+              "Process raw web data into structured formats ready for analysis or integration.",
           },
-          { 
-            title: "Real-Time Data Feeds", 
-            description: "Set up automated pipelines for continuous data collection and updates." 
+          {
+            title: "Real-Time Data Feeds",
+            description:
+              "Set up automated pipelines for continuous data collection and updates.",
           },
-          { 
-            title: "Market & Competitor Intelligence", 
-            description: "Monitor competitors, pricing, and industry trends to inform strategic decisions." 
+          {
+            title: "Market & Competitor Intelligence",
+            description:
+              "Monitor competitors, pricing, and industry trends to inform strategic decisions.",
           },
-          { 
-            title: "Lead & Contact Extraction", 
-            description: "Extract qualified leads and contact information from public sources." 
+          {
+            title: "Lead & Contact Extraction",
+            description:
+              "Extract qualified leads and contact information from public sources.",
           },
-          { 
-            title: "Compliance-Aware Scraping", 
-            description: "Ensure web scraping respects legal and ethical boundaries, including GDPR and website terms of use." 
+          {
+            title: "Compliance-Aware Scraping",
+            description:
+              "Ensure web scraping respects legal and ethical boundaries, including GDPR and website terms of use.",
           },
         ],
         features: [
-          { 
-            title: "Scalable Pipelines", 
-            description: "Collect and process large volumes of data efficiently with automated workflows." 
+          {
+            title: "Scalable Pipelines",
+            description:
+              "Collect and process large volumes of data efficiently with automated workflows.",
           },
-          { 
-            title: "Custom Integrations", 
-            description: "Feed scraped data directly into your databases, CRMs, or analytics platforms." 
+          {
+            title: "Custom Integrations",
+            description:
+              "Feed scraped data directly into your databases, CRMs, or analytics platforms.",
           },
-          { 
-            title: "Scheduled & On-Demand Scraping", 
-            description: "Flexible scheduling for periodic or real-time data updates." 
+          {
+            title: "Scheduled & On-Demand Scraping",
+            description:
+              "Flexible scheduling for periodic or real-time data updates.",
           },
         ],
         benefits: [
@@ -1260,7 +1789,8 @@ export const translations = {
       },
       copyright: "© 2026 Evobit. All rights reserved.",
       newsletter: "Stay in the loop",
-      newsletterDesc: "Tips and news on AI automation, delivered to your inbox.",
+      newsletterDesc:
+        "Tips and news on AI automation, delivered to your inbox.",
       subscribe: "Subscribe",
     },
   },

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { translations } from "../i18n/translations";
-import { useLanguage } from "../context/LanguageContext"; 
+import { useLanguage } from "../context/LanguageContext";
 import { Plus, Minus, ArrowRight } from "lucide-react";
 
 export default function FAQSection() {
@@ -9,9 +9,80 @@ export default function FAQSection() {
   const st = t.sectionTags;
 
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
-  const [showAll, setShowAll] = useState(false); // <-- New state to toggle more questions
 
-  const displayedItems = showAll ? t.faq.items : t.faq.items.slice(0, 5);
+  const allItems = t.faq.items;
+  const mid = Math.ceil(allItems.length / 2);
+  const leftColumn = allItems.slice(0, mid);
+  const rightColumn = allItems.slice(mid);
+
+  const renderItem = (item: { q: string; a: string }, globalIndex: number) => {
+    const isOpen = openFaqIndex === globalIndex;
+    return (
+      <div
+        key={globalIndex}
+        className={`group rounded-2xl border overflow-hidden transition-all duration-300 ${
+          isOpen
+            ? "bg-white dark:bg-brand-neutral-900 border-brand-primary-300 dark:border-brand-primary-600 shadow-lg shadow-brand-primary-500/5 dark:shadow-brand-primary-500/10"
+            : "bg-white dark:bg-brand-neutral-900 border-brand-neutral-200 dark:border-brand-neutral-700 hover:border-brand-neutral-300 dark:hover:border-brand-neutral-600 hover:shadow-md"
+        }`}
+      >
+        <button
+          type="button"
+          onClick={() => setOpenFaqIndex(isOpen ? null : globalIndex)}
+          className="w-full px-5 py-4 min-h-[4.5rem] flex items-center gap-3 text-left transition-colors duration-200"
+        >
+          <span
+            className={`flex-shrink-0 w-8 h-8 rounded-lg flex items-center justify-center text-xs font-bold transition-all duration-300 ${
+              isOpen
+                ? "bg-brand-primary-600 text-white"
+                : "bg-brand-neutral-100 dark:bg-brand-neutral-800 text-brand-neutral-500 dark:text-brand-neutral-400 group-hover:bg-brand-primary-100 dark:group-hover:bg-brand-primary-900/30 group-hover:text-brand-primary-600 dark:group-hover:text-brand-primary-400"
+            }`}
+          >
+            {String(globalIndex + 1).padStart(2, "0")}
+          </span>
+
+          <span
+            className={`flex-1 font-semibold text-sm sm:text-base transition-colors duration-200 ${
+              isOpen
+                ? "text-brand-primary-600 dark:text-brand-primary-400"
+                : "text-brand-neutral-800 dark:text-white group-hover:text-brand-primary-600 dark:group-hover:text-brand-primary-400"
+            }`}
+          >
+            {item.q}
+          </span>
+
+          <div
+            className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 ${
+              isOpen
+                ? "bg-brand-primary-600 text-white"
+                : "bg-brand-neutral-100 dark:bg-brand-neutral-800 text-brand-neutral-500 group-hover:bg-brand-primary-100 dark:group-hover:bg-brand-primary-900/30 group-hover:text-brand-primary-600 dark:group-hover:text-brand-primary-400"
+            }`}
+          >
+            {isOpen ? (
+              <Minus className="w-4 h-4" />
+            ) : (
+              <Plus className="w-4 h-4" />
+            )}
+          </div>
+        </button>
+
+        <div
+          className={`grid transition-all duration-300 ease-in-out ${
+            isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
+          }`}
+        >
+          <div className="overflow-hidden">
+            <div className="px-5 pb-4 pl-16">
+              <div className="h-px bg-gradient-to-r from-brand-primary-500/30 via-brand-primary-500/10 to-transparent mb-3"></div>
+              <p className="text-brand-neutral-600 dark:text-brand-neutral-300 leading-relaxed text-sm">
+                {item.a}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  };
 
   return (
     <section
@@ -37,84 +108,19 @@ export default function FAQSection() {
           </p>
         </div>
 
-        <div className="max-w-3xl mx-auto space-y-4 scroll-animate">
-          {displayedItems.map((item, index) => {
-            const isOpen = openFaqIndex === index;
-            return (
-              <div
-                key={index}
-                className={`group rounded-2xl border overflow-hidden transition-all duration-300 ${
-                  isOpen
-                    ? "bg-white dark:bg-brand-neutral-900 border-brand-primary-300 dark:border-brand-primary-600 shadow-lg shadow-brand-primary-500/5 dark:shadow-brand-primary-500/10"
-                    : "bg-white dark:bg-brand-neutral-900 border-brand-neutral-200 dark:border-brand-neutral-700 hover:border-brand-neutral-300 dark:hover:border-brand-neutral-600 hover:shadow-md"
-                }`}
-              >
-                <button
-                  type="button"
-                  onClick={() => setOpenFaqIndex(isOpen ? null : index)}
-                  className="w-full px-6 py-5 flex items-center gap-4 text-left transition-colors duration-200"
-                >
-                  <span
-                    className={`flex-shrink-0 w-8 h-8 rounded-lg flex items-center justify-center text-xs font-bold transition-all duration-300 ${
-                      isOpen
-                        ? "bg-brand-primary-600 text-white"
-                        : "bg-brand-neutral-100 dark:bg-brand-neutral-800 text-brand-neutral-500 dark:text-brand-neutral-400 group-hover:bg-brand-primary-100 dark:group-hover:bg-brand-primary-900/30 group-hover:text-brand-primary-600 dark:group-hover:text-brand-primary-400"
-                    }`}
-                  >
-                    {String(index + 1).padStart(2, "0")}
-                  </span>
-
-                  <span
-                    className={`flex-1 font-semibold transition-colors duration-200 ${
-                      isOpen
-                        ? "text-brand-primary-600 dark:text-brand-primary-400"
-                        : "text-brand-neutral-800 dark:text-white group-hover:text-brand-primary-600 dark:group-hover:text-brand-primary-400"
-                    }`}
-                  >
-                    {item.q}
-                  </span>
-
-                  <div
-                    className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 ${
-                      isOpen
-                        ? "bg-brand-primary-600 text-white"
-                        : "bg-brand-neutral-100 dark:bg-brand-neutral-800 text-brand-neutral-500 group-hover:bg-brand-primary-100 dark:group-hover:bg-brand-primary-900/30 group-hover:text-brand-primary-600 dark:group-hover:text-brand-primary-400"
-                    }`}
-                  >
-                    {isOpen ? <Minus className="w-4 h-4" /> : <Plus className="w-4 h-4" />}
-                  </div>
-                </button>
-
-                <div
-                  className={`grid transition-all duration-300 ease-in-out ${
-                    isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
-                  }`}
-                >
-                  <div className="overflow-hidden">
-                    <div className="px-6 pb-5 pl-[4.5rem]">
-                      <div className="h-px bg-gradient-to-r from-brand-primary-500/30 via-brand-primary-500/10 to-transparent mb-4"></div>
-                      <p className="text-brand-neutral-600 dark:text-brand-neutral-300 leading-relaxed">
-                        {item.a}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-
-        {/* Show More / Show Less button */}
-        {t.faq.items.length > 5 && (
-          <div className="text-center mt-6 scroll-animate">
-            <button
-              onClick={() => setShowAll(!showAll)}
-              className="text-brand-primary-600 dark:text-brand-primary-400 font-semibold hover:underline transition-colors"
-            >
-              {showAll ? "Show less" : "Show more questions"}
-            </button>
+        {/* 2-column layout — independent columns so expanding one item doesn't affect the other */}
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-4 items-start scroll-animate">
+          <div className="space-y-4">
+            {allItems
+              .slice(0, mid)
+              .map((item, index) => renderItem(item, index))}
           </div>
-        )}
+          <div className="space-y-4">
+            {allItems
+              .slice(mid)
+              .map((item, index) => renderItem(item, mid + index))}
+          </div>
+        </div>
 
         {/* Bottom CTA */}
         <div className="text-center mt-12 scroll-animate">

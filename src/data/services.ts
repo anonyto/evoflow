@@ -1,9 +1,35 @@
 import {
-  Shield, Lock, Eye, FileSearch, AlertTriangle, Server,
-  ClipboardCheck, TrendingUp, FileText, Scale, Users, Target,
-  Bot, Workflow, Zap, Brain, Cpu, BarChart3,
-  Cloud, GitBranch, Activity, HardDrive,
-  Layers, UserCog, Search, Lightbulb, Monitor, Database, Radio, Container, Link2,
+  Shield,
+  Lock,
+  Eye,
+  FileSearch,
+  AlertTriangle,
+  Server,
+  ClipboardCheck,
+  TrendingUp,
+  FileText,
+  Scale,
+  Users,
+  Target,
+  Bot,
+  Workflow,
+  Zap,
+  Brain,
+  Cpu,
+  BarChart3,
+  Cloud,
+  GitBranch,
+  Activity,
+  HardDrive,
+  Layers,
+  UserCog,
+  Search,
+  Lightbulb,
+  Monitor,
+  Database,
+  Radio,
+  Container,
+  Link2,
 } from "lucide-react";
 import { translations } from "../i18n/translations";
 
@@ -33,7 +59,9 @@ export interface ServiceCategory {
   benefits: string[];
 }
 
-export const getServices = (language: "en" | "fr" = "en"): ServiceCategory[] => {
+export const getServices = (
+  language: "en" | "fr" = "en",
+): ServiceCategory[] => {
   const t = translations[language];
   const sd = t.serviceDetails;
 
@@ -48,7 +76,8 @@ export const getServices = (language: "en" | "fr" = "en"): ServiceCategory[] => 
       longDescription: sd.cyber.longDescription,
       icon: Shield,
       subServices: sd.cyber.subServices.map((sub, idx) => ({
-        icon: [Lock, Eye, FileSearch, AlertTriangle, Server, Shield][idx] || Shield,
+        icon:
+          [Lock, Eye, FileSearch, AlertTriangle, Server, Shield][idx] || Shield,
         title: sub.title,
         description: sub.description,
       })),
@@ -66,7 +95,9 @@ export const getServices = (language: "en" | "fr" = "en"): ServiceCategory[] => 
       longDescription: sd.digital.longDescription,
       icon: ClipboardCheck,
       subServices: sd.digital.subServices.map((sub, idx) => ({
-        icon: [TrendingUp, FileText, Scale, Users, Target, BarChart3][idx] || ClipboardCheck,
+        icon:
+          [TrendingUp, FileText, Scale, Users, Target, BarChart3][idx] ||
+          ClipboardCheck,
         title: sub.title,
         description: sub.description,
       })),
@@ -102,7 +133,8 @@ export const getServices = (language: "en" | "fr" = "en"): ServiceCategory[] => 
       longDescription: sd.devops.longDescription,
       icon: Cloud,
       subServices: sd.devops.subServices.map((sub: any, idx: number) => ({
-        icon: [GitBranch, Layers, UserCog, Search, Lightbulb, Monitor, Database, Radio, Container, Link2][idx] || Cloud,
+        icon:
+          [GitBranch, Layers, Cloud, Monitor, Container, Link2][idx] || Cloud,
         title: sub.title,
         description: sub.description,
         ...(sub.subItems ? { subItems: sub.subItems } : {}),
@@ -121,7 +153,8 @@ export const getServices = (language: "en" | "fr" = "en"): ServiceCategory[] => 
       longDescription: sd.itStrategy.longDescription,
       icon: HardDrive,
       subServices: sd.itStrategy.subServices.map((sub, idx) => ({
-        icon: [Users, Server, FileSearch, Activity, TrendingUp][idx] || HardDrive,
+        icon:
+          [Users, Server, FileSearch, Activity, TrendingUp][idx] || HardDrive,
         title: sub.title,
         description: sub.description,
       })),
@@ -139,7 +172,8 @@ export const getServices = (language: "en" | "fr" = "en"): ServiceCategory[] => 
       longDescription: sd.webScraping.longDescription,
       icon: HardDrive,
       subServices: sd.webScraping.subServices.map((sub, idx) => ({
-        icon: [Users, Server, FileSearch, Activity, TrendingUp][idx] || HardDrive,
+        icon:
+          [Users, Server, FileSearch, Activity, TrendingUp][idx] || HardDrive,
         title: sub.title,
         description: sub.description,
       })),
@@ -149,10 +183,12 @@ export const getServices = (language: "en" | "fr" = "en"): ServiceCategory[] => 
   ];
 };
 
-
 export const services = getServices("en");
 
-export const getServiceBySlug = (slug: string, language: "en" | "fr" = "en") => {
+export const getServiceBySlug = (
+  slug: string,
+  language: "en" | "fr" = "en",
+) => {
   const allServices = getServices(language);
   return allServices.find((s) => s.slug === slug);
 };
