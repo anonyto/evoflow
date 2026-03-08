@@ -76,6 +76,9 @@ export default function Navbar() {
               <a href="#why-automate" onClick={(e) => handleNavClick(e, "why-automate")} className={`text-sm font-medium transition-colors ${theme === "dark" ? "text-brand-neutral-300 hover:text-brand-primary-400" : "text-brand-neutral-700 hover:text-brand-primary-600"}`}>
                 {t.nav.advantages}
               </a>
+              <a href="#clients" onClick={(e) => handleNavClick(e, "clients")} className={`text-sm font-medium transition-colors ${theme === "dark" ? "text-brand-neutral-300 hover:text-brand-primary-400" : "text-brand-neutral-700 hover:text-brand-primary-600"}`}>
+                {t.nav.clients}
+              </a>
               {/*<a href="#our-projects" className={`text-sm font-medium transition-colors ${theme === "dark" ? "text-brand-neutral-300 hover:text-brand-primary-400" : "text-brand-neutral-700 hover:text-brand-primary-600"}`}>
                 {t.nav.projects}
               </a>
@@ -202,6 +205,9 @@ export default function Navbar() {
               </a>
               <a href="#why-automate" onClick={(e) => handleNavClick(e, "why-automate")} className={`block text-sm font-medium transition-colors ${theme === "dark" ? "text-brand-neutral-300 hover:text-brand-primary-400" : "text-brand-neutral-700 hover:text-brand-primary-600"}`}>
                 {t.nav.advantages}
+              </a>
+              <a href="#clients" onClick={(e) => handleNavClick(e, "clients")} className={`block text-sm font-medium transition-colors ${theme === "dark" ? "text-brand-neutral-300 hover:text-brand-primary-400" : "text-brand-neutral-700 hover:text-brand-primary-600"}`}>
+                {t.nav.clients}
               </a>
               {/*<a href="#our-projects" className={`block text-sm font-medium transition-colors ${theme === "dark" ? "text-brand-neutral-300 hover:text-brand-primary-400" : "text-brand-neutral-700 hover:text-brand-primary-600"}`}>
                 {t.nav.projects}

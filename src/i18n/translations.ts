@@ -6,6 +6,7 @@ export const translations = {
       projects: "Projets",
       advantages: "Avantages",
       testimonials: "Témoignages",
+      clients: "Clients",
       faq: "FAQ",
       contact: "Contact",
       audit: "Soumission Gratuite",
@@ -430,6 +431,7 @@ export const translations = {
       benefits: "Avantages",
       whoWeServe: "Qui nous servons",
       integrations: "Intégrations",
+      clients: "Nos Clients",
       faq: "FAQ",
       contact: "Nous contacter",
     },
@@ -870,6 +872,11 @@ export const translations = {
         ],
       },
     },
+    clients: {
+      tag: "Nos Clients",
+      title: "Ils nous font confiance",
+      subtitle: "Des entreprises ambitieuses qui ont choisi Evobit pour accélérer leur croissance.",
+    },
     footer: {
       tagline: "Transformez votre entreprise avec nous.",
       services: {
@@ -885,6 +892,7 @@ export const translations = {
         title: "Entreprise",
         services: "Services",
         about: "À propos",
+        clients: "Clients",
         advantages: "Avantages",
         faq: "FAQ",
         contact: "Contact",
@@ -908,6 +916,7 @@ export const translations = {
       projects: "Projects",
       advantages: "Advantages",
       testimonials: "Testimonials",
+      clients: "Clients",
       faq: "FAQ",
       contact: "Contact",
       audit: "Free Submission",
@@ -1763,6 +1772,11 @@ export const translations = {
         ],
       },
     },
+    clients: {
+      tag: "Our Clients",
+      title: "They trust us",
+      subtitle: "Ambitious companies that chose Evobit to accelerate their growth.",
+    },
     footer: {
       tagline: "Transform your business with us.",
       services: {
@@ -1778,6 +1792,7 @@ export const translations = {
         title: "Company",
         services: "Services",
         about: "About Us",
+        clients: "Clients",
         advantages: "Advantages",
         faq: "FAQ",
         contact: "Contact",

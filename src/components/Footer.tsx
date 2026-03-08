@@ -19,6 +19,7 @@ export default function Footer() {
   const company = [
     { label: t.footer.company.about, href: "#about" },
     { label: t.footer.company.services, href: "#services" },
+    { label: t.footer.company.clients, href: "#clients" },
     { label: t.footer.company.advantages, href: "#advantages" },
     { label: t.footer.company.faq, href: "#faq" },
     { label: t.footer.company.contact, href: "#contact" },

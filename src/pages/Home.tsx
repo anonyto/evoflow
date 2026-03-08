@@ -10,6 +10,7 @@ import WhoWeServeSection from "../components/WhoWeServeSection";
 import FAQSection from "../components/FAQSection";
 import ContactSection from "../components/ContactSection";
 import AboutUs from "../components/AboutUs";
+import ClientsSection from "../components/ClientsSection";
 
 export default function Home() {
   const { theme } = useTheme();
@@ -54,6 +55,7 @@ export default function Home() {
       <AboutUs/>
       <WhyAutomateSection />
       <WhoWeServeSection />
+      <ClientsSection />
       {/*<TestimonialsSection />
       <ProjectsSection />
       <IntegrationsSection />*/}

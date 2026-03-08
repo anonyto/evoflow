@@ -241,3 +241,28 @@
     background-position: 100% 50%;
   }
 }
+
+/* Clients marquee animation */
+@keyframes clients-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.clients-marquee {
+  overflow: hidden;
+  width: 100%;
+}
+
+.clients-marquee-track {
+  display: flex;
+  animation: clients-scroll 35s linear infinite;
+  width: max-content;
+}
+
+.clients-marquee:hover .clients-marquee-track {
+  animation-play-state: paused;
+}
